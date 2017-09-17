@@ -10,7 +10,6 @@ github_username:  ohhelloana
 
 # Build settings
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
 exclude:
