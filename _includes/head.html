@@ -1,10 +1,30 @@
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="language" content="en">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <meta name="DC.title" content="Ana R">
+  <meta name="DC.creator " content="Ana R">
+  <meta name="DC.creator.address" content="contact@ohhelloana.blog">
+  <meta name="keywords" content="front-end, web, developer, blog">
+
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Oh Hello Ana - Blog">
+  <meta property="og:description" content="Ana's personal blog">
+  <meta property="og:url" content="http://www.ohhelloana.blog">
+  <meta property="og:site_name" content="Oh Hello Ana - Blog">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="@ohhelloana">
+  <meta property="twitter:creator" content="@ohhelloana">
+  <meta property="twitter:url" content="http://www.twitter.com/ohhelloana">
+  <meta property="twitter:domain" content="ohhelloana.blog">
+  <meta property="twitter:title" content="Oh Hello Ana - Blog">
+  <meta property="twitter:description" content="Ana's personal blog">
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
