@@ -2,7 +2,7 @@ title: Oh Hello Ana
 email: contact@ohhelloana.blog
 description: Ana's personal blog.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.ohhelloana.blog" # the base hostname & protocol for your site, e.g. http://example.com
 author: Ana R
 github_source: "https://github.com/ohhelloana/ohhelloana.blog"
 twitter_username: ohhelloana
@@ -17,3 +17,7 @@ exclude:
   - Gemfile.lock
 
 permalink: /:title
+
+sass:
+  sass_dir: _sass
+  style: compressed
