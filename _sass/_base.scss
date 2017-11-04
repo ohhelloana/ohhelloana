@@ -9,16 +9,16 @@ dl, dd, ol, ul, figure {
 }
 
 body {
-  background-color: #d0cbc8;
+  background-color: white;
   padding: 30px;
   font-family: 'Adamina', serif;
-  color: #3f3d3e;
+  color: #1f0f09;
 }
 
 body:before, body:after {
     content: "";
     position: fixed;
-    background: #fff;
+    background: #f8deca;
     left: 0;
     right: 0;
     height: 10px;
@@ -30,8 +30,8 @@ body:after {
     bottom: 0;
 }
 body {
-    border-left: 10px solid #fff;
-    border-right: 10px solid #fff;
+    border-left: 10px solid #f8deca;
+    border-right: 10px solid #f8deca;
 }
 
 a {
@@ -39,19 +39,20 @@ a {
 }
 
 a:link {
-    color: #516a3c;
+    color: #56371b;
 }
 
 a:visited {
-    color: #425830;
+    color: #56371b;
 }
 
 a:hover {
-    color: #425830;
+    color: #d8a884;
+    text-decoration: none;
 }
 
 a:active {
-    color: #516a3c;
+    color: #56371b;
 }
 
 .page-content {
@@ -64,44 +65,45 @@ a:active {
 
 .post-list {
 
-  li {
+  .single-post {
     margin-bottom: 25px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d8a884;
+
+    .post-title:hover {
+      background-color: #d8a884;
+      color: white;
+    }
 
     a {
       text-decoration: none;
     }
 
     a:link {
-        color: #3f3d3e;
+        color: #1f0f09;
     }
 
     a:visited {
-        color: #161f21;
+        color: #1f0f09;
     }
 
     a:hover {
-        color: #212c2e;
+        color: white;
     }
 
     a:active {
-        color: #3f3d3e;
+        color: #1f0f09;
     }
   }
 
   .post-meta {
-    color: #7e746b;
+    color: #d8a884;
     font-family: 'Adamina', serif;
     font-size: 14px;
-    padding: 5px 4px 5px 4px;
     text-transform: lowercase;
-    border-top: 1px dashed #7e746b;
-    border-right: 1px dashed #7e746b;
-    border-left: 1px dashed #7e746b;
   }
 
   .post-title {
-    background-color: white;
-    color: #3f3d3e;
+    color: #1f0f09;
   }
-
 }
