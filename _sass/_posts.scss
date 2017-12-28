@@ -1,3 +1,24 @@
 .post-title, .post-link {
-  font-family: 'Cutive Mono', monospace;
+  font-family: $headers-font-stack;
+  font-weight: 100;
+}
+
+.post-title {
+  color: #d8a884;
+}
+
+.post-content {
+  margin-top: 20px;
+
+  h3 {
+    margin: 20px 0;
+    color: #d8a884;
+    font-weight: normal;
+  }
+}
+
+.post-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }

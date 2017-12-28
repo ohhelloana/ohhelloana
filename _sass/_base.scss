@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
 body {
   background-color: white;
   padding: 30px;
-  font-family: 'Adamina', serif;
+  font-family: $body-font-stack;
   color: #1f0f09;
 }
 
@@ -98,7 +98,7 @@ a:active {
 
   .post-meta {
     color: #d8a884;
-    font-family: 'Adamina', serif;
+    font-family: $body-font-stack;
     font-size: 14px;
     text-transform: lowercase;
   }

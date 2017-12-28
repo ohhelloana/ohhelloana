@@ -1,7 +1,17 @@
 .site-header h1 {
   text-align: center;
-  font-family: 'Cutive Mono', monospace;
-  color: #d8a884;
+  font-family: $headers-font-stack;
+  font-weight: 100;
+
+  a {
+    color: #d8a884;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #56371b;
+  }
+
 
   .title {
     border: 1px dashed #d8a884;
