@@ -4,17 +4,17 @@
   font-weight: 100;
 
   a {
-    color: #d8a884;
+    color: $main-color;
     text-decoration: none;
   }
 
   a:hover {
-    color: #56371b;
+    color: $main-color;
   }
 
 
   .title {
-    border: 1px dashed #d8a884;
+    border: 1px dashed $main-color;
     padding: 0 5px;
   }
 }

@@ -12,13 +12,13 @@ body {
   background-color: white;
   padding: 30px;
   font-family: $body-font-stack;
-  color: #1f0f09;
+  color: $body;
 }
 
 body:before, body:after {
     content: "";
     position: fixed;
-    background: #f8deca;
+    background: $third-color;
     left: 0;
     right: 0;
     height: 10px;
@@ -29,30 +29,26 @@ body:before {
 body:after {
     bottom: 0;
 }
-body {
-    border-left: 10px solid #f8deca;
-    border-right: 10px solid #f8deca;
-}
 
 a {
   text-decoration: underline;
 }
 
 a:link {
-    color: #56371b;
+    color: $secondary-color;
 }
 
 a:visited {
-    color: #56371b;
+    color: $secondary-color;
 }
 
 a:hover {
-    color: #d8a884;
+    color: $secondary-color;
     text-decoration: none;
 }
 
 a:active {
-    color: #56371b;
+    color: $secondary-color;
 }
 
 .page-content {
@@ -68,11 +64,11 @@ a:active {
   .single-post {
     margin-bottom: 25px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #d8a884;
+    border-bottom: 1px solid $secondary-color;
 
     .post-title:hover {
-      background-color: #d8a884;
-      color: white;
+      background-color: $secondary-color;
+      color: $color-hover;
     }
 
     a {
@@ -80,30 +76,30 @@ a:active {
     }
 
     a:link {
-        color: #1f0f09;
+        color: $secondary-color;
     }
 
     a:visited {
-        color: #1f0f09;
+        color: $secondary-color;
     }
 
     a:hover {
-        color: white;
+        color: $color-hover;
     }
 
     a:active {
-        color: #1f0f09;
+        color: $secondary-color;
     }
   }
 
   .post-meta {
-    color: #d8a884;
+    color: $body;
     font-family: $body-font-stack;
     font-size: 14px;
     text-transform: lowercase;
   }
 
   .post-title {
-    color: #1f0f09;
+    color: $secondary-color;
   }
 }

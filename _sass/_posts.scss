@@ -3,8 +3,12 @@
   font-weight: 100;
 }
 
+.post-meta {
+  font-style: italic; //make this pretty
+}
+
 .post-title {
-  color: #d8a884;
+  color: $main-color;
 }
 
 .post-content {
@@ -14,16 +18,20 @@
 
   a {
     text-decoration: none;
-    border-bottom: 3px solid #f8deca;
+    border-bottom: 3px solid $main-color;
   }
 
   p {
     margin-bottom: 30px;
   }
 
+  .p-img {
+    text-align: center;
+  }
+
   h3 {
     margin: 20px 0;
-    color: #d8a884;
+    color: $main-color;
     font-weight: normal;
   }
 }
