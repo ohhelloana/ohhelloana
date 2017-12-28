@@ -9,6 +9,17 @@
 
 .post-content {
   margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.7;
+
+  a {
+    text-decoration: none;
+    border-bottom: 3px solid #f8deca;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
 
   h3 {
     margin: 20px 0;
