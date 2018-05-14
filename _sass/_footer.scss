@@ -1,17 +1,48 @@
 .site-footer {
   background-color: $secondary-bg-color;
   padding: 20px 50px;
-  overflow: auto;
+  display: grid;
+  grid-template-columns: 200px minmax(200px, 1fr) minmax(200px, 1fr);
+  grid-template-areas: "profile bio links"
+                       "notes notes notes";
 
   .profile-img {
-    width: 100px;
-    height: 100px;
-    background-image: url('/assets/profile-img.jpg');
-    background-size: cover;
-    display: block;
-    border-radius: 50%;
-    shape-outside: circle();
-    margin-right: 30px;
-    float: left;
+    grid-area: profile;
+    padding: 10px;
+    border: 1px dashed;
+    img{
+      object-fit: cover;
+      width: 100%
+    }
+  }
+
+  .bio {
+    grid-area: bio;
+    padding: 10px;
+
+    .greeting {
+      color: $body;
+      font-family: $body-font-stack;
+      font-size: 14px;
+      text-transform: lowercase;
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .links {
+    grid-area: links;
+    padding: 10px;
+    ul {
+      list-style: none;
+    }
+  }
+
+  .footer-notes {
+    grid-area: notes;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    border: 1px dashed;
   }
 }
