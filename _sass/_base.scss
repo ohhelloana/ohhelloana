@@ -10,7 +10,6 @@ dl, dd, ol, ul, figure {
 
 body {
   background-color: white;
-  padding: 30px;
   font-family: $body-font-stack;
   color: $body;
 }
@@ -52,19 +51,42 @@ a:active {
 }
 
 .page-content {
+  margin-bottom: 50px;
+  max-width: 800px;
   margin: 0 auto;
-  max-width: 52rem;
-  overflow: hidden;
-  padding: 30px 0;
+  padding: 0 10px;
 }
 
-
 .post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
 
   .single-post {
-    margin-bottom: 25px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid $secondary-color;
+    padding: 10px;
+    list-style: none;
+    margin: 10px;
+    border: 1px dashed;
+    padding: 10px;
+
+    &:nth-child(1n) {
+      background-color: #369593;
+    }
+
+    &:nth-child(2n) {
+      background-color: #E6BF31;
+    }
+
+    &:nth-child(3n) {
+      background-color: #F6DBF6;
+    }
+
+    &:nth-child(4n) {
+      background-color: #9E568B;
+    }
+
+    &:nth-child(5n) {
+      background-color: #52094B;
+    }
 
     .post-title:hover {
       background-color: $secondary-color;
@@ -92,14 +114,21 @@ a:active {
     }
   }
 
+  .post-info {
+    word-wrap: break-word;
+  }
+
   .post-meta {
     color: $body;
     font-family: $body-font-stack;
     font-size: 14px;
     text-transform: lowercase;
+    background-color: black;
+    color: white;
   }
 
   .post-title {
     color: $secondary-color;
+    background-color: white;
   }
 }

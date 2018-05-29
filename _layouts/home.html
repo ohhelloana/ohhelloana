@@ -1,19 +1,17 @@
 ---
 layout: default
 ---
-<div class="home">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li class="single-post">
-        <div class="post-info">
-          <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span>
-          <h2>
-            <span class="post-title">
-            //<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </span>
-          </h2>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li class="single-post">
+      <div class="post-info">
+        <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span>
+        <h2>
+          <span class="post-title">
+          //<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </span>
+        </h2>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
