@@ -1,48 +1,71 @@
 .site-footer {
   background-color: $secondary-bg-color;
-  padding: 20px 50px;
-  display: grid;
-  grid-template-columns: 200px minmax(200px, 1fr) minmax(200px, 1fr);
-  grid-template-areas: "profile bio links"
-                       "notes notes notes";
+  padding: 20px 10px;
 
-  .profile-img {
-    grid-area: profile;
-    padding: 10px;
-    border: 1px dashed;
-    img{
-      object-fit: cover;
-      width: 100%
+  .footer-inner-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 10px;
+
+    .profile-img {
+      padding: 10px;
+      border: 1px dashed;
+      width: 100px;
+      order: 1;
+      img{
+        object-fit: cover;
+        width: 100px;
+      }
+    }
+
+    .bio {
+      order: 3;
+      width: 100%;
+      padding: 10px 0;
+
+      .greeting {
+        color: $body;
+        font-family: $body-font-stack;
+        font-size: 14px;
+        text-transform: lowercase;
+        background-color: black;
+        color: white;
+      }
+    }
+    .links {
+      padding: 10px;
+      order: 2;
+      ul {
+        list-style: none;
+      }
+    }
+    .footer-notes {
+      padding: 10px;
+      text-align: center;
+      margin: 10px 0;
+      border: 1px dashed;
+      width: 100%;
+      flex: auto;
+      order: 4;
     }
   }
+}
 
-  .bio {
-    grid-area: bio;
-    padding: 10px;
-
-    .greeting {
-      color: $body;
-      font-family: $body-font-stack;
-      font-size: 14px;
-      text-transform: lowercase;
-      background-color: black;
-      color: white;
+@media all and (min-width: 600px) {
+  .site-footer {
+    .footer-inner-container {
+      .bio {
+        order: 2;
+        width: auto;
+        flex: 1;
+        padding: 10px;
+      }
+      .links {
+        order: 3;
+      }
     }
-  }
-
-  .links {
-    grid-area: links;
-    padding: 10px;
-    ul {
-      list-style: none;
-    }
-  }
-
-  .footer-notes {
-    grid-area: notes;
-    padding: 10px;
-    text-align: center;
-    margin: 10px 0;
-    border: 1px dashed;
   }
 }
