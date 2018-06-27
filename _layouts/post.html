@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post h-entry">
 
   <header class="post-header">
     <h2 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h2>
@@ -14,5 +14,10 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+  </div>
+
+
+  <div class="webmentions">
+    {% webmentions %}
   </div>
 </article>
