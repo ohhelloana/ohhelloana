@@ -120,6 +120,7 @@ http://localhost:4000/stonehenge-castle-combe-and-bath-in-one-day:
   https://citywonders.com/london-tours/stonehenge-tours-from-london: false
   http://romanbathssearcys.co.uk/: false
   http://www.sallylunns.co.uk/: false
-http://localhost:4000/nearly-halfway-through-2018: {}
+http://localhost:4000/nearly-halfway-through-2018:
+  https://webmention.rocks/test/1: false
 http://localhost:4000/nearly-halfway-through-2018-copy: {}
 http://localhost:4000/test: {}
