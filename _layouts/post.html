@@ -18,6 +18,9 @@ layout: default
 
   {% assign pagePath = site.url + page.url %}
 
+  <p>site url: {{site.url }} </p>
+  <p>page url: {{page.url }} </p>
+
   here : {{ pagePath }}
   <div class="webmentions">
     {% webmentions pagePath %}
