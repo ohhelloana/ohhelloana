@@ -16,10 +16,16 @@ layout: default
     {{ content }}
   </div>
 
-  {% capture url_path %}{{site.url}}{{page.url}}{% endcapture %}
+  {% assign x = 'https://ohhelloana.blog' %}
+  {% assign y = 'def' %}
+  {% assign z = x | append: y %}
 
-{{page.url | absolute_url}}
+  {% assign new_var = append: x | append: page.url %}
+
+  {% assign test = 'https://ohhelloana.blog/test' %}
+
+  render test var: {{ test }}
   <div class="webmentions">
-    {% webmentions page.url | absolute_url %}
+    {% webmentions test %}
   </div>
 </article>
