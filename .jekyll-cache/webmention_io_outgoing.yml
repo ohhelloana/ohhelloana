@@ -222,3 +222,7 @@ http://www.ohhelloana.blog/test:
   https://www.ohhelloana.blog/assets/profile.jpg: false
   https://ohhelloana.blog: false
   https://aaronparecki.com/2018/06/30/11/your-first-webmention: false
+http://localhost:4000/second-test:
+  https://www.ohhelloana.blog/assets/profile.jpg: false
+  https://ohhelloana.blog: false
+  https://www.ohhelloana.blog/test: false
