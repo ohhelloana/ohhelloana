@@ -16,13 +16,14 @@ layout: default
     {{ content }}
   </div>
 
-  {% assign pagePath = site.url + page.url %}
+{% capture url_path %}{{site.url}}{{page.url}}{% endcapture %}
 
   <p>site url: {{site.url }} </p>
   <p>page url: {{page.url }} </p>
+  <p>page url: {{page.url }} </p>
 
-  here : {{ pagePath }}
+  here : {{ url_path }}
   <div class="webmentions">
-    {% webmentions pagePath %}
+    {% webmentions url_path %}
   </div>
 </article>
