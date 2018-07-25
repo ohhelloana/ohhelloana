@@ -18,6 +18,7 @@ layout: default
 
   {% capture url_path %}{{site.url}}{{page.url}}{% endcapture %}
 
+{{page.url | absolute_url}}
   <div class="webmentions">
     {% webmentions page.url | absolute_url %}
   </div>
