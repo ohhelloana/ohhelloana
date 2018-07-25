@@ -24,8 +24,10 @@ layout: default
 
   {% assign test = 'https://ohhelloana.blog/test' %}
 
+  <p>{{site.url}}{{page.url}}</p>
+
   render test var: {{ test }}
   <div class="webmentions">
-    {% webmentions test %}
+    {% webmentions %}
   </div>
 </article>
