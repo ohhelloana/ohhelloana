@@ -16,9 +16,10 @@ layout: default
     {{ content }}
   </div>
 
-  {{site.url}}
+  {% assign pagePath = site.url + page.url %}
 
+  here : {{ pagePath }}
   <div class="webmentions">
-    {% webmentions site.url %}
+    {% webmentions pagePath %}
   </div>
 </article>
