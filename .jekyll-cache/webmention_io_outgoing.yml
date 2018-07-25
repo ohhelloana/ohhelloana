@@ -193,4 +193,6 @@ http://localhost:4000/test:
   https://webmention.rocks/test/22: false
   https://webmention.rocks/test/23/page: false
   https://aaronparecki.com/2018/06/30/11/your-first-webmention: false
+  https://www.ohhelloana.blog/assets/profile.jpg: false
+  https://ohhelloana.blog: false
 http://www.ohhelloana.blog/test: {}
