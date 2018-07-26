@@ -68,26 +68,6 @@ a:active {
     border: 1px dashed;
     padding: 10px;
 
-    &:nth-child(1n) {
-      background-color: #369593;
-    }
-
-    &:nth-child(2n) {
-      background-color: #E6BF31;
-    }
-
-    &:nth-child(3n) {
-      background-color: #F6DBF6;
-    }
-
-    &:nth-child(4n) {
-      background-color: #9E568B;
-    }
-
-    &:nth-child(5n) {
-      background-color: #52094B;
-    }
-
     .post-title:hover {
       background-color: $secondary-color;
       color: $color-hover;
