@@ -58,8 +58,8 @@ a:active {
 }
 
 .post-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+  display: flex;
+  flex-direction: column;
 
   .single-post {
     padding: 10px;
@@ -103,8 +103,7 @@ a:active {
     font-family: $body-font-stack;
     font-size: 14px;
     text-transform: lowercase;
-    background-color: black;
-    color: white;
+    color: black;
   }
 
   .post-title {
