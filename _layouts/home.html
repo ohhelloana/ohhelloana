@@ -3,15 +3,20 @@ layout: default
 ---
 <ul class="post-list">
   {% for post in site.posts %}
-    <li class="single-post">
-      <div class="post-info">
-        <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span>
-        <h2>
-          <span class="post-title">
-          //<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </span>
-        </h2>
-      </div>
-    </li>
+      <li class="single-post">
+        <div class="post-info">
+          <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span>
+          <h2>
+            <span class="post-title">
+              {% if post.category contains "social" %}
+              //<a href="{{ post.url | relative_url }}">Instagram post</a>
+              {% else %}
+              //<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              {% endif %}
+            </span>
+          </h2>
+        </div>
+      </li>
+
   {% endfor %}
 </ul>
