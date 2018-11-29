@@ -39,13 +39,13 @@ For this particular case it wasn’t needed at all.</p>
 </pre>
 
 <p>I would then have to enter OwnYourGram and follow the steps to test it. When you’re missing something, OwnYourGram informs you of what you’re missing so that was really useful. After getting my IndieAuth working I realised that I also needed to have a micropub endpoint.</p>
-<p>Should had learned from my mistake one, but because I didn’t, I spent too much time reading the wiki about micro pub endpoints and at this point I was feeling a bit frustrated and feeling a bit dumb.</p>
+<p>I should have learned from my first mistake, but because I didn’t, I spent too much time reading the wiki about micro pub endpoints and at this point I was feeling a bit frustrated and feeling a bit dumb.</p>
 
-<p>Impatience got the best of me so I decided to add to my head the following and just poke and see what happens:</p>
+<p>Impatience got the better of me so I decided to add to my < head > the following and just poke and see what happens:</p>
 <pre>
   < link rel="micropub" href="https://www.ohhelloana.blog/micropub">
 </pre>
-<p>And yes. It failed. I had no idea what I was doing but it was worth to give it a go.</p>
+<p>And yes. It failed. I had no idea what I was doing but it was worth giving it a go.</p>
 
 <p>At this point I decided to search “Jekyll micro pub endpoint” and I found <a href="https://github.com/voxpelli/webpage-micropub-to-github" target="_blank">this repository</a>.</p>
 
@@ -63,7 +63,7 @@ For this particular case it wasn’t needed at all.</p>
 
 <p>At this point I FINALLY understood what the repository did. I forked my own version and re-added it to Heroku.</p>
 
-<p>As per ReadMe, I added the config variables in the Heroku panel and added to my head the following:</p>
+<p>As per ReadMe, I added the config variables in the Heroku panel and added to my < head > the following:</p>
 
 <pre>
 < link rel="micropub" href="https://ohhelloana-micropub.herokuapp.com/micropub/main">
@@ -73,7 +73,7 @@ For this particular case it wasn’t needed at all.</p>
 
 <p>Here’s when things got more complicated:  Everything was (and is) working as I expected but when I opened it on my blog, I didn’t like the URL. I wanted to create a specific URL and following the suggestions in the ReadMe didn’t work. I spent quite a few hours on this but eventually it resulted in creating a <a href="https://github.com/voxpelli/webpage-micropub-to-github/issues/81" target="_blank">gitHub issue</a> in the original package (also my very first gitHub issue).</p>
 
-<p>Another issue I found is that when trying to share an instagram post that has more than one photo, my Heroku app times-out and I need to restart it. This probably can be fixed by upgrading my account but I can’t afford it right now.</p>
+<p>Another issue I found is that when trying to share an instagram post that has more than one photo, my Heroku app times-out and I need to restart it. This can probably be fixed by upgrading my account but I can’t afford it right now.</p>
 
 <p>But, in all fairness, the micro pub repository that I used is likely not even ideal for this type of content (media content from instagram) so my “issues” may not be real issues as it wasn’t designed to work with it. But it was my very first attempt and it allowed me to understand how it works. Maybe in the future I may create my own micro pub endpoint or use something else more suitable for instagram content.</p>
 
