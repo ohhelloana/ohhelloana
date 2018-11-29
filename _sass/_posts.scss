@@ -14,6 +14,7 @@
 
   ul {
     list-style: square inside none;
+    margin-bottom: 20px;
   }
 
   a {
@@ -52,4 +53,17 @@
 .instagram-post {
   width: 100%;
   height: 100%;
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px dashed #ddd;
+  color: #666;
+  font-family: monospace;
+  font-size: 15px;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  word-wrap: break-word;
 }
