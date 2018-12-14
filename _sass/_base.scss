@@ -9,7 +9,7 @@ dl, dd, ol, ul, figure {
 }
 
 body {
-  background-color: white;
+  background-color: #EBE3D9;
   font-family: $body-font-stack;
   color: $body;
 }
@@ -54,19 +54,43 @@ a:active {
   margin-bottom: 50px;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 20px 0;
 }
 
 .post-list {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-auto-rows: 200px;
 
   .single-post {
-    padding: 10px;
     list-style: none;
-    margin: 10px;
-    border: 1px dashed;
-    padding: 10px;
+    border-style: dashed;
+    outline-offset: 10px;
+    outline: 1px dashed black;
+    border: 0;
+    grid-row-end: span 1;
+    background-color: darkgray;
+
+    &.instagram {
+      grid-row-end: span 2;
+      outline-offset: 15px;
+      outline: 3px dashed black;
+      background-color: coral;
+    }
+
+    .post-img-thumb {
+      width: 100%;
+    }
+
+    .post-img-content {
+      margin: 0 10px;
+      font-family: monospace;
+      color: white;
+    }
 
     .post-title:hover {
       background-color: $secondary-color;
@@ -96,18 +120,39 @@ a:active {
 
   .post-info {
     word-wrap: break-word;
+    padding: 10px;
   }
 
   .post-meta {
     color: $body;
-    font-family: $body-font-stack;
+    font-family: monospace;
     font-size: 14px;
     text-transform: lowercase;
-    color: black;
+    color: white;
+    background-color: #FF5722;
+    padding: 5px;
   }
 
   .post-title {
     color: $secondary-color;
     background-color: white;
   }
+}
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  color: $third-color;
+}
+blockquote:before {
+  color: $third-color;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }

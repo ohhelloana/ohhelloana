@@ -3,19 +3,25 @@ layout: default
 ---
 <ul class="post-list">
   {% for post in site.posts %}
-      <li class="single-post">
+      <li class="single-post {% if post.category contains "social" %}instagram{% endif %}">
         <div class="post-info">
           <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span>
           <h2>
             <span class="post-title">
               {% if post.category contains "social" %}
-              //<a href="{{ post.url | relative_url }}">Instagram post</a>
+                <a href="{{ post.mf-syndication }}" target="_blank">Instagram post</a>
               {% else %}
-              //<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
               {% endif %}
             </span>
           </h2>
         </div>
+
+        {% if post.category contains "social" %}
+          <img class="post-img-thumb" src="{{ post.mf-photo }}"/>
+
+          <div class="post-img-content">{{ post.content }}</div>
+        {% endif %}
       </li>
 
   {% endfor %}

@@ -1,22 +1,22 @@
 .site-header h1 {
   text-align: center;
-  font-family: $headers-font-stack;
+  font-family: monospace;
   font-weight: 100;
   margin: 40px 0 30px 0;
 
   a {
-    color: $main-color;
+    color: $third-color;
     text-decoration: none;
   }
 
   a:hover {
     color: white;
-    background-color: $main-color;
+    background-color: $third-color;
   }
 
 
   .title {
-    border: 1px dashed $main-color;
+    border: 1px dashed $third-color;
     padding: 0 5px;
   }
 }

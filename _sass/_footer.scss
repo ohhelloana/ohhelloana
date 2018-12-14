@@ -1,6 +1,6 @@
 .site-footer {
-  background-color: $secondary-bg-color;
   padding: 20px 10px;
+  font-family: monospace;
 
   .footer-inner-container {
     max-width: 800px;
@@ -8,13 +8,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 10px;
+    padding: 7px;
+    border: 3px dashed;
+    border-color: coral;
 
     .profile-img {
       padding: 10px;
       border: 1px dashed;
       width: 100px;
       order: 1;
+      border: 1px dotted;
+      outline-offset: -25px;
+      outline: 3px dashed white;
+
       img{
         object-fit: cover;
         width: 100px;
@@ -24,11 +30,13 @@
     .bio {
       order: 3;
       width: 100%;
-      padding: 10px 0;
+      padding: 0 0 10px 10px;
+      align-self: center;
+      outline-offset: 4px;
+      outline: 3px dashed black;
 
       .greeting {
         color: $body;
-        font-family: $body-font-stack;
         font-size: 14px;
         text-transform: lowercase;
         background-color: black;
@@ -38,6 +46,7 @@
     .links {
       padding: 10px;
       order: 2;
+      align-self: center;
       ul {
         list-style: none;
       }
@@ -45,7 +54,7 @@
     .footer-notes {
       padding: 10px;
       text-align: center;
-      margin: 10px 0;
+      margin: 10px 0 0 0;
       border: 1px dashed;
       width: 100%;
       flex: auto;
@@ -61,7 +70,7 @@
         order: 2;
         width: auto;
         flex: 1;
-        padding: 10px;
+        padding: 0 0 10px 10px;
       }
       .links {
         order: 3;
