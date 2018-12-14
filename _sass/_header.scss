@@ -1,8 +1,17 @@
-.site-header h1 {
+.menu-container {
+  margin: 50px auto;
+
+  ul {
+    list-style: none;
+  }
+}
+
+
+
+.site-header {
   text-align: center;
   font-family: monospace;
-  font-weight: 100;
-  margin: 40px 0 30px 0;
+  font-size: rems(24px);
 
   a {
     color: $secondary;

@@ -1,80 +1,79 @@
-.site-footer {
-  padding: 20px 10px;
-  font-family: monospace;
+footer {
+  margin: 50px 0;
+}
 
-  .footer-inner-container {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 7px;
-    border: 3px dashed;
-    border-color: coral;
+.footer-inner-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 7px;
+  border: 3px dashed;
+  border-color: coral;
 
-    .profile-img {
-      padding: 10px;
-      border: 1px dashed;
+  .profile-img {
+    padding: 10px;
+    border: 1px dashed;
+    width: 100px;
+    order: 1;
+    border: 1px dotted;
+    outline-offset: -25px;
+    outline: 3px dashed white;
+
+    img{
+      object-fit: cover;
       width: 100px;
-      order: 1;
-      border: 1px dotted;
-      outline-offset: -25px;
-      outline: 3px dashed white;
+    }
+  }
 
-      img{
-        object-fit: cover;
-        width: 100px;
-      }
-    }
+  .bio {
+    order: 3;
+    width: 100%;
+    padding: 0 0 10px 10px;
+    align-self: center;
+    outline-offset: 0;
+    outline: 0;
+    margin: 10px 0;
 
-    .bio {
-      order: 3;
-      width: 100%;
-      padding: 0 0 10px 10px;
-      align-self: center;
-      outline-offset: 4px;
-      outline: 3px dashed black;
-
-      .greeting {
-        color: $body;
-        font-size: 14px;
-        text-transform: lowercase;
-        background-color: black;
-        color: white;
-      }
+    .greeting {
+      color: $body;
+      font-size: 14px;
+      text-transform: lowercase;
+      background-color: black;
+      color: white;
     }
-    .links {
-      padding: 10px;
-      order: 2;
-      align-self: center;
-      ul {
-        list-style: none;
-      }
+  }
+  .links {
+    padding: 10px;
+    order: 2;
+    align-self: center;
+    ul {
+      list-style: none;
     }
-    .footer-notes {
-      padding: 10px;
-      text-align: center;
-      margin: 10px 0 0 0;
-      border: 1px dashed;
-      width: 100%;
-      flex: auto;
-      order: 4;
-    }
+  }
+  .footer-notes {
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    border: 1px dashed;
+    width: 100%;
+    flex: auto;
+    order: 4;
   }
 }
 
 @media all and (min-width: 600px) {
-  .site-footer {
-    .footer-inner-container {
-      .bio {
-        order: 2;
-        width: auto;
-        flex: 1;
-        padding: 0 0 10px 10px;
-      }
-      .links {
-        order: 3;
-      }
+  .footer-inner-container {
+    .bio {
+      order: 2;
+      width: auto;
+      flex: 1;
+      padding: 0 0 10px 10px;
+      outline-offset: 4px;
+      outline: 3px dashed black;
+      margin: 0;
+    }
+    .links {
+      order: 3;
     }
   }
 }
