@@ -1,0 +1,18 @@
+@mixin font-base {
+  font-family: monospace;
+  font-weight: normal;
+  font-size: rems(13px);
+}
+
+%font-base {
+  @include font-base;
+}
+
+@mixin font-body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: rems(15px);
+}
+
+%font-body {
+  @include font-body;
+}

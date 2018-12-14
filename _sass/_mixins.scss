@@ -1,0 +1,11 @@
+@mixin mq($size) {
+  $min-width: map-get($breakpoints, $size);
+
+  @if (type_of($min-width) == 'null') {
+    $min-width: $size;
+  }
+
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}

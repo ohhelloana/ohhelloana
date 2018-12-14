@@ -1,0 +1,88 @@
+.page-content {
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.post-list {
+  // display: flex;
+  // flex-direction: column;
+
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-auto-rows: 200px;
+
+  .single-post {
+    list-style: none;
+    border-style: dashed;
+    outline-offset: 10px;
+    outline: 1px dashed black;
+    border: 0;
+    grid-row-end: span 1;
+    background-color: darkgray;
+
+    &.instagram {
+      grid-row-end: span 2;
+      outline-offset: 15px;
+      outline: 3px dashed black;
+      background-color: coral;
+    }
+
+    .post-img-thumb {
+      width: 100%;
+    }
+
+    .post-img-content {
+      margin: 0 10px;
+      font-family: monospace;
+      color: white;
+    }
+
+    .post-title:hover {
+      background-color: $secondary;
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:link {
+        color: $secondary;
+    }
+
+    a:visited {
+        color: $secondary;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    a:active {
+        color: $secondary;
+    }
+  }
+
+  .post-info {
+    word-wrap: break-word;
+    padding: 10px;
+  }
+
+  .post-meta {
+    color: $body;
+    font-family: monospace;
+    font-size: 14px;
+    text-transform: lowercase;
+    color: white;
+    background-color: #FF5722;
+    padding: 5px;
+  }
+
+  .post-title {
+    color: $secondary;
+    background-color: white;
+  }
+}

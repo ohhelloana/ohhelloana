@@ -1,0 +1,17 @@
+/* Rems */
+
+/**
+ * Convert pixels to rems, based on the base font size
+ */
+
+@function rems($px) {
+  @return ($px / $font-size-base) * 1rem;
+}
+
+/**
+* Convert rems to pixels, based on the base font size
+*/
+
+@function px($rem) {
+  @return $rem * $font-size-base / 1rem;
+}

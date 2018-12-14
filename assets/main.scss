@@ -1,8 +1,13 @@
 ---
  # Front matter comment to ensure Jekyll properly reads the file
 ---
+@import "general";
+@import "sizes";
 @import "variables";
+@import "mixins";
+@import "fonts";
 @import "base";
+@import "home";
 @import "posts";
 @import "header";
 @import "footer";

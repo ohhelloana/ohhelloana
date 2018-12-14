@@ -5,18 +5,18 @@
   margin: 40px 0 30px 0;
 
   a {
-    color: $third-color;
+    color: $secondary;
     text-decoration: none;
   }
 
   a:hover {
     color: white;
-    background-color: $third-color;
+    background-color: $secondary;
   }
 
 
   .title {
-    border: 1px dashed $third-color;
+    border: 1px dashed $secondary;
     padding: 0 5px;
   }
 }

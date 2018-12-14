@@ -10,14 +10,14 @@ dl, dd, ol, ul, figure {
 
 body {
   background-color: #EBE3D9;
-  font-family: $body-font-stack;
+  @extend %font-body;
   color: $body;
 }
 
 body:before, body:after {
     content: "";
     position: fixed;
-    background: $third-color;
+    background: $secondary;
     left: 0;
     right: 0;
     height: 10px;
@@ -34,119 +34,30 @@ a {
 }
 
 a:link {
-    color: $secondary-color;
+    color: $secondary;
 }
 
 a:visited {
-    color: $secondary-color;
+    color: $secondary;
 }
 
 a:hover {
-    color: $secondary-color;
+    color: $secondary;
     text-decoration: none;
 }
 
 a:active {
-    color: $secondary-color;
-}
-
-.page-content {
-  margin-bottom: 50px;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-.post-list {
-  // display: flex;
-  // flex-direction: column;
-
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  grid-auto-rows: 200px;
-
-  .single-post {
-    list-style: none;
-    border-style: dashed;
-    outline-offset: 10px;
-    outline: 1px dashed black;
-    border: 0;
-    grid-row-end: span 1;
-    background-color: darkgray;
-
-    &.instagram {
-      grid-row-end: span 2;
-      outline-offset: 15px;
-      outline: 3px dashed black;
-      background-color: coral;
-    }
-
-    .post-img-thumb {
-      width: 100%;
-    }
-
-    .post-img-content {
-      margin: 0 10px;
-      font-family: monospace;
-      color: white;
-    }
-
-    .post-title:hover {
-      background-color: $secondary-color;
-      color: $color-hover;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    a:link {
-        color: $secondary-color;
-    }
-
-    a:visited {
-        color: $secondary-color;
-    }
-
-    a:hover {
-        color: $color-hover;
-    }
-
-    a:active {
-        color: $secondary-color;
-    }
-  }
-
-  .post-info {
-    word-wrap: break-word;
-    padding: 10px;
-  }
-
-  .post-meta {
-    color: $body;
-    font-family: monospace;
-    font-size: 14px;
-    text-transform: lowercase;
-    color: white;
-    background-color: #FF5722;
-    padding: 5px;
-  }
-
-  .post-title {
-    color: $secondary-color;
-    background-color: white;
-  }
+    color: $secondary;
 }
 
 blockquote {
   margin: 1.5em 0;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
-  color: $third-color;
+  color: $secondary;
 }
 blockquote:before {
-  color: $third-color;
+  color: $secondary;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
