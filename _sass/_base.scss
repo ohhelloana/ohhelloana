@@ -79,4 +79,7 @@ img {
 	width: auto;
   max-width: 100%;
   height: auto;
+  outline-offset: -15px;
+  outline: 3px dashed rgba(255, 255, 255, 0.2);
+  margin: 15px 0;
 }

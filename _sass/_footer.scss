@@ -11,12 +11,11 @@ footer {
   .profile-img {
     width: 100px;
     order: 1;
-    outline-offset: -15px;
-    outline: 3px dashed white;
 
     img{
       object-fit: cover;
       width: 100px;
+      margin: 0;
     }
   }
 
