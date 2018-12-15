@@ -89,3 +89,9 @@
   }
 }
 
+.page-content, .post, .footer-inner-container {
+  border: 2px dashed $content-borders;
+  padding: rems(10px);
+}
+
+

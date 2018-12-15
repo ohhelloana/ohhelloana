@@ -1,31 +1,33 @@
 .menu-container {
   margin: 50px auto;
+  @extend %font-base;
 
   ul {
     list-style: none;
+
+    & li {
+      display: inline-block;
+      font-size: rems(16px);
+    }
+
+    .site-header {
+      font-size: rems(24px);
+      border: 2px dashed $secondary;
+      padding: 0 10px;
+      margin-right: 15px;
+    
+      a {
+        color: $secondary;
+        text-decoration: none;
+      }
+    
+      a:hover {
+        color: white;
+        background-color: $secondary;
+      }
+    }    
   }
 }
 
 
 
-.site-header {
-  text-align: center;
-  font-family: monospace;
-  font-size: rems(24px);
-
-  a {
-    color: $secondary;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: white;
-    background-color: $secondary;
-  }
-
-
-  .title {
-    border: 1px dashed $secondary;
-    padding: 0 5px;
-  }
-}

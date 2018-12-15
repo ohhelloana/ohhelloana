@@ -10,23 +10,25 @@ dl, dd, ol, ul, figure {
 
 body {
   background-color: #EBE3D9;
-  @extend %font-body;
+  @extend %font-base;
   color: $body;
 }
 
 body:before, body:after {
-    content: "";
-    position: fixed;
-    background: $secondary;
-    left: 0;
-    right: 0;
-    height: 10px;
+	content: "";
+	position: fixed;
+	background: $secondary;
+	left: 0;
+	right: 0;
+	height: 10px;
 }
+
 body:before {
-    top: 0;
+  top: 0;
 }
+
 body:after {
-    bottom: 0;
+  bottom: 0;
 }
 
 a {
@@ -34,20 +36,20 @@ a {
 }
 
 a:link {
-    color: $secondary;
+  color: $secondary;
 }
 
 a:visited {
-    color: $secondary;
+  color: $secondary;
 }
 
 a:hover {
-    color: $secondary;
-    text-decoration: none;
+	color: $secondary;
+	text-decoration: none;
 }
 
 a:active {
-    color: $secondary;
+  color: $secondary;
 }
 
 blockquote {
@@ -64,6 +66,17 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+img {
+	width: auto;
+  max-width: 100%;
+  height: auto;
 }

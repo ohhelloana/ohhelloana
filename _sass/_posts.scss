@@ -1,3 +1,6 @@
+.post {
+  @extend %font-body;
+}
 .post-title, .post-link {
   font-family: monospace;
   font-weight: 100;
@@ -31,10 +34,6 @@
       color: black;
       background-color: coral;
     }
-  }
-
-  p {
-    margin-bottom: 30px;
   }
 
   .p-img {

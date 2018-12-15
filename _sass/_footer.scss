@@ -6,17 +6,12 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 7px;
-  border: 3px dashed;
-  border-color: coral;
+  font-size: rems(14px);
 
   .profile-img {
-    padding: 10px;
-    border: 1px dashed;
     width: 100px;
     order: 1;
-    border: 1px dotted;
-    outline-offset: -25px;
+    outline-offset: -15px;
     outline: 3px dashed white;
 
     img{
@@ -28,36 +23,36 @@ footer {
   .bio {
     order: 3;
     width: 100%;
-    padding: 0 0 10px 10px;
     align-self: center;
-    outline-offset: 0;
-    outline: 0;
-    margin: 10px 0;
+    margin: 15px 0 0 0;
+    padding: 0;
 
     .greeting {
-      color: $body;
-      font-size: 14px;
       text-transform: lowercase;
       background-color: black;
       color: white;
     }
+
+    p {
+      margin: 0;
+    }
   }
   .links {
-    padding: 10px;
     order: 2;
     align-self: center;
+    margin: 0 0 0 15px;
     ul {
       list-style: none;
     }
   }
   .footer-notes {
-    padding: 10px;
     text-align: center;
-    margin: 10px 0 0 0;
-    border: 1px dashed;
     width: 100%;
     flex: auto;
     order: 4;
+    border: 1px dashed $content-borders;
+    margin: 15px 0 0 0;
+    padding: 10px;
   }
 }
 
@@ -67,13 +62,12 @@ footer {
       order: 2;
       width: auto;
       flex: 1;
-      padding: 0 0 10px 10px;
-      outline-offset: 4px;
-      outline: 3px dashed black;
-      margin: 0;
+      padding: 0 0 0 15px;
+      margin: 0 15px 0 15px;
     }
     .links {
       order: 3;
+      margin: 0;
     }
   }
 }
