@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-<ul class="post-list">
-  {% for post in site.posts %}
+<div class="page-content">
+  <ul class="post-list">
+    {% for post in site.posts %}
       <li class="single-post {% if post.category contains "social" %}instagram{% endif %}">
         <div class="post-info">
           <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span>
@@ -23,6 +24,6 @@ layout: default
           <div class="post-img-content">{{ post.content }}</div>
         {% endif %}
       </li>
-
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div>

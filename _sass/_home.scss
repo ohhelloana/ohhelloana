@@ -4,22 +4,18 @@
 
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-auto-rows: minmax(150px, auto);
 
   .single-post {
     list-style: none;
     border-style: dashed;
-    outline-offset: 10px;
-    outline: 1px dashed black;
     border: 0;
     grid-row-end: span 1;
-    background-color: darkgray;
+    background-color: $content-borders;
 
     &.instagram {
       grid-row-end: span 3;
-      outline-offset: 15px;
-      outline: 3px dashed black;
       background-color: coral;
     }
 
@@ -93,5 +89,3 @@
   border: 2px dashed $content-borders;
   padding: rems(10px);
 }
-
-
