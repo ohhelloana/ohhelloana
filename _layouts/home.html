@@ -19,7 +19,7 @@ layout: default
         </div>
 
         {% if post.category contains "social" %}
-          <img class="post-img-thumb" src="{{ post.mf-photo }}"/>
+          <img class="post-img-thumb" src="{{ post.mf-photo }}" alt="{{ post.alt }}"/>
 
           <div class="post-img-content">{{ post.content }}</div>
         {% endif %}
