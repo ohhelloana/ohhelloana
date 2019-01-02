@@ -1,10 +1,14 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
+body, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
+  padding: 0;
+}
+
+p,h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 30px 0;
   padding: 0;
 }
 
@@ -58,6 +62,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
   color: $secondary;
 }
+
 blockquote:before {
   color: $secondary;
   content: open-quote;
@@ -69,10 +74,6 @@ blockquote:before {
 
 blockquote p {
   display: inline;
-}
-
-p {
-  margin-bottom: 30px;
 }
 
 img {
