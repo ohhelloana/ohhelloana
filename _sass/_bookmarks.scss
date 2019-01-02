@@ -5,26 +5,41 @@
 }
 
 .bookmark {
+  font-weight: initial;
   list-style: none;
   margin-bottom: 20px;
   pointer-events: none;
-  padding: 10px 0;
+  padding: 10px;
   transition: background-color .5s;
+  background-color: $content-borders;
 
   &:hover {
-    background-color: $content-borders;
+    background-color: $primary;
+    color: white;
   }
 }
 
 .bookmark-date {
-  background-color: $primary;
+  font-size: rems(14px);
+  background-color: $highlight;
   color: white;
+  margin-bottom: 5px;
+  display: inline-block;
+  padding: 5px;
 }
 
-.bookmark-title, .bookmark-title a {
-  color: $primary;
+.bookmark-title a {
+  font-weight: initial;
+  color: $dark-grey;
   margin-bottom: 15px;
   pointer-events: auto;
+  background-color: white;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $secondary;
+    color: white;
+  }
 }
 
 .bookmark-description {
