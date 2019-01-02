@@ -1,0 +1,28 @@
+---
+title: Bookmarks
+permalink: bookmarks
+layout: default
+---
+<div class="page-content">
+  <ul class="bookmarks-list">
+    {% for post in site.posts %}
+    {% if post.category contains "links" %}
+      <li class="bookmark h-entry">
+        <div class="bookmark-info">
+          <span class="bookmark-date">{{ post.date | date: '%B %d, %Y' }}</span>
+          <h2 class="bookmark-title">
+            <a class="u-bookmark-of h-cite" href="{{ post.mf-bookmark-of }}" target="_blank">{{ post.title }}</a>
+          </h2>
+          <div class="bookmark-description">{{post.content}}</div>
+          <div class="bookmark-tags">
+            Tagged with:
+            {% for tag in post.tags %}
+              <a class="bookmark-single-tag" href="/tags/{{ tag }}/">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>

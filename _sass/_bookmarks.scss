@@ -1,0 +1,45 @@
+.bookmarks-list {
+  display: block;
+  @extend %font-base;
+  font-size: rems(14px);
+}
+
+.bookmark {
+  list-style: none;
+  margin-bottom: 20px;
+  pointer-events: none;
+  padding: 10px 0;
+  transition: background-color .5s;
+
+  &:hover {
+    background-color: $content-borders;
+  }
+}
+
+.bookmark-date {
+  background-color: $primary;
+  color: white;
+}
+
+.bookmark-title, .bookmark-title a {
+  color: $primary;
+  margin-bottom: 15px;
+  pointer-events: auto;
+}
+
+.bookmark-description {
+  @extend %font-body;
+  font-size: rems(14px);
+}
+
+.bookmark-tags {
+  font-size: rems(15px);
+}
+
+.bookmark-single-tag {
+  pointer-events: auto;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
