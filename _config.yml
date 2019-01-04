@@ -21,3 +21,15 @@ permalink: /:title
 sass:
   sass_dir: _sass
   style: compressed
+
+defaults:
+  -
+    scope:
+      path: "link"
+    values:
+      category: links
+
+collections:
+  bookmarks:
+    output: true
+    permalink: /link/:title/
