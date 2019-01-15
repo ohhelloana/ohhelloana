@@ -1,0 +1,394 @@
+.month {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px dashed grey;
+  margin: 20px 0;
+  padding: 3px;
+  flex-basis: auto;
+  flex-grow: 1;
+  max-width: calc(50% - 18px);
+  margin-right: 10px;
+}
+
+.month:nth-child(even) {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.month > * {
+  padding: 50px;
+  flex: 1 100%;
+}
+
+.aside-right, .aside-left {
+  flex: 1 0 0;
+}
+
+.month-cards {
+  display: flex;
+  flex-flow: row wrap;
+  clear: both;
+}
+
+.month-title {
+  padding: 0;
+  text-align: center;
+}
+
+.january.computer {
+  .top {
+    background-color: #bfab95;
+  }
+
+  .aside-right {
+    background-color: #3a291b;
+  }
+
+  .aside-left {
+    background-color: #4a5c69;
+  }
+}
+
+.january.mine {
+  .top {
+    background-color: #B28B44;
+  }
+
+  .aside-right {
+    background-color: #E4D5BF;
+  }
+
+  .aside-left {
+    background-color: #303C18;
+  }
+}
+
+.february {
+  &.computer {
+    .top {
+      background-color: #7c6d56;
+    }
+
+    .aside-right {
+      background-color: #d8d5d2;
+    }
+
+    .aside-left {
+      background-color: #211e19;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #FBFFFF;
+    }
+
+    .aside-right {
+      background-color: #7B8F6D;
+    }
+
+    .aside-left {
+      background-color: #814B3C;
+    }
+  }
+}
+
+.march {
+  &.computer {
+    .top {
+      background-color: #b5c2e8;
+    }
+
+    .aside-right {
+      background-color: #51333c;
+    }
+
+    .aside-left {
+      background-color: #826863;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #A0B9E4;
+    }
+
+    .aside-right {
+      background-color: #7C3B5A;
+    }
+
+    .aside-left {
+      background-color: #775D5D;
+    }
+  }
+}
+
+.april {
+  &.computer {
+    .top {
+      background-color: #4e453f;
+    }
+
+    .aside-right {
+      background-color: #dcd3c0;
+    }
+
+    .aside-left {
+      background-color: #9b8e7e;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #292C33;
+    }
+
+    .aside-right {
+      background-color: #D0C2AC;
+    }
+
+    .aside-left {
+      background-color: #9C9E84;
+    }
+  }
+}
+
+.may {
+  &.computer {
+    .top {
+      background-color: #adafad;
+    }
+
+    .aside-right {
+      background-color: #302720;
+    }
+
+    .aside-left {
+      background-color: #65422a;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #C39563;
+    }
+
+    .aside-right {
+      background-color: #94ACC2;
+    }
+
+    .aside-left {
+      background-color: #655D3C;
+    }
+  }
+}
+
+.june {
+  &.computer {
+    .top {
+      background-color: #353c21;
+    }
+
+    .aside-right {
+      background-color: #ddcfa1;
+    }
+
+    .aside-left {
+      background-color: #877b4e;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #A5AF54;
+    }
+
+    .aside-right {
+      background-color: #466137;
+    }
+
+    .aside-left {
+      background-color: #212918;
+    }
+  }
+}
+
+.july {
+  &.computer {
+    .top {
+      background-color: #30362b;
+    }
+
+    .aside-right {
+      background-color: #d49372;
+    }
+
+    .aside-left {
+      background-color: #80a8e0;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #204F87;
+    }
+
+    .aside-right {
+      background-color: #F5C467;
+    }
+
+    .aside-left {
+      background-color: #ED93CC;
+    }
+  }
+}
+
+.august {
+  &.computer {
+    .top {
+      background-color: #6f6443;
+    }
+
+    .aside-right {
+      background-color: #a6c2e4;
+    }
+
+    .aside-left {
+      background-color: #cfb37e;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #D9BC83;
+    }
+
+    .aside-right {
+      background-color: #8DCBF9;
+    }
+
+    .aside-left {
+      background-color: #6D7543;
+    }
+  }
+}
+
+.september {
+  &.computer {
+    .top {
+      background-color: #4e5a39;
+    }
+
+    .aside-right {
+      background-color: #d5d5d2;
+    }
+
+    .aside-left {
+      background-color: #c3af85;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #CFB992;
+    }
+
+    .aside-right {
+      background-color: #5B7E2E;
+    }
+
+    .aside-left {
+      background-color: #C4947B;
+    }
+  }
+}
+
+.october {
+  &.computer {
+    .top {
+      background-color: #221513;
+    }
+
+    .aside-right {
+      background-color: #d0b299;
+    }
+
+    .aside-left {
+      background-color: #6d4d3f;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #657993;
+    }
+
+    .aside-right {
+      background-color: #764830;
+    }
+
+    .aside-left {
+      background-color: #402426;
+    }
+  }
+}
+
+.november {
+  &.computer {
+    .top {
+      background-color: #36332e;
+    }
+
+    .aside-right {
+      background-color: #dcd3c0;
+    }
+
+    .aside-left {
+      background-color: #9b8e7e;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #292C33;
+    }
+
+    .aside-right {
+      background-color: #D0C2AC;
+    }
+
+    .aside-left {
+      background-color: #9C9E84;
+    }
+  }
+}
+
+.december {
+  &.computer {
+    .top {
+      background-color: #4e453f;
+    }
+
+    .aside-right {
+      background-color: #dcd3c0;
+    }
+
+    .aside-left {
+      background-color: #9b8e7e;
+    }
+  }
+
+  &.mine {
+    .top {
+      background-color: #AE2A32;;
+    }
+
+    .aside-right {
+      background-color: #D0C2AC;
+    }
+
+    .aside-left {
+      background-color: #9C9E84;
+    }
+  }
+}

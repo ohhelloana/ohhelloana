@@ -84,3 +84,25 @@ img {
   outline: 3px dashed rgba(255, 255, 255, 0.2);
   margin: 15px 0;
 }
+
+.float-left {
+  float: left;
+  width: 50%;
+  margin: 0 15px 0 0;
+  max-width: fit-content;
+}
+
+.float-right {
+  float: right;
+  width: 50%;
+  margin: 0 0 0 15px;
+  max-width: fit-content;
+}
+
+.hidden {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
