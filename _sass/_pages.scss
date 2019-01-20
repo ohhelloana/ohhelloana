@@ -1,4 +1,9 @@
 .page-content {
   font-size: rems(14px);
   @extend %font-body;
+
+  ul {
+    list-style: square inside none;
+    margin-bottom: 20px;
+  }
 }

@@ -1,6 +1,7 @@
 .menu-container {
-  margin: 50px auto;
+  margin: 50px auto 30px auto;
   @extend %font-base;
+  padding: rems(10px);
 
   ul {
     list-style: none;
@@ -8,6 +9,7 @@
     & li {
       display: inline-block;
       font-size: rems(16px);
+      margin: 0 0 rems(20px) 0;
     }
 
     .site-header {
