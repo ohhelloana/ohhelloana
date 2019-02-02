@@ -1,0 +1,17 @@
+.aside {
+  &.aside-right {
+    flex: 1;
+    margin: 0px;
+    padding: rems(10px);
+  }
+}
+
+@media all and (min-width: 800px) {
+  .aside {
+    &.aside-right {
+      flex: 1 0 0;
+      margin-left: 20px;
+      padding: 0;
+    }
+  }
+}

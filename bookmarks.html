@@ -1,11 +1,12 @@
 ---
 title: Bookmarks
 permalink: bookmarks
-layout: default
+layout: bookmarks
 description: Hand picked links that I want to share
 ---
 <div class="page-content">
   <h2>Bookmarks</h2>
+  <p>The bookmarks page has its own <a href="{{ "/feed.links.xml" | relative_url }}">RSS feed.</a></p>
   <ul class="bookmarks-list">
     {% for post in site.posts %}
     {% if post.category contains "links" %}
@@ -13,15 +14,9 @@ description: Hand picked links that I want to share
         <div class="bookmark-info">
           <span class="bookmark-date">{{ post.date | date: '%B %d, %Y' }}</span>
           <h2 class="bookmark-title">
-            <a class="u-bookmark-of h-cite" href="{{ post.mf-bookmark-of }}" target="_blank">{{ post.title }}</a>
+            <a class="u-bookmark-of h-cite" href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </h2>
-          <div class="bookmark-description">{{post.content}}</div>
-          <div class="bookmark-tags">
-            Tagged with:
-            {% for tag in post.tags %}
-              <a class="bookmark-single-tag" href="/tags/{{ tag }}/">{{ tag }}</a>
-            {% endfor %}
-          </div>
+          <div class="bookmark-content">{{post.content}}</div>
         </div>
       </li>
     {% endif %}

@@ -20,9 +20,14 @@
   flex: 1 100%;
 }
 
-.aside-right, .aside-left {
-  flex: 1 0 0;
+.post {
+
+  .aside-right, .aside-left {
+    flex: 1 0 0;
+  }
+
 }
+
 
 .month-cards {
   display: flex;
