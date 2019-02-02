@@ -1,4 +1,5 @@
 title: Oh Hello Ana
+name: Oh Hello Ana - Ana Rodrigues blog
 email: contact@ohhelloana.blog
 description: Ana's personal blog.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -22,14 +23,3 @@ sass:
   sass_dir: _sass
   style: compressed
 
-defaults:
-  -
-    scope:
-      path: "link"
-    values:
-      category: links
-
-collections:
-  bookmarks:
-    output: true
-    permalink: /link/:title/
