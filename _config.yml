@@ -13,6 +13,7 @@ github_username:  ohhelloana
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-webmention_io
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -23,3 +24,14 @@ sass:
   sass_dir: _sass
   style: compressed
 
+webmentions:
+  # Enter your webmention.io username
+  username: ohhelloana.blog
+  cache_bad_uris_for: 5
+  # If you've changed domain in the past, list the old ones here
+  legacy_domains:
+    - http://ohhelloana.blog
+    - http://www.ohhelloana.blog
+  # I have the JavaScript portion of the plugin disabled, since I'm
+  # triggering builds with Netlify
+  js: false
