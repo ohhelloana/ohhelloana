@@ -1,0 +1,199 @@
+---
+http://localhost:4000/i-wish-i-was-in-finland:
+  http://www.twitter.com/ohhelloana: false
+  http://instagram.com/iwishiwasinfinland: false
+http://localhost:4000/rails-girls-porto:
+  http://railsgirls.com/: false
+  http://www.geekettes.io/: false
+  http://www.facebook.com/RailsGirlsPortugal: false
+  http://www.geekettes.io/membership/: false
+  https://www.facebook.com/portugalgeekettes: false
+http://localhost:4000/lxjs-2014:
+  http://lxjs.org: false
+  http://www.blip.pt: false
+  https://twitter.com/lalamaguire: false
+  http://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are: false
+  http://www.ladieswhocode.com/: false
+  http://2014.lxjs.org/: false
+http://localhost:4000/tailandia:
+  http://katatranquilvilla.com/: false
+http://localhost:4000/um-fim-de-semana-em-brighton:
+  http://www.spalace.co.uk/: false
+  http://www.sushigarden.co.uk/: false
+  http://bills-website.co.uk/: false
+  https://instagram.com/ohhelloana/: false
+http://localhost:4000/switzerland-2014: {}
+http://localhost:4000/bowlingjs-2:
+  http://bowlingjs.github.io/: false
+  https://twitter.com/iteles/status/611639759333662720: false
+  https://twitter.com/BowlingJS: false
+http://localhost:4000/um-fim-de-semana-em-weston-super-mare:
+  http://www.booking.com/hotel/gb/savoy-b-amp-b.en-gb.html: false
+  http://www.tripadvisor.com.br/Restaurant_Review-g191282-d6856701-Reviews-The_Ship_Inn-Weston_super_Mare_Somerset_England.html: false
+  https://instagram.com/p/5UMK3_oPLu/: false
+http://localhost:4000/one-day-in-amsterdam: {}
+http://localhost:4000/the-cat-village-2:
+  http://www.londoncatvillage.com/: false
+http://localhost:4000/in-bruges:
+  http://www.imdb.com/title/tt0780536/: false
+  http://www.brugsbeertje.be/index_en.htm: false
+  http://www.tripadvisor.co.uk/Restaurant_Review-g188671-d3540282-Reviews-De_Belleman_Pub-Bruges_West_Flanders_Province.html: false
+  http://www.denhuzaar.be/: false
+  https://bezoekers.brugge.be/nl/belfort: false
+  https://www.historium.be/: false
+http://localhost:4000/copenhaga:
+  http://cofoco.dk/da/restauranter/hoest/</li>: false
+  http://www.madklubben.dk/bistro-de-luxe/</li>: false
+  http://halifax.dk/restauranterne</li>: false
+  http://torvehallernekbh.dk/</li>: false
+  http://llamarestaurant.dk/</li>: false
+  http://cofoco.dk/da/restauranter/oysters-and-grill/</li>: false
+http://localhost:4000/goodbye-2015: {}
+http://localhost:4000/i-was-in-finland: {}
+http://localhost:4000/vesala-live:
+  https://www.flickr.com/photos/anarodrigues_/albums/72157671480033234: false
+  http://dailybruin.com/2016/11/22/finnish-voice-actress-student-paula-vesala-debuts-original-play/: false
+  http://vesala.la/: false
+http://localhost:4000/oh-hello-2017: {}
+http://localhost:4000/stonehenge-castle-combe-and-bath-in-one-day:
+  https://citywonders.com/london-tours/stonehenge-tours-from-london: false
+  http://romanbathssearcys.co.uk/: false
+  http://www.sallylunns.co.uk/: false
+http://localhost:4000/nearly-halfway-through-2018: {}
+http://localhost:4000/viewsource-2018:
+  https://events.mozilla.org/viewsource2018: false
+  https://www.youtube.com/user/Mozilla/videos: false
+  https://twitter.com/hashtag/ViewSource?src=hash: false
+  https://www.flickr.com/photos/paul_clarke/45568759611/in/album-72157702834970015/: false
+  https://indieweb.org/this-week/2018-10-26.html: false
+  https://deliciousreverie.co.uk/: false
+  https://rickbutterfield.com/blog/: false
+  http://blog.danielleavincent.com: false
+  https://indieweb.org/2018/Berlin: false
+  https://www.meetup.com/todo-london/events/255724958/: false
+http://localhost:4000/39019: {}
+http://localhost:4000/63489: {}
+http://localhost:4000/46919: {}
+http://localhost:4000/indie-web-camp-berlin-2018:
+  https://indieweb.org/2018/Berlin: false
+  https://julieannenoying.com/: false
+  https://www.flickr.com/photos/tollwerk/sets/72157703142292825: false
+  https://www.flickr.com/photos/tollwerk/sets/72157703054537654: false
+  http://ownyourgram.com: false
+  https://github.com/voxpelli/webpage-micropub-to-github: false
+  https://indieauth.com/: false
+  https://indieauth.com/auth: false
+  https://tokens.indieauth.com/token: false
+  https://www.ohhelloana.blog/micropub: false
+  https://ohhelloana-micropub.herokuapp.com/micropub/main: false
+  https://github.com/voxpelli/webpage-micropub-to-github/issues/81: false
+  https://www.ohhelloana.blog/39019: false
+  https://indiewebcat.com/: false
+  https://www.flickr.com/photos/tollwerk/45698785541/in/album-72157703142292825/: false
+  https://farm5.staticflickr.com/4905/45698785541_b00e74a5da_c.jpg: false
+  "//embedr.flickr.com/assets/client-code.js": false
+  https://www.flickr.com/photos/tollwerk/45670456452/in/album-72157703054537654/: false
+  https://farm5.staticflickr.com/4911/45670456452_a5d9b199b3_c.jpg: false
+  https://indieweb.org: false
+  https://herestomwiththeweather.com/2017/11/27/jekyll-indieweb-and-micropub/: false
+http://localhost:4000/blogging-and-me:
+  https://todo-london.com/: false
+  https://twitter.com/ReactJSgirls: false
+  https://twitter.com/sarah_edo/status/1013427276350873600: false
+  http://www.patrickrhone.net/4480-2/: false
+  https://twitter.com/Fox0x01/status/951047110618689537: false
+  https://twitter.com/abookapart/status/1017760817838788608: false
+  https://www.youtube.com/watch?v=VvYK-K0jWng: false
+  https://youtu.be/DNwaChz8xRY: false
+  https://www.staticgen.com/: false
+  https://www.sarasoueidan.com/desk/just-write/: false
+  https://twitter.com/HeyChelseaTroy/status/1051854037417635841: false
+  https://indieweb.org: false
+  https://www.patrickrhone.net/4480-2/: false
+http://localhost:4000/42469: {}
+http://localhost:4000/51641: {}
+http://localhost:4000/overthinking-instagram: {}
+http://localhost:4000/the-end-of-2018:
+  "//TODO": false
+  https://youtu.be/-v-eSzgX9BU: false
+  https://youtu.be/WYXSck7TyVM: false
+  https://www.youtube.com/watch?v=D9d1WrARqvI&index=1&list=PLXmT1r4krsTq3yrg4t14hPUbO1OsrA1Hx: false
+  https://www.ohhelloana.blog/blogging-and-me: false
+http://localhost:4000/overthinking-my-blog:
+  https://quill.p3k.io: false
+  https://indieweb.org/selfdogfood: false
+  https://adactio.com/journal/6801: false
+  https://indieweb.org/principles: false
+http://localhost:4000/colours-of-2018:
+  http://www.designmuseum.fi/en/: false
+  https://margretheodgaard.com/: false
+  https://github.com/lokesh/color-thief: false
+http://localhost:4000/bookmarks-of-2018:
+  https://www.swiss-miss.com/link-pack: false
+  https://codepen.io/jensimmons/pen/PQVwjq?editors=1100: false
+  https://amberwilson.co.uk/blog/apartfromcode/: false
+  http://ashton.codes/preload-google-fonts-using-resource-hints/: false
+  https://noti.st/ericwbailey/QxdLmO/slides: false
+  https://docs.google.com/presentation/d/1odRjIKD8AN5m3TY1AjjeTymI6hNh16wJN6TPH0larjQ/edit?usp=sharing: false
+  http://bradfrost.com/blog/post/i-dunno/: false
+  https://codepen.io/collection/DamKJW/: false
+  https://keithjgrant.com/posts/2018/06/resilient-declarative-contextual/: false
+  https://noti.st/lisi/vWbgvW/from-pen-paper-to-svg-animations-an-illustration-adventure: false
+  https://indiewebguides.org/: false
+  https://glitch.com/culture/you-got-this-zine-2/: false
+  http://uigoodies.com: false
+  https://github.com/yuanchuan/CSS-at/blob/master/README.md: false
+  https://robinrendle.com/notes/i-dont-believe-in-full-stack-engineering/: false
+  https://medium.com/@nodunayo/so-you-want-to-speak-at-tech-conferences-but-you-have-nothing-to-talk-about-771ac9e32a3d: false
+  https://roadtrip.glitch.me/: false
+  https://codepen.io/burkeholland/details/yEEdMQ/: false
+  https://codepen.io/meowwwls/full/djYgRY/: false
+  https://medium.com/s/story/data-violence-and-how-bad-engineering-choices-can-damage-society-39e44150e1d4: false
+  https://github.com/lauragift21/awesome-learning-resources: false
+  https://hbr.org/2018/07/why-women-volunteer-for-tasks-that-dont-lead-to-promotions: false
+  http://www.disambiguity.com/what-walls-are-for/: false
+  https://slides.com/cassiecodes/deck-1: false
+  https://thehistoryoftheweb.com/: false
+  https://code.likeagirl.io/toxic-jobs-low-self-esteem-interviewing-6c4650a3c28a: false
+  https://medium.freecodecamp.org/the-complete-illustrated-flexbox-tutorial-d35c085dbf35: false
+  https://joelglovier.com/about/: false
+  https://a11ywins.tumblr.com/: false
+  https://moritzgiessmann.de/accessibility-cheatsheet/: false
+  https://nostalgic-css.github.io/NES.css/: false
+http://localhost:4000/75569: {}
+http://localhost:4000/85151: {}
+http://localhost:4000/47073: {}
+http://localhost:4000/january-bookmarks:
+  https://www.slideshare.net/TanyaReilly/being-glue: false
+  https://veerle.duoh.com/: false
+  https://charity.wtf/2019/01/04/engineering-management-the-pendulum-or-the-ladder/: false
+  https://yoksel.github.io/svg-gradient-map/: false
+  https://julesforrest.com/a-refactor-with-css-variables: false
+  https://mxb.at/blog/syndicating-content-to-twitter-with-netlify-functions/: false
+  https://cathydutton.co.uk/posts/why-i-stopped-using-sass/: false
+  https://dcurt.is/when-to-stop: false
+  https://knowbility.org/blog/2019/links-opening-new-windows-no-warning/: false
+  https://docs.google.com/presentation/d/1RpQ7lQ4XIX8D451YfwFAMsaUJ6hw-mcwk8N7-C3UBJ4/edit: false
+  https://personalsit.es/: false
+  https://codepen.io/notwaldorf/full/omXwzw: false
+  https://www.theguardian.com/technology/2019/jan/23/conspiracy-theories-internet-survivors-truth: false
+  https://codepen.io/kathykato/pen/omxPap: false
+  https://www.richardwestenra.com/repeater/: false
+  https://medium.com/@owltastic/new-year-new-website-7065afa64057: false
+  https://rachelandrew.co.uk/archives/2019/01/30/html-css-and-our-vanishing-industry-entry-points/: false
+  https://jarredsumner.com/codeblog/?r: false
+  https://github.com/sturobson/myRSS: false
+  https://www.wsj.com/articles/new-york-insurers-can-evaluate-your-social-media-useif-they-can-prove-why-its-needed-11548856802: false
+  https://www.globaldiversitycfpday.com/blog: false
+  https://www.reddit.com/r/MapPorn/comments/acn2d6/night_trains_in_europe_2018/?st=JQJAG9OG&sh=0203d925: false
+  https://www.swyx.io/writing/learn-in-public/: false
+  https://twitter.com/FluffSociety/status/1088855830613520385: false
+  https://twitter.com/nocontexttgp/status/1089299868122865664: false
+  https://twitter.com/kenradio/status/1088489509757554689: false
+  https://twitter.com/aussiesdointhgs/status/1088856332084674561: false
+  https://twitter.com/feross/status/1088525872636854272: false
+  https://twitter.com/ItsTheShadsy/status/1086829036976914432: false
+  https://twitter.com/AmyLGalles/status/1086364646947188736: false
+  https://twitter.com/anna_debenham/status/1082274734014951425: false
+  https://twitter.com/kassy/status/1081179862109511681: false
+http://localhost:4000/about-the-b-word: {}
