@@ -17,5 +17,9 @@ layout: default
 </article>
 
 <section>
-  {% webmentions %}
+  {% webmentions page.url posts replies links %}
+
+  {% webmention_likes page.url %}
+
+  {% webmention_reposts page.url %}
 </section>
