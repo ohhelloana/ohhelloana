@@ -5,31 +5,43 @@
 
   ul {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
 
     & li {
-      display: inline-block;
       font-size: rems(16px);
-      margin: 0 0 rems(20px) 0;
     }
 
     .site-header {
       font-size: rems(24px);
       border: 2px dashed $secondary;
       padding: 0 10px;
-      margin-right: 15px;
-    
+
       a {
         color: $secondary;
         text-decoration: none;
       }
-    
+
       a:hover {
         color: white;
         background-color: $secondary;
       }
-    }    
+    }
   }
 }
 
+@media all and (max-width: 600px) {
+  .menu-container ul {
+    flex-flow: column wrap;
 
+    & li {
+      margin: 10px 0;
+    }
 
+    &:first-of-type {
+      margin: 0 0 10px 0;
+    }
+  }
+}
