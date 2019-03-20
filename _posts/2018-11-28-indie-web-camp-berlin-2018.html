@@ -8,7 +8,7 @@ status: publish
 category: post
 ---
 
-<p>Last weekend I attended my very first <a href="https://indieweb.org/2018/Berlin" target="_blank">IndieWebCamp</a> in Berlin. I planned it very last minute and was lucky that flights were still at an acceptable price. I’ve been wanting to attend one for a while. I found out about the IndieWeb because somehow I stumbled upon a list of blogs that were created in a previous IndieWebCamp and that’s how I discovered one of my favourite blogs: <a href="https://julieannenoying.com/" target="_blank">JulieAnnenoying</a> (Julie Anne was the photographer for the event. The photos are available <a href="https://www.flickr.com/photos/tollwerk/sets/72157703142292825" target="_blank">here</a> and <a href="https://www.flickr.com/photos/tollwerk/sets/72157703054537654" target="_blank">here</a>).</p>
+<p>Last weekend I attended my very first <a href="https://indieweb.org/2018/Berlin"  >IndieWebCamp</a> in Berlin. I planned it very last minute and was lucky that flights were still at an acceptable price. I’ve been wanting to attend one for a while. I found out about the IndieWeb because somehow I stumbled upon a list of blogs that were created in a previous IndieWebCamp and that’s how I discovered one of my favourite blogs: <a href="https://julieannenoying.com/"  >JulieAnnenoying</a> (Julie Anne was the photographer for the event. The photos are available <a href="https://www.flickr.com/photos/tollwerk/sets/72157703142292825"  >here</a> and <a href="https://www.flickr.com/photos/tollwerk/sets/72157703054537654"  >here</a>).</p>
 
 <p>It was so much fun! I loved meeting people that I had only “met” via twitter before, the discussions and the opportunity to work on my blog and being able to ask for help.</p>
 
@@ -23,10 +23,10 @@ category: post
 <p>Now, whenever I post a photo to instagram it is automatically picked up, publishes to my GitHub repo which then triggers a build in my netlify account.</p>
 
 <h3>How?</h3>
-<p>Using <a href="http://ownyourgram.com" target="_blank">OwnYourGram</a> and a package called <a href="https://github.com/voxpelli/webpage-micropub-to-github" target="_blank">“webpage micro pub to gitHub”</a>.</p>
+<p>Using <a href="http://ownyourgram.com"  >OwnYourGram</a> and a package called <a href="https://github.com/voxpelli/webpage-micropub-to-github"  >“webpage micro pub to gitHub”</a>.</p>
 
 <h3>But, how again?</h3>
-<p>Right, in order to have this working I had to have <a href="https://indieauth.com/" target="_blank">IndieAuth</a> on my blog so that I could even use OwnYourGram.</p>
+<p>Right, in order to have this working I had to have <a href="https://indieauth.com/"  >IndieAuth</a> on my blog so that I could even use OwnYourGram.</p>
 <p>I’m a bit embarrassed to admit this but it took me too long to figure out that the process was WAY more simple than I thought. When I opened some pages about the IndieAuth I spent too much time trying to figure if I needed an access token and how to generate one. This was mistake number one. Instead of just copy pasting code and poke it, I spent too much going around all wiki pages and just feeling lost.
 For this particular case it wasn’t needed at all.</p>
 
@@ -46,7 +46,7 @@ For this particular case it wasn’t needed at all.</p>
 </pre>
 <p>And yes. It failed. I had no idea what I was doing but it was worth giving it a go.</p>
 
-<p>At this point I decided to search “Jekyll micro pub endpoint” and I found <a href="https://github.com/voxpelli/webpage-micropub-to-github" target="_blank">this repository</a>.</p>
+<p>At this point I decided to search “Jekyll micro pub endpoint” and I found <a href="https://github.com/voxpelli/webpage-micropub-to-github"  >this repository</a>.</p>
 
 <p>Ding ding ding - everything I wanted: works with Jekyll, does a mysterious thing for me, pushes to GitHub automatically!</p>
 
@@ -70,7 +70,7 @@ For this particular case it wasn’t needed at all.</p>
 
 <p>I finally had a micro pub endpoint! So I signed in again to OwnYourGram, followed all the steps (now I already had all the requirements) and tested it. I chose one of my existing photos to be published. That worked! So I decided to take a photo, post on instagram and see (after a while) if it would publish automatically (it did).</p>
 
-<p>Here’s when things got more complicated:  Everything was (and is) working as I expected but when I opened it on my blog, I didn’t like the URL. I wanted to create a specific URL and following the suggestions in the ReadMe didn’t work. I spent quite a few hours on this but eventually it resulted in creating a <a href="https://github.com/voxpelli/webpage-micropub-to-github/issues/81" target="_blank">gitHub issue</a> in the original package (also my very first gitHub issue).</p>
+<p>Here’s when things got more complicated:  Everything was (and is) working as I expected but when I opened it on my blog, I didn’t like the URL. I wanted to create a specific URL and following the suggestions in the ReadMe didn’t work. I spent quite a few hours on this but eventually it resulted in creating a <a href="https://github.com/voxpelli/webpage-micropub-to-github/issues/81"  >gitHub issue</a> in the original package (also my very first gitHub issue).</p>
 
 <p>Another issue I found is that when trying to share an instagram post that has more than one photo, my Heroku app times-out and I need to restart it. This can probably be fixed by upgrading my account but I can’t afford it right now.</p>
 
@@ -87,7 +87,7 @@ For this particular case it wasn’t needed at all.</p>
 <h3>This is what I accomplished:</h3>
 
 <p>If I post a photo on instagram, it publishes on my blog too and I will host a copy of said image in my blog.</p>
-<p>This was my first <a href="https://www.ohhelloana.blog/39019" target="_blank">"official post"</a>. I deleted the test ones. The stickers in that photo allowed me to discover <a href="https://indiewebcat.com/" target="_blank">IndieWebCat</a> ❤️.</p>
+<p>This was my first <a href="https://www.ohhelloana.blog/39019"  >"official post"</a>. I deleted the test ones. The stickers in that photo allowed me to discover <a href="https://indiewebcat.com/"  >IndieWebCat</a> ❤️.</p>
 
 <h3>Issues:</h3>
 <ul>
@@ -106,7 +106,7 @@ For this particular case it wasn’t needed at all.</p>
 
 <h3>Useful links:</h3>
 <ul>
-  <li><a href="https://indieweb.org" target="_blank">IndieWeb</a></li>
-  <li><a href="https://herestomwiththeweather.com/2017/11/27/jekyll-indieweb-and-micropub/" target="_blank">Jekyll - IndieWeb and MicroPub</a></li>
-  <li><a href="https://indiewebcat.com/" target="_blank">IndieWebCat</a></li>
+  <li><a href="https://indieweb.org"  >IndieWeb</a></li>
+  <li><a href="https://herestomwiththeweather.com/2017/11/27/jekyll-indieweb-and-micropub/"  >Jekyll - IndieWeb and MicroPub</a></li>
+  <li><a href="https://indiewebcat.com/"  >IndieWebCat</a></li>
 </ul>
