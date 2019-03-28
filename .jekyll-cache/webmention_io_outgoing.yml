@@ -515,3 +515,13 @@ http://localhost:4000/february-bookmarks:
   https://m.tiktok.com/v/6657125743564164357.html: false
   https://twitter.com/zoewhiite/status/1091526702864482304?s=21: false
   https://twitter.com/WelshMountainZo/status/1091262802617081857: false
+http://localhost:4000/it-is-everyones-job: {}
+http://localhost:4000/2014-06-02-rails-girls-porto:
+  http://railsgirls.com/: false
+  http://www.geekettes.io/: false
+  http://www.facebook.com/RailsGirlsPortugal: false
+  http://www.geekettes.io/membership/: false
+  https://www.facebook.com/portugalgeekettes: false
+http://localhost:4000/66020: {}
+http://localhost:4000/76852: {}
+http://localhost:4000/78750: {}
