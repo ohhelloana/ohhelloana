@@ -70,3 +70,20 @@ pre {
   padding: 1em 1.5em;
   word-wrap: break-word;
 }
+
+.mood {
+  border: 4px dashed #ebe3d9;
+  margin: 15px 0 0 0;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #d4cabd;
+
+  ul {
+    list-style: none;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+
+}
