@@ -58,7 +58,7 @@ a:active {
 
 blockquote {
   margin: 1.5em 0;
-  padding: 0.5em 10px;
+  padding: 0.5em;
   quotes: "\201C""\201D""\2018""\2019";
   color: $secondary;
 }
@@ -74,6 +74,11 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+cite {
+  display: block;
+  margin: 0 0 1em 0.5em;
 }
 
 img {
