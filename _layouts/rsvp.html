@@ -3,7 +3,11 @@ layout: default
 ---
 
 <article class="post h-entry">
-  I'm RSVPing <span class="p-rsvp">{{ page.rsvp }}</span> to <a href="{{ page.rsvpTargetUrl }}" class="u-in-reply-to">{{ page.rsvpTargetName }}</a>
+  <img class="photo u-photo" src="{{ site.baseurl }}/assets/profile.jpg" alt="Photo of Ana"></img>
+  <a class="p-author h-card" href="https://www.ohhelloana.blog">
+    Ana
+  </a>
+  is RSVPing <span class="p-rsvp">{{ page.rsvp }}</span> to <a href="{{ page.rsvpTargetUrl }}" class="u-in-reply-to">{{ page.rsvpTargetName }}</a>
 </article>
 
 {% if page.hasMood %}
