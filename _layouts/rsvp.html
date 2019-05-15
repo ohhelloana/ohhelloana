@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<article class="post h-entry">
+  I'm RSVPing <span class="p-rsvp">{{ page.rsvp }}</span> to <a href="{{ page.rsvpTargetUrl }}" class="u-in-reply-to">{{ page.rsvpTargetName }}</a>
+</article>
+
+{% if page.hasMood %}
+  {% include mood.html %}
+{% endif %}
