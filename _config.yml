@@ -1,5 +1,5 @@
 title: Oh Hello Ana
-name: Oh Hello Ana - Ana Rodrigues blog
+name: Ana Rodrigues Blog
 email: contact@ohhelloana.blog
 description: Ana's personal blog.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -11,9 +11,9 @@ github_username:  ohhelloana
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 gems:
   - jekyll-feed
-  - jekyll-webmention_io
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -23,15 +23,3 @@ permalink: /:title
 sass:
   sass_dir: _sass
   style: compressed
-
-webmentions:
-  # Enter your webmention.io username
-  username: ohhelloana.blog
-  cache_bad_uris_for: 5
-  # If you've changed domain in the past, list the old ones here
-  legacy_domains:
-    - http://ohhelloana.blog
-    - http://www.ohhelloana.blog
-  # I have the JavaScript portion of the plugin disabled, since I'm
-  # triggering builds with Netlify
-  js: false
