@@ -6,7 +6,7 @@
 	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 >
 	<channel>
-		<title>{{ site.name | xml_escape }} - Miscellaneous</title>
+		<title>{{ site.name | xml_escape }} Bookmarks</title>
 		<description>Posts categorized as 'links'</description>
 		<sy:updatePeriod>{{ site.feed_update_period | default: "daily" | xml_escape }}</sy:updatePeriod>
 		<sy:updateFrequency>{{ site.feed_update_frequency | default: 1 | xml_escape }}</sy:updateFrequency>
