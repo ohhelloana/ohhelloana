@@ -18,7 +18,7 @@
   <meta property="og:description" content="Ana's personal blog">
   <meta property="og:url" content="http://www.ohhelloana.blog">
   <meta property="og:site_name" content="Oh Hello Ana - Blog">
-  <meta property="og:image" content="https://www.ohhelloana.blog/assets/profile.jpg">
+  <meta property="og:image" content="{% if page.photo %}{{ page.photo }}{% else %}https://www.ohhelloana.blog/assets/profile.jpg{% endif %}">
 
   <meta property="twitter:card" content="summary">
   <meta property="twitter:site" content="@ohhelloana">
@@ -27,12 +27,13 @@
   <meta property="twitter:domain" content="ohhelloana.blog">
   <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Oh Hello Ana - Blog{% endif %}">
   <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Oh Hello Ana - Blog{% endif %}">
-  <meta property="twitter:image" content="https://www.ohhelloana.blog/assets/profile.jpg">
+  <meta property="twitter:image" content="{% if page.photo %}{{ page.photo }}{% else %}https://www.ohhelloana.blog/assets/profile.jpg{% endif %}">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <link href="{{ "/feed.links.xml" | relative_url }}" type="application/rss+xml" rel="alternate" title="Latest 10 posts in category called links" />
+  <link href="{{ "/feed.links.xml" | relative_url }}" type="application/rss+xml" rel="alternate" title="Latest 10 posts in my bookmarks category" />
+  {% json_feed_meta %}
 
   <link rel="pingback" href="https://webmention.io/ohhelloana.blog/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/ohhelloana.blog/webmention" />
