@@ -12,6 +12,7 @@ layout: default
   </ul> -->
   <ul class="post-list">
     {% for post in site.posts %}
+    {{ post.url | relative_url }}
       {% if post.category contains "post" or post.category contains "social" %}
       <li class="single-post {% if post.category contains "social" %}instagram{% endif %}">
         <div class="post-info">
