@@ -1,18 +1,23 @@
-<nav role="navigation">
-  <div class="menu-container wrapper">
-    <ul>
-      <li class="site-header">
-        <a href="{{site.url}}" title="Latest blog posts">oh hello ana</a>
-      </li>
-      <li>
-        <a href="{{site.url}}/about" title="About Ana">About</a>
-      </li>
-      <li>
-        <a href="{{site.url}}/bookmarks" title="Bookmarks">Bookmarks</a>
-      </li>
-      <li>
-        <a href="{{site.url}}/contact" title="Contact Ana">Contact</a>
-      </li>
-    </ul>
+<header>
+  <div class="wrapper header">
+    <h1>
+      <a href="/" title="OhHelloAna.blog">
+        <img src="{{ site.baseurl }}/assets/header.png" class="header-image" alt="A drawing of Ana holding a phone and taking a photo of a cat who is washing itself. The cat says, suprised, oh, hello Ana.">
+        </img>
+      </a>
+    </h1>
+    <nav role="navigation" class="menu-container">
+      <ul>
+        <li>
+          <a href="{{site.url}}/about" title="About Ana">About</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/bookmarks" title="Bookmarks">Bookmarks</a>
+        </li>
+        <li>
+          <a href="{{site.url}}/contact" title="Contact Ana">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-</nav>
+</header>

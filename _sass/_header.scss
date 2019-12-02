@@ -1,14 +1,28 @@
+.header {
+  display: flex;
+
+  & > * {
+    margin: 0;
+  }
+
+  .header-image {
+    width: 300px;
+  }
+
+}
+
 .menu-container {
-  margin: 50px auto 30px auto;
   @extend %font-base;
-  padding: rems(10px);
+  display: flex;
+  align-items: center;
+  width: 70%;
 
   ul {
     list-style: none;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     flex-flow: row wrap;
+    width: 100%;
 
     & li {
       font-size: rems(16px);
@@ -35,6 +49,7 @@
 @media all and (max-width: 600px) {
   .menu-container ul {
     flex-flow: column wrap;
+    align-items: center;
 
     & li {
       margin: 10px 0;
