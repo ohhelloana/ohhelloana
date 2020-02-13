@@ -1,0 +1,25 @@
+{
+  "name": "ohhelloana.blog",
+  "version": "1.0.0",
+  "description": "Ana Rodrigues's personal blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohhelloana/ohhelloana.blog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Ana Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohhelloana/ohhelloana.blog/issues"
+  },
+  "homepage": "https://github.com/ohhelloana/ohhelloana.blog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
