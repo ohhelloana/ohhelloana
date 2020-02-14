@@ -2,14 +2,6 @@
 layout: default
 ---
 <div class="page-content">
-
-  <!-- <ul class="tags">
-  {% for tag in site.tags %}
-    {% assign t = tag | first %}
-    {% assign posts = tag | last %}
-    <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
-  {% endfor %}
-  </ul> -->
   <ul class="post-list">
     {% for post in site.posts %}
       {% if post.category contains "post" or post.category contains "social" %}
