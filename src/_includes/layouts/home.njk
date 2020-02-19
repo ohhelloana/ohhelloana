@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="page-content">
-  <ul class="post-list">
+  {# <ul class="post-list">
     {% for post in site.posts %}
       {% if post.category contains "post" or post.category contains "social" %}
       <li class="single-post {% if post.category contains "social" %}instagram{% endif %}">
@@ -27,5 +27,13 @@ layout: default
       </li>
       {% endif %}
     {% endfor %}
+  </ul> #}
+
+  home
+
+  <ul>
+  {%- for post in collections.all -%}
+    <li><a href="{{ post.url }}">{{ post.url }}</a></li>
+  {%- endfor -%}
   </ul>
 </div>
