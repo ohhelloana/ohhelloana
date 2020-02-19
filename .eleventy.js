@@ -10,6 +10,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('rsvp', 'layouts/rsvp.njk');
 
   eleventyConfig.addPassthroughCopy('src/assets');
+  eleventyConfig.addFilter("post_permalink", page => {
+    return `${page.fileSlug}/`;
+  });
 
   return {
     dir: {
