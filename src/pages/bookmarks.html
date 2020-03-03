@@ -1,14 +1,14 @@
 ---
 title: Bookmarks
-permalink: bookmarks/
+permalink: "bookmarks/"
 layout: bookmarks
 description: Hand picked links that I want to share
 ---
 <div class="page-content">
   <h2>Bookmarks</h2>
-  <p>The bookmarks page has its own <a href="{{ "/feed.links.xml" | relative_url }}">RSS feed.</a></p>
+  {# <p>The bookmarks page has its own <a href="{{ "/feed.links.xml" | relative_url }}">RSS feed.</a></p> #}
   <ul class="bookmarks-list">
-    {% for post in site.posts %}
+    {# {% for post in site.posts %}
     {% if post.category contains "links" %}
       <li class="bookmark h-entry">
         <div class="bookmark-info">
@@ -20,6 +20,7 @@ description: Hand picked links that I want to share
         </div>
       </li>
     {% endif %}
-    {% endfor %}
+    {% endfor %} #}
+    Bookmarks  test
   </ul>
 </div>
