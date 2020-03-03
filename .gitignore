@@ -4,3 +4,4 @@ _site
 _drafts
 .DS_Store
 node_modules
+src/assets
