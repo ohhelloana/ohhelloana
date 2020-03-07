@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/ohhelloana/ohhelloana.blog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^0.10.0",
+    "sass": "^1.26.2"
+  },
+  "dependencies": {
+    
   }
 }
