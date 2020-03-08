@@ -1,0 +1,1 @@
+.wrapper{max-width:800px;margin:0 auto}.wrapper.two-col{display:flex;flex-flow:row wrap}.wrapper.two-col>.page-content{flex:1 100%}@media all and (min-width: 800px){.wrapper.two-col>.page-content{flex:3}}/*# sourceMappingURL=styles.css.map */

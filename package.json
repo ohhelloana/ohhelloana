@@ -4,7 +4,13 @@
   "description": "Ana Rodrigues's personal blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "sass": "sass --style=compressed src/styles/_general.scss src/_includes/css/styles.css",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "npm run sass -- --watch",
+    "start": "npm-run-all sass --parallel watch:*",
+    "build": "npm run sass && eleventy"
   },
   "repository": {
     "type": "git",
@@ -21,9 +27,8 @@
   "homepage": "https://github.com/ohhelloana/ohhelloana.blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.26.2"
   },
-  "dependencies": {
-    
-  }
+  "dependencies": {}
 }
