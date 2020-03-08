@@ -1,5 +1,6 @@
-module.exports = function(eleventyConfig) {
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
+module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('bookmarks', 'layouts/bookmarks.njk');
   eleventyConfig.addLayoutAlias('bookmarktagpage', 'layouts/bookmarktagpage.njk');
   eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
@@ -13,6 +14,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("post_permalink", page => {
     return `${page.fileSlug}/`;
   });
+
+  eleventyConfig.addPlugin(pluginRss);
 
   return {
     dir: {
