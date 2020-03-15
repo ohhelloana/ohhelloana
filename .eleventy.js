@@ -1,6 +1,8 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
+
+  // add layout aliases that were originally set up in jekyll. This might need a refactor in the future.
   eleventyConfig.addLayoutAlias('bookmarks', 'layouts/bookmarks.njk');
   eleventyConfig.addLayoutAlias('bookmarktagpage', 'layouts/bookmarktagpage.njk');
   eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
@@ -10,12 +12,23 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
   eleventyConfig.addLayoutAlias('rsvp', 'layouts/rsvp.njk');
 
+  // passthrough stuff
   eleventyConfig.addPassthroughCopy('src/assets');
+
+  //plugins
+  eleventyConfig.addPlugin(pluginRss);
+
+  // This blog was originally a wordpress that was then converted to jekyll and now to 11ty. 
+  // So when it was converted from wordpress, I didn't think too much about the permalinks
+  // This filter had to be created because of that legacy in the naming of the files of the posts.
   eleventyConfig.addFilter("post_permalink", page => {
     return `${page.fileSlug}/`;
   });
 
-  eleventyConfig.addPlugin(pluginRss);
+  // I prefer to see things from "newest to oldest". So .reverse() does that.
+  eleventyConfig.addCollection("mainFeed", function(collection) {
+    return collection.getAllSorted().reverse();
+  });
 
   return {
     dir: {
