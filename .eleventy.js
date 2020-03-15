@@ -30,6 +30,11 @@ module.exports = function(eleventyConfig) {
     return collection.getAllSorted().reverse();
   });
 
+  eleventyConfig.addCollection("bookmarks" , function(collection) {
+    var postCollection = collection.getFilteredByTag("Bookmarks");
+    return postCollection.reverse();
+});
+
   return {
     dir: {
       input: "src",
