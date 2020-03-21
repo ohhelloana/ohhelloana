@@ -2,38 +2,30 @@
 layout: default
 ---
 <div class="page-content">
-  {# <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.category contains "post" or post.category contains "social" %}
-      <li class="single-post {% if post.category contains "social" %}instagram{% endif %}">
+  <ul class="post-list">
+    {% for post in collections.mainFeed %}
+      {% if post.data.category == "social" %}
+      <li class="single-post instagram">
+        <h2>
+          <span class="post-title">
+            <a href="{{ post.data.mfsyndication }}">Instagram post</a>
+          </span>
+        </h2>
+        <img class="post-img-thumb" src="{{ post.data.mfphoto }}" alt="{{ post.data.alt }}"/>
+        <div class="post-img-content">{{ post.data.content | safe }}</div>
+      </li>
+      {% else %}
+      <li class="single-post">
         <div class="post-info">
-          <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span>
-          <h2>
-            <span class="post-title">
-              {% if post.category contains "social" %}
-                <a href="{{ post.mf-syndication }}" target="_blank">Instagram post</a>
-              {% else %}
-              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-              {% endif %}
+          <span class="post-meta">{{ post.data.date }}</span>
+            <h2>
+              <span class="post-title">
+                <a href="{{ post.url }}">{{ post.data.title | escape }}</a>
             </span>
           </h2>
         </div>
-
-        {% if post.category contains "social" %}
-          <img class="post-img-thumb" src="{{ post.mf-photo }}" alt="{{ post.alt }}"/>
-
-          <div class="post-img-content">{{ post.content }}</div>
-        {% endif %}
       </li>
       {% endif %}
     {% endfor %}
-  </ul> #}
-
-  home
-
-  <ul>
-  {%- for post in collections.all -%}
-    <li><a href="{{ post.url }}">{{ post.url }}</a></li>
-  {%- endfor -%}
   </ul>
 </div>
