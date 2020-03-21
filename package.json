@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "DEBUG=Eleventy* eleventy",
-    "sass": "sass --style=compressed src/styles/_general.scss src/_includes/css/styles.css",
+    "sass": "sass --style=compressed src/styles/main.scss src/_includes/css/styles.css",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "start": "npm-run-all sass --parallel watch:*",
