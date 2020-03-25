@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const moment = require('moment');
 
 module.exports = function(eleventyConfig) {
 
@@ -23,6 +24,16 @@ module.exports = function(eleventyConfig) {
   // This filter had to be created because of that legacy in the naming of the files of the posts.
   eleventyConfig.addFilter("post_permalink", page => {
     return `${page.fileSlug}/`;
+  });
+
+  eleventyConfig.addFilter("prettyDate", value => {
+    let newDate = moment(value).format('Do MMMM YYYY');
+    return newDate;
+  });
+
+  eleventyConfig.addFilter("time", value => {
+    let newDate = moment(value).format('YYYY-MM-DD');
+    return newDate;
   });
 
   // I prefer to see things from "newest to oldest". So .reverse() does that.
