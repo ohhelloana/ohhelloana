@@ -10,7 +10,7 @@ layout: default
   {% for post in site.tags[page.tag] %}
     <li class="bookmark h-entry">
       <div class="bookmark-info">
-        <span class="bookmark-date">{{ post.date | date: '%B %d, %Y' }}</span>
+        <span class="bookmark-date">{{ post.date }}</span>
         <h2 class="bookmark-title">
           <a class="u-bookmark-of h-cite" href="{{ post.mf-bookmark-of }}" target="_blank">{{ post.title }}</a>
         </h2>
