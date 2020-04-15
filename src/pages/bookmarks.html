@@ -1,0 +1,24 @@
+---
+title: Bookmarks
+permalink: "bookmarks/"
+layout: bookmarks
+description: Hand picked links that I want to share
+eleventyExcludeFromCollections: true
+---
+<div class="page-content">
+  <h2>Bookmarks</h2>
+  <p>The bookmarks page has its own <a href="{{ "/feed.links.xml" | relative_url }}">RSS feed.</a></p>
+  <ul class="bookmarks-list">
+  {%- for post in collections.bookmarks -%}
+    <li class="bookmark h-entry">
+      <div class="bookmark-info">
+        <span class="bookmark-date">{{ post.date | prettyDate }}</span>
+        <h2 class="bookmark-title">
+          <a class="u-bookmark-of h-cite" href="{{ post.url }}">{{ post.data.title }}</a>
+        </h2>
+        <div class="bookmark-content">{{ post.templateContent | safe }}</div>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

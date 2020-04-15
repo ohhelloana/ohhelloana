@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{# <html lang="{{ page.lang | default: site.lang | default: "en" }}"> #}
+<html lang="en">
+
+  {% include "partials/head.njk" %}
+
+  <body>
+
+    {% include "partials/header.njk" %}
+
+    <main role="main">
+      <div class="wrapper">
+        {{ content | safe }}
+      </div>
+    </main>
+
+    {% include "partials/footer.njk" %}
+
+  </body>
+
+</html>

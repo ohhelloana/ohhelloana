@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include "partials/head.njk" %}
+
+  <body>
+
+    {% include "partials/header.njk" %}
+
+    <main role="main">
+      <div class="wrapper two-col">
+        
+        {{ content | safe}}
+
+      </div>
+    </main>
+
+    {% include "partials/footer.njk" %}
+
+  </body>
+
+</html>

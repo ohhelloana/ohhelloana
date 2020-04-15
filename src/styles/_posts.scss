@@ -1,0 +1,95 @@
+.post {
+  @extend %font-body;
+}
+.post-title, .post-link {
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.post-meta {
+  font-family: monospace;
+}
+
+.post-title {
+  color: coral;
+}
+
+.post-content {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.7;
+
+  ul {
+    list-style: square inside none;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: $dark-grey;
+    text-decoration: underline;
+    padding: 0 1px 0 1px;
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  .p-img {
+    text-align: center;
+  }
+
+  h3 {
+    margin: 20px 0;
+    color: coral;
+    font-weight: normal;
+  }
+}
+
+.post-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.instagram-post {
+  width: 100%;
+  height: 100%;
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px dashed #ddd;
+  color: #666;
+  font-family: monospace;
+  font-size: 15px;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  word-wrap: break-word;
+}
+
+.mood {
+  border: 4px dashed #ebe3d9;
+  margin: 15px 0 0 0;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #d4cabd;
+
+  ul {
+    list-style: none;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+
+}
+
+.social-avatar {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border: 1px dotted #d4cabd;
+  padding: 5px;
+}

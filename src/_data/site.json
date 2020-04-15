@@ -1,0 +1,11 @@
+{
+  "title": "Oh, hello Ana!",
+  "url": "https://ohhelloana.blog",
+  "baseurl": "",
+  "repo": "https://github.com/ohhelloana/ohhelloana.blog",
+  "comments": false,
+  "author": {
+    "name": "Ana Rodrigues"
+  },
+  "og_locale": "en_UK"
+}
