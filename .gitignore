@@ -1,5 +1,10 @@
 site
+
 .sass-cache
+
 .DS_Store
+
 node_modules
+
 drafts
+
