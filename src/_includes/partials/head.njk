@@ -11,8 +11,7 @@
 
   <link rel="canonical" href="{{ currentUrl }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
-  {# <link href="{{ "/feed.links.xml" | relative_url }}" type="application/rss+xml" rel="alternate" title="Latest 10 posts in my bookmarks category" />
-  {% json_feed_meta %} #}
+  <link rel="alternate" type="application/rss+xml" title="Latest 10 posts in my bookmarks category" href="{{ site.url }}/feed.links.xml">
 
   <link rel="pingback" href="https://webmention.io/ohhelloana.blog/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/ohhelloana.blog/webmention" />
@@ -37,9 +36,9 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Oh Hello Ana - Blog">
   <meta property="og:description" content="Ana's personal blog">
-  <meta property="og:url" content="http://www.ohhelloana.blog">
+  <meta property="og:url" content="http://ohhelloana.blog">
   <meta property="og:site_name" content="Oh Hello Ana - Blog">
-  <meta property="og:image" content="{% if photo %}{{ photo }}{% else %}https://www.ohhelloana.blog/assets/profile.jpg{% endif %}">
+  <meta property="og:image" content="{% if photo %}{{ photo }}{% else %}https://ohhelloana.blog/assets/profile.jpg{% endif %}">
 
   <meta property="twitter:card" content="summary">
   <meta property="twitter:site" content="@ohhelloana">
@@ -48,9 +47,9 @@
   <meta property="twitter:domain" content="ohhelloana.blog">
   <meta property="twitter:title" content="{% if title %}{{ title }}{% else %}Oh Hello Ana - Blog{% endif %}">
   <meta property="twitter:description" content="{% if description %}{{ description }}{% else %}Oh Hello Ana - Blog{% endif %}">
-  <meta property="twitter:image" content="{% if photo %}{{ photo }}{% else %}https://www.ohhelloana.blog/assets/profile.jpg{% endif %}">
+  <meta property="twitter:image" content="{% if photo %}{{ photo }}{% else %}https://ohhelloana.blog/assets/profile.jpg{% endif %}">
 
-  <style>
+  {# <style>
     {% include "css/styles.css" ignore missing %}
-  </style>
+  </style> #}
 </head>
