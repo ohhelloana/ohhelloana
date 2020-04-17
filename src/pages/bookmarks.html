@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
   {%- for post in collections.bookmarks -%}
     <li class="bookmark h-entry">
       <div class="bookmark-info">
-        <span class="bookmark-date">{{ post.date | prettyDate }}</span>
+        <p>Published on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time></p>
         <h2 class="bookmark-title">
           <a class="u-bookmark-of h-cite" href="{{ post.url }}">{{ post.data.title }}</a>
         </h2>
