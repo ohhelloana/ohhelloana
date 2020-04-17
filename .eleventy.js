@@ -5,7 +5,6 @@ module.exports = function(eleventyConfig) {
 
   // add layout aliases that were originally set up in jekyll. This might need a refactor in the future.
   eleventyConfig.addLayoutAlias('bookmarks', 'layouts/bookmarks.njk');
-  eleventyConfig.addLayoutAlias('bookmarktagpage', 'layouts/bookmarktagpage.njk');
   eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
   eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
   eleventyConfig.addLayoutAlias('micropubpost', 'layouts/micropubpost.njk');
