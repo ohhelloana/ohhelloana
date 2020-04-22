@@ -15,14 +15,14 @@ layout: default
         <img class="post-img-thumb" src="{{ post.data.mfphoto }}" alt="{{ post.data.alt }}"/>
         <div class="post-img-content">{{ post.data.content | safe }}</div>
       </li>
-      {% elseif "RSVP" in post.data.tags %}  
+      {# {% elseif "RSVP" in post.data.tags %}  
         <li class="single-post rsvp">
           <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
           <h2>
             RSVP
           </h2>
           <p>Today I RSVPed "{{post.data.rsvp}}" to <a href="{{post.data.rsvpTargetUrl}}">{{post.data.rsvpTargetName}}</a>.</p>
-        </li>
+        </li> #}
       {% else %}
       <li class="single-post">
         <div class="post-info">
