@@ -13,3 +13,7 @@ layout: default
     {{ content | safe }}
   </div>
 </article>
+
+{% if hasMood %}
+  {% include "partials/mood.njk" %}
+{% endif %}
