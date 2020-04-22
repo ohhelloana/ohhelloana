@@ -6,19 +6,19 @@ media_folder: "src/media"
 public_folder: "/assets"
 collections: 
   - name: "posts"
-  label: "Posts"
-  folder: "src/posts"
-  slug: "{{slug}}"
-  preview_path: "posts/{{slug}}"
-  create: true
-  fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Publish Date", name: "date", widget: "datetime"}
-    - {label: "Tags", name: "tags", widget: "list", allow_add: true}
-    - {label: "Description", name: "description", widget: "string"}
-    - {label: "Has mood", name: "hasMood", widget: "boolean", default: false}
-    - {label: "Mood", name: "mood", widget: "string"}
-    - {label: "Doing", name: "doing", widget: "string"}
-    - {label: "Thinking", name: "thinking", widget: "string"}
-    - {label: "Listening", name: "listening", widget: "string"}
+    label: "Posts"
+    folder: "src/posts"
+    slug: "{{slug}}"
+    preview_path: "posts/{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", allow_add: true}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Has mood", name: "hasMood", widget: "boolean", default: false}
+      - {label: "Mood", name: "mood", widget: "string"}
+      - {label: "Doing", name: "doing", widget: "string"}
+      - {label: "Thinking", name: "thinking", widget: "string"}
+      - {label: "Listening", name: "listening", widget: "string"}
