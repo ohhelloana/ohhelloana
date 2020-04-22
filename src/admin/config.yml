@@ -22,3 +22,4 @@ collections:
       - {label: "Doing", name: "doing", widget: "string"}
       - {label: "Thinking", name: "thinking", widget: "string"}
       - {label: "Listening", name: "listening", widget: "string"}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
