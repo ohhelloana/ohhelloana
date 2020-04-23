@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: master
+  repo: ohhelloana/ohhelloana
 publish_mode: editorial_workflow
 media_folder: "src/media"
 public_folder: "/assets"
