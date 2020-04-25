@@ -12,3 +12,7 @@ thinking: How is it Thursday already?
 listening: nothing
 ---
 This is my first attempt to publish from Netlify CMS. I don't think this will work but we'll see.
+
+I'm also going to try to add an image and see what happens. 
+
+![My cat with a snapchat filter.](/assets/pp.jpeg "My cat with a snapchat filter.")
