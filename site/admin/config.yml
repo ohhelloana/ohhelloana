@@ -3,7 +3,8 @@ backend:
   branch: master
   repo: ohhelloana/ohhelloana
 publish_mode: editorial_workflow
-media_folder: "src/media"
+media_folder: "src/assets"
+public_folder: "assets"
 collections: 
   - name: "posts"
     label: "Posts"
