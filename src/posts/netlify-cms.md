@@ -15,4 +15,4 @@ This is my first attempt to publish from Netlify CMS. I don't think this will wo
 
 I'm also going to try to add an image and see what happens. 
 
-![My cat with a snapchat filter.](assets/pp.jpeg "My cat with a snapchat filter.")
+![My cat with a snapchat filter.](assets/posts/55498107_10103499775420907_2759604908171722752_n.jpg "My cat with a snapchat filter.")
