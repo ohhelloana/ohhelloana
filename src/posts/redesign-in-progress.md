@@ -8,7 +8,7 @@ description: Announcing on the actual blog its current redesign.
 hasMood: true
 mood: Tired
 doing: Browsing Pinterest
-thinking: I’m shocked that my £3 solar powered outside lamp from Tiger stopped
+thinking: I'm shocked that my £3 solar powered outside lamp from Tiger stopped
   working because of the rain.
 listening: Nothing
 ---
