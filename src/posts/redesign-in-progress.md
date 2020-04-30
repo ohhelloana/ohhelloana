@@ -16,7 +16,7 @@ I announced on twitter a couple of days ago that I went a bit rogue on my blog. 
 
 It doesn't help that I have an irrational hate for white backgrounds. I was just now looking up on Pinterest for some inspiration when I realised that I wasn't looking at "blog designs". I was looking at notebooks. When I want to think about my blog, I look at everything but web design. In fact, [my previous blog design](https://twitter.com/ohhelloana/status/1201577627456331776/photo/1), was inspired by a [scrapbook pin](https://www.pinterest.co.uk/pin/159385274297948765/). This tiny fact was actually buried in my memory because only just now I re-visited my saved pins.
 
-There are rare moments where I see something, like a [painting](https://www.metmuseum.org/art/collection/search/437383) or a concert and my immediately think: "how can I make my blog look like that?" and it isn't even... a *web medium* thing!
+There are rare moments where I see something, like a [painting](https://www.metmuseum.org/art/collection/search/437383) or a concert and I immediately think: "how can I make my blog look like that?" and it isn't even... a *web medium* thing!
 
 I've added a tiny bar at the top of the website to let people know that this is a very raw redesign and it might take a while. I'm sure my blog looks much better in an RSS reader. I've also reduced the size of the main image so that a cat bum isn't the first thing people see.
 
