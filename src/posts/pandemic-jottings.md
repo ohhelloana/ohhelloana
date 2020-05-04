@@ -7,7 +7,7 @@ tags:
   - overthinking
   - personal
 description: A summary of the poopy bits of the last two months because of the pandemic.
-hasMood: false
+hasMood: true
 mood: Calm
 doing: Lighting up candles
 thinking: I mean jottings is an incredible word. It suits my blog so well.
