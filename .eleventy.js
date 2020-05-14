@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
 
   // passthrough stuff
   eleventyConfig.addPassthroughCopy('src/assets');
+  eleventyConfig.addPassthroughCopy('src/media');
 
   //plugins
   eleventyConfig.addPlugin(pluginRss);
@@ -43,7 +44,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("bookmarks" , function(collection) {
     var postCollection = collection.getFilteredByTag("Bookmarks");
     return postCollection.reverse();
-});
+  });
+  
+  eleventyConfig.addCollection("posts" , function(collection) {
+    var postCollection = collection.getFilteredByTag("post");
+    return postCollection.reverse();
+  });
 
   return {
     dir: {

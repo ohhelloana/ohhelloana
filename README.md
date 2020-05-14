@@ -1,3 +1,3 @@
 # ohhelloana.blog
 
-This is a WIP - currently converting my self hosted wordpress blog to Jekyll... 
+`npm start`
