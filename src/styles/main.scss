@@ -1,16 +1,156 @@
-@import '_mixins';
-@import '_general';
+@import "colours_2018";
 
-@import '_variables';
-@import '_base';
-@import '_sizes';
-@import '_fonts';
-@import '_aside';
-@import '_bookmarks';
-@import '_colours_2018';
-@import '_footer';
-@import '_header';
-@import '_home';
-@import '_pages';
-@import '_posts';
+//NEW STUFF - TO BE PRETTIER ONE DAY
 
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Karla', sans-serif;
+}
+
+$gap: 30px;
+$border-color: #916154;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6dfd6;
+  display: flex;
+  height: 100vh;
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.3;
+}
+
+.wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+}
+a {
+  color: black;
+}
+header {
+  border: 1px solid #916154;
+  writing-mode: vertical-rl;
+  padding: $gap;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(transparent 11px, rgb(195, 195, 179) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(195, 195, 179, 1) 12px, transparent 12px);
+  background-size: 100% 12px,12px 100%;
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+main {
+  flex: 1;
+  border-top: 1px solid #916154;
+  overflow-y: scroll;
+  border-bottom: 1px solid #916154;
+}
+
+footer {
+  border: 1px solid #916154;
+  flex: 0;
+  padding: $gap;
+  background-image: linear-gradient(transparent 11px, rgb(195, 195, 179) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(195, 195, 179, 1) 12px, transparent 12px);
+  background-size: 100% 12px,12px 100%;
+  min-width: 200px;
+
+  .footer-inner-container {
+    border: 1.5px solid #37353f;
+    border-radius: 0 0 125px 3px/3px 85px 5px 55px;
+    position: relative;
+    padding: 10px;
+  }
+
+  .profile-img img {
+    width: 100%;
+  }
+}
+
+li.single-post {
+  background-color: #d0c3bc;
+}
+
+li.single-post.rsvp {
+  background-color: #aca793;
+}
+
+
+li.single-post.instagram {
+  background-color: #fff;
+  background-image: linear-gradient(transparent 11px, rgba(220, 220, 200, 0.8) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(220, 220, 200, 0.8) 12px, transparent 12px);
+  background-size: 100% 12px,12px 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.home-page {
+  padding: $gap 0;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .single-post {
+      padding: $gap;
+      border: 1px solid #916154;
+      margin-bottom: $gap;
+    }
+  }
+
+}
+
+.header-image {
+  width: 200px;
+}
+
+.tape {
+  width: 85px;
+  height: 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transform: rotate(-25deg);
+  margin: 0.2rem 0;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(224, 217, 218, 0.4);
+  left: -22px;
+  top: -8px;
+}
+
+.post {
+  padding: $gap 0;
+
+  img {
+    border: 1px solid #916154;
+    width: calc(100% - 60px);
+    padding: 30px;
+    background-image: linear-gradient(transparent 11px, #c3c3b3 12px, transparent 12px),linear-gradient(90deg, transparent 11px, #c3c3b3 12px, transparent 12px);
+    background-size: 100% 12px,12px 100%;
+    background-color: white;
+    object-fit: scale-down;
+  }
+}
+
+.post-header, .mood {
+  border: 1px solid $border-color;
+  padding: $gap;
+}
+
+.post-content {
+  padding: 0 $gap;
+}
+.mood {
+  margin-bottom: $gap;
+}
