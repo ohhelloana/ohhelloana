@@ -54,8 +54,18 @@ body {
 
     li {
       margin-bottom: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
+}
+
+.main-header__homepage_link {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 main {
