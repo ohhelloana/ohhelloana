@@ -204,3 +204,8 @@ li.single-post.instagram {
     padding: 0 $gap;
   }
 }
+
+blockquote p {
+  border-left: 2px solid $border-color;
+  padding-left: 10px;
+}
