@@ -5,7 +5,7 @@ layout: default
   <div class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ title | escape }}</h1>
     <p class="post-meta">
-      Published by <a class="p-author h-card" href="https://ohhelloana.blog">Ana Rodrigues</a> on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
+      Published by <a class="p-author h-card" href="https://ohhelloana.blog">Ana Rodrigues</a> on the <time datetime="{{ date | time }}">{{ date | prettyDate }}</time>
     </div>
 
   <div class="post-content e-content" itemprop="articleBody">
