@@ -5,7 +5,7 @@ date: 2020-06-17T17:32:01.971Z
 tags:
   - post
   - bookmarks
-description: Bookmarks I saved during May 2020
+description: Bookmarks I saved during May and June 2020
 hasMood: true
 mood: Tired
 doing: At Homebrew Website Club
@@ -14,11 +14,11 @@ listening: Nothing
 ---
 Black Lives Matter. 
 
-I'm Portuguese - when I went to school I wasn't taught what my country actually did during "discoveries". Where I grew up, we pretend our society isn't racist because there is no physical violence. In today's age with today's resources there is no excuse not to educate yourself and see how we're in a racist society. 
+In today's age with today's resources there is no excuse not to educate yourself and see how we're in a racist society. 
 
 Follow the folks who talk about racial injustice. Think how the technology we're building is tracking and tracing everyone who is protesting. Learn about data regulations. Learn the tricks of the media. 
 
-Here's a couple of things I saved. However, I urge you all to please diversify the feeds you consume. 
+Here's a couple of things I think everyone should see. However, I urge you all to please diversify the feeds you consume. 
 
 * [Black Lives Matter](https://blacklivesmatter.carrd.co/);
 * [We the protesters](https://www.wetheprotesters.org/);
@@ -37,8 +37,10 @@ Here's a couple of things I saved. However, I urge you all to please diversify t
 * [Guide to what to say when people deny the reality of what's happening right now](https://www.instagram.com/p/CA6A3Usl5c4/) (Instagram);
 * [How can I help from Europe? (Instagram)](https://www.instagram.com/p/CA41eo8HgXh/);
 * [The racist legacy of Portuguese colonialism (Instagram)](https://www.instagram.com/p/BzAarCMiLrx/);
-* [Black and POC designers that the fashion industry has silenced (Instagram)](https://www.instagram.com/p/CA-02hMnSUD/);
+* [Black and POC designers that the fashion industry has silenced](https://www.instagram.com/p/CA-02hMnSUD/)[ (Instagram)](https://www.instagram.com/p/CA-02hMnSUD/);
 * [Racial gaslighting 101](https://www.instagram.com/p/CA82O3YlqUS/) (Instagram);
 * ["this is to my white friends with feed fatigue" (Instagram)](https://www.instagram.com/p/CA0_G0zDXTr/);
 * [Racismo em Portugal](https://www.instagram.com/p/CA-O_7vCY_R/) (Instagram);
 * [Supremacy system](https://www.instagram.com/p/CAq9_0uJary/) (Instagram);
+
+Tech bookmarks can wait another month. This is what matters.
