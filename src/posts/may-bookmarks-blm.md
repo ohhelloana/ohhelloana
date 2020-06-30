@@ -4,7 +4,7 @@ title: May bookmarks - BLM
 date: 2020-06-17T17:32:01.971Z
 tags:
   - post
-  - bookmarks
+  - Bookmarks
 description: Bookmarks I saved during May and June 2020
 hasMood: true
 mood: Tired
