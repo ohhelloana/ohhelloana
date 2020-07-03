@@ -26,24 +26,17 @@ a {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 30px 0;
   background-color: #e6dfd6;
-  display: flex;
-  height: auto;
   font-family: 'Inconsolata', monospace;
   line-height: 1.3;
-  flex-direction: column;
+  background-image: linear-gradient(transparent 11px, rgb(195, 195, 179) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(195, 195, 179, 1) 12px, transparent 12px);
+  background-size: 100% 12px,12px 100%;
 }
 
 .main-header {
-  border: 1px solid #916154;
-  writing-mode: unset;
   padding: $gap;
   display: flex;
-  justify-content: space-between;
-  background-image: linear-gradient(transparent 11px, rgb(195, 195, 179) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(195, 195, 179, 1) 12px, transparent 12px);
-  background-size: 100% 12px,12px 100%;
-  flex-direction: column-reverse;
   align-items: center;
 
   nav ul {
@@ -51,6 +44,8 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
     li {
       margin-bottom: 15px;
@@ -69,25 +64,33 @@ body {
 }
 
 main {
-  flex: 1;
   a:hover {
     text-decoration: none;
   }
 }
 
 .main-footer {
-  border: 1px solid $border-color;
-  flex: 0;
-  padding: $gap;
-  background-image: linear-gradient(transparent 11px, rgb(195, 195, 179) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(195, 195, 179, 1) 12px, transparent 12px);
-  background-size: 100% 12px,12px 100%;
-  min-width: 200px;
-
   .footer-inner-container {
-    border: 1.5px solid $drawn-border-color;
-    border-radius: 0 0 125px 3px/3px 85px 5px 55px;
+    border-radius: 105px 105px 105px 105px/10px 10px 10px 5px;
+    border: 2px solid #000;
     position: relative;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+
+  .profile-img {
+    flex: 0;
+    margin-right: 10px;
+  }
+
+  .bio, .links {
+    flex: 1;
+  }
+
+  .footer-notes {
+    flex: 0 0 100%;
   }
 
   .profile-img img {
@@ -101,6 +104,7 @@ main {
 
 li.single-post {
   background-color: #d0c3bc;
+ 
 }
 
 li.single-post.rsvp {
@@ -110,8 +114,6 @@ li.single-post.rsvp {
 
 li.single-post.instagram {
   background-color: #fff;
-  background-image: linear-gradient(transparent 11px, rgba(220, 220, 200, 0.8) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(220, 220, 200, 0.8) 12px, transparent 12px);
-  background-size: 100% 12px,12px 100%;
 
   img {
     width: 100%;
@@ -120,17 +122,28 @@ li.single-post.instagram {
 
 .home-page {
   padding: $gap 0;
-  ul {
+  .post-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     .single-post {
       padding: $gap;
-      border: 1px solid $border-color;
+      border-radius: 125px 125px 125px 100px/5px 5px 5px 5px;
+      border: 2px solid #000000;
       margin-bottom: $gap;
     }
   }
 
+}
+
+.single-page {
+  border-radius: 115px 95px 115px 55px/5px 15px 15px 5px;
+  border: 2px solid #000;
+  padding: 10px;
+  background-color: white;
 }
 
 .header-image {
@@ -151,7 +164,10 @@ li.single-post.instagram {
 }
 
 .post {
-  padding: $gap 0;
+  border-radius: 105px 95px 100px 55px/15px 10px 5px 5px;
+  border: 2px solid #000;
+  padding: 10px;
+  background-color: white;
 
   img {
     border: 1px solid $border-color;
@@ -168,34 +184,16 @@ li.single-post.instagram {
   margin-bottom: $gap;
 }
 
+.pagination {
+  text-align: center;
+}
+
+.pagination__link {
+  background: linear-gradient(to left, rgba(253, 200, 48, 0.3) 0%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.6) 85%, rgba(253, 200, 48, 0.8) 100%);
+  padding: 10px;
+}
+
 @media all and (min-width: 1020px) {
-  body {
-    flex-direction: inherit;
-    height: 100vh;
-  }
-
-  .main-header {
-    writing-mode: vertical-rl;
-    flex-direction: inherit;
-  }
-
-  main {
-    overflow-y: scroll;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-  }
-
-  .main-footer {
-    .profile-img img {
-      width: 100%;
-    }
-  }
-
-  .post-header, .mood {
-    border: 1px solid $border-color;
-    padding: $gap;
-  }
-
   .post-header, .mood {
     padding: $gap;
   }

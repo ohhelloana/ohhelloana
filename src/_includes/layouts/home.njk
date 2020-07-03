@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="home-page page-content">
   <ul class="post-list">
-    {% for post in collections.mainFeed %}
+    {% for post in pagination.items %}
       {% if post.data.category == "social" %}
       <li class="single-post instagram">
         <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
@@ -13,7 +13,7 @@ layout: default
           </span>
         </h2>
         <img class="post-img-thumb" src="{{ post.data.mfphoto }}" alt="{{ post.data.alt }}"/>
-        <div class="post-img-content">{{ post.data.content | safe }}</div>
+        {# <div class="post-img-content">{{ post.data.content | safe }}</div> #}
       </li>
       {% elseif "RSVP" in post.data.tags %}  
         <li class="single-post rsvp">
@@ -37,4 +37,13 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
+
+  <nav role="navigation" class="pagination">
+    {% if pagination.href.previous %}
+      <a class="pagination__link" href="{{ pagination.href.previous }}">&larr; Newer <span class="page">entries</span></a>
+    {% endif %}
+    {% if pagination.href.next %}
+      <a class="pagination__link" href="{{ pagination.href.next }}">Older <span class="page">entries</span> &rarr;</a>
+    {% endif %}
+  </nav>
 </div>

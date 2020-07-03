@@ -1,6 +1,9 @@
 ---
-permalink: index.html
+permalink: "{% if pagination.pageNumber > 0 %}/archive-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 layout: home
 eleventyExcludeFromCollections: true
+pagination:
+  data: collections.mainFeed
+  size: 10
 ---
 
