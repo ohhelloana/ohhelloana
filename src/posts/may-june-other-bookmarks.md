@@ -10,7 +10,7 @@ hasMood: true
 mood: Alright
 doing: Telling my cat the cat flap is closed.
 thinking: Nothing
-listening: "What's a girl to do?" by Bat For Lashes
+listening: What's a girl to do? by Bat For Lashes
 ---
 
 The news are quiet now and it is on purpose. There's protests happening. There's things happening. They just aren't showing it anymore. #BlackLivesMatter 
