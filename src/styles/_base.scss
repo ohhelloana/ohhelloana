@@ -1,3 +1,8 @@
+$secondary: black;
+$gap: 30px;
+$border-color: #916154;
+$drawn-border-color: #37353f;
+
 /**
  * Reset some basic elements
  */
@@ -7,32 +12,24 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-p,h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0 0 30px 0;
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Karla', sans-serif;
+}
+
 body {
-  background-color: #EBE3D9;
-  @extend %font-base;
-  color: $body;
-}
-
-body:before, body:after {
-	content: "";
-	position: fixed;
-	background: $secondary;
-	left: 0;
-	right: 0;
-	height: 10px;
-}
-
-body:before {
-  top: 0;
-}
-
-body:after {
-  bottom: 0;
+  margin: 0;
+  padding: 30px 0;
+  background-color: #ececec;
+  border: 20px solid #ececec;
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.3;
+  background-image: linear-gradient(transparent 11px, rgb(195, 195, 179) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(195, 195, 179, 1) 12px, transparent 12px);
+  background-size: 100% 12px,12px 100%;
 }
 
 a {
@@ -73,7 +70,8 @@ blockquote:before {
 }
 
 blockquote p {
-  display: inline;
+  border-left: 2px solid $border-color;
+  padding-left: 10px;
 }
 
 cite {

@@ -1,72 +1,32 @@
-footer {
-  margin: 50px 0;
-}
-
-.footer-inner-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: rems(14px);
+.main-footer {
+  .footer-inner-container {
+    border-radius: 105px 105px 105px 105px/10px 10px 10px 5px;
+    border: 2px solid #000;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+  }
 
   .profile-img {
-    width: 100px;
-    order: 1;
-
-    img{
-      object-fit: cover;
-      width: 100px;
-      margin: 0;
-    }
+    flex: 0;
+    margin-right: 10px;
   }
 
-  .bio {
-    order: 3;
-    width: 100%;
-    align-self: center;
-    margin: 15px 0 0 0;
-    padding: 0;
-
-    .greeting {
-      text-transform: lowercase;
-      background-color: black;
-      color: white;
-    }
-
-    p {
-      margin: 0;
-    }
+  .bio, .links {
+    flex: 1;
   }
-  .links {
-    order: 2;
-    align-self: center;
-    margin: 0 0 0 15px;
-    ul {
-      list-style: none;
-    }
-  }
+
   .footer-notes {
-    text-align: center;
-    width: 100%;
-    flex: auto;
-    order: 4;
-    border: 1px dashed $content-borders;
-    margin: 15px 0 0 0;
-    padding: 10px;
+    flex: 0 0 100%;
   }
-}
 
-@media all and (min-width: 600px) {
-  .footer-inner-container {
-    .bio {
-      order: 2;
-      width: auto;
-      flex: 1;
-      padding: 0 0 0 15px;
-      margin: 0 15px 0 15px;
-    }
-    .links {
-      order: 3;
-      margin: 0;
-    }
+  .profile-img img {
+    width: 150px;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 }

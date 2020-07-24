@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
   // passthrough stuff
   eleventyConfig.addPassthroughCopy('src/assets');
   eleventyConfig.addPassthroughCopy('src/media');
+  eleventyConfig.addPassthroughCopy('src/fonts');
 
   //plugins
   eleventyConfig.addPlugin(pluginRss);
@@ -34,6 +35,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("time", value => {
     let newDate = moment(value).format('YYYY-MM-DD');
     return newDate;
+  });
+
+  eleventyConfig.addFilter("indexPaginationPermalink", value => {
+
+    const indexPaginationPermalink = (pageNumber) => pageNumber ? `/page/${pageNumber + 1}/` : "/";
+
+    return indexPaginationPermalink;
   });
 
   // I prefer to see things from "newest to oldest". So .reverse() does that.

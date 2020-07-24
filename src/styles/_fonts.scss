@@ -16,3 +16,12 @@
 %font-body {
   @include font-body;
 }
+
+@font-face {
+  font-family: 'Nanum Pen Script';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('NanumPenScript-Regular'),
+      url('/assets/fonts/NanumPenScript-Regular.ttf') format('truetype');
+}
