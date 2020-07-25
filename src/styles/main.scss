@@ -1,22 +1,33 @@
-@import "_fonts";
+/**
+ * Reset some basic elements
+ */
+ body, blockquote, pre, hr,
+ dl, dd, ol, ul, figure {
+   margin: 0;
+   padding: 0;
+ }
+
+ 
 @import "_base";
 @import "colours_2018";
 @import "footer";
 
-//NEW STUFF - TO BE PRETTIER. One day at the time.
-
 .wrapper {
-  max-width: 680px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 10px;
 }
 
+//NEW STUFF - TO BE PRETTIER. One day at the time.
 
 .main-header {
-  padding: $gap;
-  display: flex;
-  align-items: center;
 
+  .header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   nav ul {
     display: flex;
     list-style: none;
@@ -34,11 +45,27 @@
   }
 }
 
+.menu-container {
+  flex: 0 0 100%;
+}
+
 .main-header__homepage_link {
-  font-family: 'Karla', sans-serif;
   font-size: 1.5em;
   text-decoration: none;
-  font-weight: bold;
+  font-family: 'Nanum Pen Script';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 30px;
+  position: relative;
+  background: linear-gradient(to left, rgba(253, 200, 48, 0.3) 0%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.6) 85%, rgba(253, 200, 48, 0.8) 100%);
+  transform: rotate(1deg);
+  padding: 0 0 0 5px;
+
+  span {
+    border-bottom: 5px solid;
+    border-radius: 100px 100px 10px 100px/5px 5px 5px 5px;
+    border-color: #E91E63;
+  }
 }
 
 main {
@@ -48,8 +75,15 @@ main {
 }
 
 li.single-post {
-  background-color: #d7d7cf;
- 
+  background-color: #ececec;
+  a {
+    background: linear-gradient(to left, rgba(240, 204, 215, 0.3) 0%, rgba(240, 204, 215, 0.4) 60%, rgba(240, 204, 215, 0.4) 60%, rgba(240, 204, 215, 0.6) 85%, rgba(240, 204, 215, 0.8) 100%);
+    padding: 5px;
+    border-bottom: 2px solid;
+    border-radius: 100px 100px 10px 100px/0px 0px 5px 5px;
+    border-color: #E91E63;
+    text-decoration: none;
+  }
 }
 
 li.single-post.rsvp {
@@ -136,7 +170,12 @@ li.single-post.instagram {
 .pagination__link {
   background: linear-gradient(to left, rgba(253, 200, 48, 0.3) 0%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.6) 85%, rgba(253, 200, 48, 0.8) 100%);
   padding: 10px;
-  font-family: 'Nanum Pen Script', Helvetica, Arial, sans-serif;
+  text-decoration-color: red;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-decoration-style: wavy;
+  font-family: 'Nanum Pen Script';
 }
 
 @media all and (min-width: 1020px) {
