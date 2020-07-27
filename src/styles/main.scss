@@ -99,6 +99,9 @@ li.single-post.instagram {
   border: 2px solid #000;
   padding: 10px;
   background-color: white;
+  line-height: 1.8;
+  max-width: 680px;
+  margin: 0 auto;
 
   img {
     border: 1px solid $border-color;
@@ -108,6 +111,10 @@ li.single-post.instagram {
     background-size: 100% 12px,12px 100%;
     background-color: white;
     object-fit: scale-down;
+  }
+
+  li {
+    list-style: inside;
   }
 }
 
@@ -129,6 +136,6 @@ li.single-post.instagram {
   }
   
   .post-content {
-    padding: 0 $gap;
+    padding: 0 $gap $gap $gap;
   }
 }
