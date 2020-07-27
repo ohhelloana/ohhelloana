@@ -118,15 +118,6 @@ cite {
   margin: 0 0 1em 0.5em;
 }
 
-img {
-	width: auto;
-  max-width: 100%;
-  height: auto;
-  outline-offset: -15px;
-  outline: 3px dashed rgba(255, 255, 255, 0.2);
-  margin: 15px 0;
-}
-
 .float-left {
   float: left;
   width: 50%;
@@ -147,4 +138,20 @@ img {
   position: absolute;
   overflow: hidden;
   top: -10px;
+}
+
+@mixin highlight-link {
+  background: linear-gradient(to left, rgba(253, 200, 48, 0.3) 0%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.6) 85%, rgba(253, 200, 48, 0.8) 100%);
+  padding: 10px;
+  text-decoration-color: red;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-decoration-style: wavy;
+  font-family: 'Nanum Pen Script';
+  display:inline-block
+}
+
+%highlight-link {
+  @include highlight-link;
 }

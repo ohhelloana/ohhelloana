@@ -1,22 +1,25 @@
-<header class="main-header">
-  <div class="wrapper header">
-    <div class="logo">
+<header class="header">
+  <div class="wrapper header__wrapper">
+    <div class="header__img-container">
       <img 
         src="{{ site.baseurl }}/assets/header.png" 
-        class="header-image" 
+        class="header__image" 
         alt="A drawing of Ana holding a phone and taking a photo of a cat who is washing itself. The cat says, suprised, oh, hello Ana.">
       </img>
     </div>
-    <a href="/" title="Go to the homepage." class="main-header__homepage_link">
-      <span>Jottings from Ana Rodrigues</span>
+
+    <a href="/" title="Go to the homepage." class="header__home-link">
+      <h1 class="header__title">OhHelloAna.blog</h1>
+      <small class="header__small-print">Jottings from Ana Rodrigues</small>
     </a>
-    <nav role="navigation" class="menu-container">
-      <ul>
-        <li>
-          <a href="{{site.baseurl}}/about" title="About me, contact information and website credits.">About</a>
+
+    <nav role="navigation" class="header__navigation">
+      <ul class="header__navigation-list">
+        <li lass="header__navigation-list-item">
+          <a class="header__navigation-link" href="{{site.baseurl}}/about" title="About me, contact information and website credits.">About</a>
         </li>
         <li>
-          <a href="{{site.baseurl}}/bookmarks" title="All my bookmarks.">Bookmarks</a>
+          <a class="header__navigation-link" href="{{site.baseurl}}/bookmarks" title="All my bookmarks.">Bookmarks</a>
         </li>
       </ul>
     </nav>
