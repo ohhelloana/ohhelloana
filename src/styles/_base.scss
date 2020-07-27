@@ -1,38 +1,74 @@
-/**
- * Reset some basic elements
- */
-body, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
+$secondary: black;
+$gap: 30px;
+$border-color: #916154;
+$drawn-border-color: #37353f;
+
+@font-face {
+  font-family: 'Nanum Pen Script';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('NanumPenScript-Regular'), 
+    url("/fonts/NanumPenScript-Regular.woff") format("woff"),
+    url("/fonts/NanumPenScript-Regular.woff2") format("woff2"),
+    url('/fonts/NanumPenScript-Regular.ttf') format('truetype');
 }
 
-p,h1, h2, h3, h4, h5, h6 {
+
+@font-face {
+  font-family: 'Inconsolata Medium';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Inconsolata-Medium'), 
+    url('/fonts/Inconsolata-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), 
+    url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat Italic';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Montserrat-Italic'), 
+    url('/fonts/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), 
+    url('/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inconsolata Medium';
+}
+
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0 0 30px 0;
   padding: 0;
 }
 
 body {
-  background-color: #EBE3D9;
-  @extend %font-base;
-  color: $body;
-}
-
-body:before, body:after {
-	content: "";
-	position: fixed;
-	background: $secondary;
-	left: 0;
-	right: 0;
-	height: 10px;
-}
-
-body:before {
-  top: 0;
-}
-
-body:after {
-  bottom: 0;
+  font-family: 'Montserrat Regular';
+  margin: 0;
+  padding: 30px 0;
+  background-color: #ececec;
+  border: 20px solid #ececec;
+  line-height: 1.3;
+  background-image: linear-gradient(transparent 11px, rgb(195, 195, 179) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(195, 195, 179, 1) 12px, transparent 12px);
+  background-size: 100% 12px,12px 100%;
 }
 
 a {
@@ -73,21 +109,13 @@ blockquote:before {
 }
 
 blockquote p {
-  display: inline;
+  border-left: 2px solid $border-color;
+  padding-left: 10px;
 }
 
 cite {
   display: block;
   margin: 0 0 1em 0.5em;
-}
-
-img {
-	width: auto;
-  max-width: 100%;
-  height: auto;
-  outline-offset: -15px;
-  outline: 3px dashed rgba(255, 255, 255, 0.2);
-  margin: 15px 0;
 }
 
 .float-left {
@@ -110,4 +138,20 @@ img {
   position: absolute;
   overflow: hidden;
   top: -10px;
+}
+
+@mixin highlight-link {
+  background: linear-gradient(to left, rgba(253, 200, 48, 0.3) 0%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.6) 85%, rgba(253, 200, 48, 0.8) 100%);
+  padding: 10px;
+  text-decoration-color: red;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-decoration-style: wavy;
+  font-family: 'Nanum Pen Script';
+  display:inline-block
+}
+
+%highlight-link {
+  @include highlight-link;
 }

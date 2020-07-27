@@ -1,66 +1,22 @@
+/**
+ * Reset some basic elements
+ */
+ body, blockquote, pre, hr,
+ dl, dd, ol, ul, figure {
+   margin: 0;
+   padding: 0;
+ }
+
+ 
+@import "base";
+@import "header";
 @import "colours_2018";
-
-//NEW STUFF - TO BE PRETTIER. One day at the time.
-
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
-
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Karla', sans-serif;
-}
-
-$gap: 30px;
-$border-color: #916154;
-$drawn-border-color: #37353f;
-
-a {
-  color: black;
-}
+@import "footer";
 
 .wrapper {
-  max-width: 680px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 10px;
-}
-
-body {
-  margin: 0;
-  padding: 30px 0;
-  background-color: #e6dfd6;
-  font-family: 'Inconsolata', monospace;
-  line-height: 1.3;
-  background-image: linear-gradient(transparent 11px, rgb(195, 195, 179) 12px, transparent 12px),linear-gradient(90deg, transparent 11px, rgba(195, 195, 179, 1) 12px, transparent 12px);
-  background-size: 100% 12px,12px 100%;
-}
-
-.main-header {
-  padding: $gap;
-  display: flex;
-  align-items: center;
-
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    li {
-      margin-bottom: 15px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-.main-header__homepage_link {
-  font-family: 'Karla', sans-serif;
-  font-size: 1.5em;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 main {
@@ -69,42 +25,20 @@ main {
   }
 }
 
-.main-footer {
-  .footer-inner-container {
-    border-radius: 105px 105px 105px 105px/10px 10px 10px 5px;
-    border: 2px solid #000;
-    position: relative;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-  }
-
-  .profile-img {
-    flex: 0;
-    margin-right: 10px;
-  }
-
-  .bio, .links {
-    flex: 1;
-  }
-
-  .footer-notes {
-    flex: 0 0 100%;
-  }
-
-  .profile-img img {
-    width: 150px;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-}
-
 li.single-post {
-  background-color: #d0c3bc;
- 
+  background-color: #ececec;
+  a {
+    background: linear-gradient(to left, rgba(240, 204, 215, 0.3) 0%, rgba(240, 204, 215, 0.4) 60%, rgba(240, 204, 215, 0.4) 60%, rgba(240, 204, 215, 0.6) 85%, rgba(240, 204, 215, 0.8) 100%);
+    padding: 5px;
+    border-bottom: 2px solid;
+    border-radius: 100px 100px 10px 100px/0px 0px 5px 5px;
+    border-color: #E91E63;
+    text-decoration: none;
+    &:hover {
+      background: none;
+      border-bottom: transparent;
+    }
+  }
 }
 
 li.single-post.rsvp {
@@ -146,9 +80,6 @@ li.single-post.instagram {
   background-color: white;
 }
 
-.header-image {
-  width: 200px;
-}
 
 .tape {
   width: 85px;
@@ -189,8 +120,7 @@ li.single-post.instagram {
 }
 
 .pagination__link {
-  background: linear-gradient(to left, rgba(253, 200, 48, 0.3) 0%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.6) 85%, rgba(253, 200, 48, 0.8) 100%);
-  padding: 10px;
+  @extend %highlight-link;
 }
 
 @media all and (min-width: 1020px) {
@@ -201,9 +131,4 @@ li.single-post.instagram {
   .post-content {
     padding: 0 $gap;
   }
-}
-
-blockquote p {
-  border-left: 2px solid $border-color;
-  padding-left: 10px;
 }

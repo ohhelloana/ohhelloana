@@ -1,62 +1,63 @@
-.header {
-  display: flex;
-
-  & > * {
-    margin: 0;
-  }
-
-  .header-image {
-    width: 300px;
-  }
-
-}
-
-.menu-container {
-  @extend %font-base;
+.header__wrapper {
   display: flex;
   align-items: center;
-  width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    width: 100%;
+.header__image {
+  width: 200px;
+}
 
-    & li {
-      font-size: rems(16px);
-    }
+.header__navigation {
+  flex: 0 0 100%;
+  background-color: #ececec;
+  border: 1px solid #d8d8d1;
+  font-family: "Nanum Pen Script";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-top: 30px;
+}
 
-    .site-header {
-      font-size: rems(24px);
-      border: 2px dashed $secondary;
-      padding: 0 10px;
+.header__navigation-list { 
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-      a {
-        color: $secondary;
-        text-decoration: none;
-      }
+.header__navigation-link {
+  @extend %highlight-link;
+}
 
-      a:hover {
-        color: white;
-        background-color: $secondary;
-      }
-    }
+.header__home-link {
+  background-color: #ececec;
+  border: 1px solid #d8d8d1;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: 'Nanum Pen Script';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 30px;
+  position: relative;
+  transform: rotate(1deg);
+  padding: 10px;
+  text-align: center;
+  &:hover {
+    color: #E91E63;
   }
 }
 
-@media all and (max-width: 600px) {
-  .menu-container ul {
-    flex-flow: column wrap;
-    align-items: center;
+.header__title {
+  margin: 0;
+  text-transform: initial;
+  font-size: 1.1em;
+}
 
-    & li {
-      margin: 10px 0;
-    }
-
-    &:first-of-type {
-      margin: 0 0 10px 0;
-    }
-  }
+.header__small-print {
+  border-bottom: 3px solid;
+  border-radius: 100px 100px 10px 100px/5px 5px 5px 5px;
 }

@@ -2,41 +2,50 @@
 layout: default
 ---
 <div class="home-page page-content">
-  <ul class="post-list">
+
+  <h2>Latest posts</h2>
+  <ol class="post-list">
     {% for post in pagination.items %}
       {% if post.data.category == "social" %}
       <li class="single-post instagram">
         <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
-        <h2>
+        <h3>
           <span class="post-title">
             <a href="{{ post.data.mfsyndication }}">Instagram post</a>
           </span>
-        </h2>
+        </h3>
         <img class="post-img-thumb" src="{{ post.data.mfphoto }}" alt="{{ post.data.alt }}"/>
         {# <div class="post-img-content">{{ post.data.content | safe }}</div> #}
       </li>
       {% elseif "RSVP" in post.data.tags %}  
         <li class="single-post rsvp">
           <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
-          <h2>
+          <h3>
             RSVP
-          </h2>
+          </h3>
           <p>Today I RSVPed "{{post.data.rsvp}}" to <a href="{{post.data.rsvpTargetUrl}}">{{post.data.rsvpTargetName}}</a>.</p>
         </li>
       {% else %}
       <li class="single-post">
         <div class="post-info">
-           <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
-            <h2>
+            <h3>
               <span class="post-title">
                 <a href="{{ post.url }}">{{ post.data.title | escape }}</a>
             </span>
-          </h2>
+          </h3>
+          <div>
+          <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
+          {# <p>
+         {#  {% for tag in post.data.tags  %}
+            {% if tag != 'post' %} <span>{{ tag }}</span> {% endif %}
+          {% endfor %}
+          </p>#}
+        </div>
         </div>
       </li>
       {% endif %}
     {% endfor %}
-  </ul>
+  </ol>
 
   <nav role="navigation" class="pagination">
     {% if pagination.href.previous %}
