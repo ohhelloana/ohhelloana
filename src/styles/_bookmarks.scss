@@ -1,0 +1,12 @@
+.bookmarks-list {
+  list-style: none;
+}
+
+.bookmark {
+  @extend %single-post-container;
+  margin-bottom: 30px;
+}
+
+.bookmark-content li {
+  list-style: inside;
+}
