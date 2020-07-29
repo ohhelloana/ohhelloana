@@ -20,6 +20,8 @@ Some of these are in the documentation of Hugo but I personally find it easier t
 
 Also, some of these things will likely seem very obvious to people who are very used to using Hugo. I am also 100% certain that there are better ways to do certain things. In my opinion, it doesn't really matter as long as the output does what we need. But I had to start somewhere, so this is the blog post I wish I had found when I first started.
 
+PS.: there may be typos in the titles and description of the examples. Funny how these things only turn up after an article is published online! 😁
+
 ## The if/else
 
 ``` html
@@ -91,7 +93,7 @@ This particular example assumes we're iterating on a menu set in the config.
 {% endraw %}
 ```
 
-## How to only render something if there is more than one page in a section.
+## How to only render something if there is at least one page in a section.
 This example assumes we have a section called "latest" that has some posts inside it. 
 ``` html
 {% raw %}
@@ -165,7 +167,7 @@ I had a specific situation where I had to replace "_" that could come up in a co
 
 ## How to get the content of an _index.md inside a partial
 
-Imagine you have a partial (like a banner) and could like to bring the content of the index of a section to it (in this case, for example an "about" page).
+Imagine you have a partial (like a banner) and could like to bring the content of the index file of a section to it (in this case, for example an "about" page).
 
 ``` html
 {% raw %}
