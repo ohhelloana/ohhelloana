@@ -1,5 +1,6 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require('moment');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
 
@@ -58,6 +59,8 @@ module.exports = function(eleventyConfig) {
     var postCollection = collection.getFilteredByTag("post");
     return postCollection.reverse();
   });
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {
