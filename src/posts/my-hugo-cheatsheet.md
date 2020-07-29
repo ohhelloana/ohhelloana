@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: My Hugo cheatsheet
+title: My Hugo cheat sheet
 date: 2020-07-29
 tags:
   - post
