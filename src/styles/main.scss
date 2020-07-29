@@ -40,6 +40,10 @@ li.single-post {
       border-bottom: transparent;
     }
   }
+
+  h3 {
+    margin-top: 0;
+  }
 }
 
 li.single-post.rsvp {
@@ -144,7 +148,11 @@ li.single-post.instagram {
 }
 
 @media all and (min-width: 1020px) {
-  .post-header, .mood {
+  .post-header {
+    padding: 0 $gap;
+  }
+
+  .mood {
     padding: $gap;
   }
   

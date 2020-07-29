@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   background-color: #ececec;
   border: 1px solid #d8d8d1;
+
+  p {
+    margin-top: 0;
+  }
 }
 
 .footer__profile-img{
@@ -28,7 +32,6 @@
 }
 
 .footer__extra {
-  margin-top: 30px;
   flex: 0 0 100%;
   p {
     margin-bottom: 15px;
