@@ -64,7 +64,7 @@ This example checks if a value is lower than 5 and greater than 1.
 ## How to add a class based on what page you're on
 I wanted to add a specific class to a page called "Privacy policy". This page was created inside my `content` folder and I named its folder `privacy-policy` and inside it I created an `_index.md`. The frontmatter of the `.md` file has a title. Something like: `title: Privacy Policy`.
 
-I want a specific class to be added to the header when I visit the this particular page. 
+I want a specific class to be added when I visit this particular page. 
 
 ``` html
 {% raw %}
