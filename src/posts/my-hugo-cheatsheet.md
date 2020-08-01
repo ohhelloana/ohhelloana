@@ -225,4 +225,4 @@ Assuming you're adding this to the `list.html` of a section, this example shows 
 
 I think this is it. I will update it if I remember anything else.
 
-Big thanks to [Bryan Robinson](https://bryanlrobinson.com/) who helped me out sort out why my syntax highlight wasn't working via the JAMStack slack channel. 
+Big thanks to [Bryan Robinson](https://bryanlrobinson.com/blog/how-to-show-your-template-code-in-11ty-blog-posts/) who helped me out sort out why my syntax highlight wasn't working via the JAMStack slack channel. 
