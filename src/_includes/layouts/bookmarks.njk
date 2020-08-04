@@ -11,6 +11,15 @@
       <div class="wrapper">
         {{ content | safe}}
       </div>
+
+    <nav role="navigation" class="pagination">
+        {% if pagination.href.previous %}
+          <a class="pagination__link" href="{{ pagination.href.previous }}">&larr; Newer <span class="page">entries</span></a>
+        {% endif %}
+        {% if pagination.href.next %}
+          <a class="pagination__link" href="{{ pagination.href.next }}">Older <span class="page">entries</span> &rarr;</a>
+        {% endif %}
+      </nav>
     </main>
 
     {% include "partials/footer.njk" %}
