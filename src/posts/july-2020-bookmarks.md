@@ -10,7 +10,7 @@ hasMood: true
 mood: Calm
 doing: Singing, poorly.
 thinking: I suppose this year nobody is going to a write a year review.
-listening: Join Me In Death - HIM
+listening: Love Again - Dua Lipa
 ---
 
 I've been thinking about this bookmark page especially because styling wise it is incomplete and a bit ugly and one day someone will call me out. But that isn't the only thing I've been thinking about: all those days (almost all this year) when I thought that I've done nothing for myself or my career I like to come to my bookmarks page and scroll. The work in the links that I collect here wasn't done by me, but they were learned by me and that is progress and accomplishment. All these people contributed to expanding my views and to my growth. I'm proud of my small archive.  
