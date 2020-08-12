@@ -3,54 +3,14 @@ $gap: 30px;
 $border-color: #916154;
 $drawn-border-color: #37353f;
 
-
-
-@font-face {
-  font-family: 'Inconsolata Medium';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local('Inconsolata-Medium'), 
-    url('/fonts/Inconsolata-Medium.ttf') format('truetype'),
-    url("/fonts/Inconsolata-Medium.woff") format("woff"),
-    url("/fonts/Inconsolata-Medium.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'Montserrat Regular';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local('Montserrat-Regular'), 
-    url('/fonts/Montserrat-Regular.ttf') format('truetype'),
-    url("/fonts/Montserrat-Regular.woff") format("woff"),
-    url("/fonts/Montserrat-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'Montserrat Italic';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local('Montserrat-Italic'), 
-    url('/fonts/Montserrat-Italic.ttf') format('truetype'),
-    url("/fonts/Montserrat-Italic.woff") format("woff"),
-    url("/fonts/Montserrat-Italic.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'Montserrat Bold';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: local('Montserrat-Bold'), 
-    url('/fonts/Montserrat-Bold.ttf') format('truetype'),
-    url("/fonts/Montserrat-Bold.woff") format("woff"),
-    url("/fonts/Montserrat-Bold.woff2") format("woff2");
-}
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inconsolata Medium', monospace;
+  font-family: 
+    "andale mono",
+    "monotype.com",
+    monaco,
+    "courier new",
+    courier,
+    monospace
 }
 
 p, h1, h2, h3, h4, h5, h6, ul {
@@ -59,7 +19,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
 }
 
 body {
-  font-family: 'Montserrat Regular';
+  font-family: verdana, arial, helvetica, sans-serif;
   margin: 0;
   padding: 30px 0;
   background-color: #ececec;
