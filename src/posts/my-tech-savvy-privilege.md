@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My tech-savvy priviledge
+title: My tech-savvy privilege
 date: 2020-08-26
 tags: 
   - post
