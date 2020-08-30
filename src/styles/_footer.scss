@@ -48,3 +48,14 @@
 .footer__link-list-item {
   list-style: inside;
 }
+
+.footer__rings {
+  a {
+    text-decoration: none;
+  }
+
+  text-align: center;
+  border-top: 1px solid #d8d8d1;
+  width: 100%;
+  padding: 10px;
+}
