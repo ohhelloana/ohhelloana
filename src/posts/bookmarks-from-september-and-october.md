@@ -40,6 +40,7 @@ Bookmarks related to tech or web development:
 * [You've heard of tax havens. After Brexit, the UK could become a 'data haven'](https://www.theguardian.com/commentisfree/2020/oct/17/uk-tax-brexit-data-haven-britain?CMP=Share_iOSApp_Other) by Carissa Véliz.
 * "[Honor the ADA: Avoid Web Accessibility Quick-Fix Overlays](https://www.lflegal.com/2020/08/quick-fix/)".
 * "[Portals and giant carousels](https://adactio.com/journal/17573)" by Jeremy Keith.
+* "[Why I Don’t Have Time For Your Coding Challenge](https://css-irl.info/why-i-dont-have-time-for-your-coding-challenge/)" by Michelle Barker.
 
 Other bookmarks:
 
@@ -52,3 +53,4 @@ Other bookmarks:
 * "[Japan’s Lost Generation Is Still Jobless and Living With Their Parents](https://www.bloomberg.com/features/2020-japan-lost-generation/)" by Yoshiaki Nohara.
 * "[You Don’t Batch Cook When You’re Suicidal](https://cookingonabootstrap.com/2020/07/30/the-price-of-potatoes-and-the-value-of-compassion/)" by Jack.
 * "[The Overwhelming Racism Of COVID Coverag](https://medium.com/indica/the-overwhelming-racism-of-covid-coverage-78e37e4ce6e8)e" by Indi Samarajiva.
+* [Buying Myself Back](https://www.thecut.com/article/emily-ratajkowski-owning-my-image-essay.html) by Emily Ratajkowski.
