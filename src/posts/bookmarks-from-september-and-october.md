@@ -9,7 +9,7 @@ description: Things I read and saved during September and October 2020
 hasMood: true
 mood: Lazy
 doing: Working
-thinking: Remember kids, rightfully criticising women isn't internalised misogyny.
+thinking: Remember kids, rightfully criticising a woman isn't internalised misogyny.
 listening: Nothing
 ---
 The whole September I was quite overwhelmed with work and life. I remember that in September "The Social Dilemma" came out. I don't remember a lot more weirdly. \
