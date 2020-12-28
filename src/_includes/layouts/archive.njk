@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div class="archive">
+  <div class="tape"></div>
+  <h2>Latest posts</h2>
+  <ol class="archive__post-list">
+    {% for post in pagination.items %}
+      {% if post.data.category == "social" %}
+      <li class="archive__single-post instagram">
+        <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
+        <h3>
+          <span class="post-title">
+            <a href="{{ post.data.mfsyndication }}">Instagram post</a>
+          </span>
+        </h3>
+        <img class="post-img-thumb" src="{{ post.data.mfphoto }}" alt="{{ post.data.alt }}"/>
+        {# <div class="post-img-content">{{ post.data.content | safe }}</div> #}
+      </li>
+      {% else %}
+      <li class="archive__single-post">
+        <h3>
+          <span class="post-title">
+              <a href="{{ post.url }}">{{ post.data.title | escape }}</a>
+          </span>
+        </h3>
+        
+        <div class="archive__single-post-meta">
+            <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
+            <ul class="archive__single-post-tag-list">
+              {% for tag in post.data.tags  %}
+                {% if tag != 'post' %}<li class="archive__single-post-tag">{{ tag }}</li>{% endif %}
+              {% endfor %}
+            </ul>
+        </div>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+  <nav role="navigation" class="pagination">
+    {% if pagination.href.previous %}
+      <a class="pagination__link" href="{{ pagination.href.previous }}">&larr; Newer <span class="page">entries</span></a>
+    {% endif %}
+    {% if pagination.href.next %}
+      <a class="pagination__link" href="{{ pagination.href.next }}">Older <span class="page">entries</span> &rarr;</a>
+    {% endif %}
+  </nav>
+</div>

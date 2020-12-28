@@ -1,10 +1,12 @@
+footer {
+  background-color: #ececec;
+}
+
 .footer-inner-container {
   position: relative;
-  padding: 10px;
+  padding: 30px 10px 0 10px;
   display: flex;
   flex-wrap: wrap;
-  background-color: #ececec;
-  border: 1px solid #d8d8d1;
 
   p {
     margin-top: 0;
@@ -25,10 +27,6 @@
 
 .footer__links {
   flex: 0 0 auto;
-}
-
-.footer__links-title {
-
 }
 
 .footer__extra {

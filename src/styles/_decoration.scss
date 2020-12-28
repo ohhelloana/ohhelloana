@@ -1,0 +1,19 @@
+.tape {
+  width: 85px;
+  height: 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transform: rotate(-25deg);
+  margin: 0.2rem 0;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(224, 217, 218, 0.4);
+  left: -22px;
+  top: -8px;
+}
+
+.tape--bottom-right {
+  bottom: -10px;
+  top: unset;
+  right: -30px;
+  left: unset;
+}

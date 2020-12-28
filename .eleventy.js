@@ -1,6 +1,7 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const moment = require('moment');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
 
@@ -12,6 +13,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
   eleventyConfig.addLayoutAlias('rsvp', 'layouts/rsvp.njk');
+  eleventyConfig.addLayoutAlias('archive', 'layouts/archive.njk');
 
   // passthrough stuff
   eleventyConfig.addPassthroughCopy('src/assets');
@@ -20,6 +22,7 @@ module.exports = function(eleventyConfig) {
 
   //plugins
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // This blog was originally a wordpress that was then converted to jekyll and now to 11ty. 
   // So when it was converted from wordpress, I didn't think too much about the permalinks
@@ -57,6 +60,11 @@ module.exports = function(eleventyConfig) {
   
   eleventyConfig.addCollection("posts" , function(collection) {
     var postCollection = collection.getFilteredByTag("post");
+    return postCollection.reverse();
+  });
+
+  eleventyConfig.addCollection("jots" , function(collection) {
+    var postCollection = collection.getFilteredByTag("jot");
     return postCollection.reverse();
   });
 

@@ -1,19 +1,46 @@
----
-layout: default
----
-<article class="post h-entry">
-  <div class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ title | escape }}</h1>
-    <p class="post-meta">
-      Published by <a class="p-author h-card" href="https://ohhelloana.blog">Ana Rodrigues</a> on the <time datetime="{{ date | time }}">{{ date | prettyDate }}</time>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-  <div class="post-content e-content" itemprop="articleBody">
+  {% include "partials/head.njk" %}
 
-    {{ content | safe }}
-  </div>
-</article>
+  <body>
 
-{% if hasMood %}
-  {% include "partials/mood.njk" %}
-{% endif %}
+    {% include "partials/header.njk" %}
+
+    <main role="main">
+      <div class="wrapper">
+        <article class="post h-entry">
+          <div class="post-header">
+            <h1 class="post-title p-name" itemprop="name headline">{{ title | escape }}</h1>
+            <p class="post-meta">
+              Published by <a class="p-author h-card" href="https://ohhelloana.blog">Ana Rodrigues</a> on the <time datetime="{{ date | time }}">{{ date | prettyDate }}</time>
+            </div>
+
+          <div class="post-content e-content" itemprop="articleBody">
+
+            {{ content | safe }}
+          </div>
+        </article>
+
+        {% if hasMood %}
+          {% include "partials/mood.njk" %}
+        {% endif %}
+      </div>
+    </main>
+
+    {% include "partials/footer.njk" %}
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+
+</html>

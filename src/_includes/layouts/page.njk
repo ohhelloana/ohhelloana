@@ -1,6 +1,33 @@
----
-layout: default
----
-<div class="page-content single-page">
-  {{ content | safe }}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include "partials/head.njk" %}
+
+  <body>
+
+    {% include "partials/header.njk" %}
+
+    <main role="main">
+      <div class="wrapper">
+        <div class="page-content single-page">
+          {{ content | safe }}
+        </div>
+      </div>
+    </main>
+
+    {% include "partials/footer.njk" %}
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+
+</html>
