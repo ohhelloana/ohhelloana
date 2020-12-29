@@ -152,10 +152,10 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
   .home-grid__analog-journal {
     background-image: url('/assets/website/menu-item__analog-journal.png');
-    background-size: 60%;
+    background-size: 55%;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background-position-y: bottom;
     text-align: right;

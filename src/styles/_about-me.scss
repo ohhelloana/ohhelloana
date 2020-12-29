@@ -15,10 +15,11 @@
 }
   
 .about-me__sidebar { 
-  flex-basis: 20rem;  
+  flex-basis: 15rem;  
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   figure {
     padding: 8px;
     border: 1.5px solid #37353f;
