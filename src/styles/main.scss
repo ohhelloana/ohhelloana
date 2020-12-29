@@ -19,10 +19,11 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
 @import "decoration";
 @import "archive-list";
 @import "post";
+@import "about-me";
 @import "colours_2018";
 
 
-.home-page {
+.home-page, .single-page {
   padding: 30px 0;
 }
 
