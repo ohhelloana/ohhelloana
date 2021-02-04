@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: all
 ---
+
 <div class="archive">
   <div class="tape"></div>
   <h2>Latest posts</h2>
@@ -37,13 +38,4 @@ layout: default
       {% endif %}
     {% endfor %}
   </ol>
-
-  <nav role="navigation" class="pagination">
-    {% if pagination.href.previous %}
-      <a class="pagination__link" href="{{ pagination.href.previous }}">&larr; Newer <span class="page">entries</span></a>
-    {% endif %}
-    {% if pagination.href.next %}
-      <a class="pagination__link" href="{{ pagination.href.next }}">Older <span class="page">entries</span> &rarr;</a>
-    {% endif %}
-  </nav>
 </div>

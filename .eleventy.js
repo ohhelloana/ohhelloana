@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
   eleventyConfig.addLayoutAlias('rsvp', 'layouts/rsvp.njk');
   eleventyConfig.addLayoutAlias('archive', 'layouts/archive.njk');
+  eleventyConfig.addLayoutAlias('all', 'layouts/all.njk');
 
   // passthrough stuff
   eleventyConfig.addPassthroughCopy('src/assets');
@@ -65,6 +66,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("jots" , function(collection) {
     var postCollection = collection.getFilteredByTag("jot");
+    return postCollection.reverse();
+  });
+
+  eleventyConfig.addCollection("pixels" , function(collection) {
+    var postCollection = collection.getFilteredByTag("pixels");
     return postCollection.reverse();
   });
 

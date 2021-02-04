@@ -132,3 +132,13 @@ cite {
 code {
   background-color: antiquewhite;
 }
+
+.skip-link {
+  position: absolute;
+  padding: 30px;
+  background-color: $bg;
+  color: black;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+}

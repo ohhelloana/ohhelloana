@@ -12,6 +12,7 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
 }
 
 @import "base";
+@import "layouts";
 @import "header";
 @import "footer";
 @import "bookmarks";
@@ -64,6 +65,9 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
       &:hover {
         & ~ svg {
           transform: scale(1.05) rotate(-120deg);
+          @media screen and (prefers-reduced-motion: reduce) {
+            transform: none;
+          }
         }
       }
 
@@ -94,6 +98,10 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
     &:hover {
       transform: scale(1.05);
       outline: 0;
+
+      @media screen and (prefers-reduced-motion: reduce) {
+        transform: none;
+      }
     }
   }
 

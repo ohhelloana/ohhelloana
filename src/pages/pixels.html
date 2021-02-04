@@ -1,0 +1,27 @@
+---
+title: Pixels
+permalink: "pixels/{% if pagination.pageNumber > 0 %}/archive-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+layout: bookmarks
+description: Things I've created that are now pixels in your screen
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections.pixels 
+  size: 5
+---
+<div class="page-content bookmark-page">
+  <h2 class="bookmark-page__title">Pixels</h2>
+  <ul class="bookmarks-list">
+    {%- for post in pagination.items -%}
+      <li class="bookmark h-entry">
+        <div class="bookmark-info">
+          <p>Published on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time></p>
+          <h2 class="bookmark-title">
+            <a class="u-bookmark-of h-cite" href="{{ post.url }}">{{ post.data.title }}</a>
+          </h2>
+          <div class="bookmark-content">{{ post.templateContent | safe }}</div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
