@@ -61,6 +61,7 @@ Despite going to bed quite early (and eventually putting my phone down!), I stru
 * I miss the gym every day. I hate exercising at home and I don't like exercising. I see it as a task and because it is an unpleasant task, I will not do it if I have to do it at home. I need the gym to feel accountability. I also don't like running.
 * Saturday is the day I catch up on the shows that my husband and I don't watch together (he does the same).
 * I also play Fantasy Football so, Fantasy Football deadlines are a thing for me (along with knowing the scores).
+* I run an [Instagram page for my cat](https://instagram.com/purrfect_jessie), so recently, I've been trying to snap a photo of her and post it.
 
 At first, I was afraid that this chain would create some "productivity shame". I truly hope that at least my post doesn't. I struggle a lot many days. This pandemic hasn't been easy on anyone. January was, personally, a devastating month for me - if anyone judges me for the lack of content I put out there, then that's a problem with their unrealistic and false expectations. 
 
