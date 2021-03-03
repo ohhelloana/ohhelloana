@@ -57,8 +57,19 @@ If I thought the last months of 2020 were somewhat hard, January really proved m
 * [Are your anchor links accessible?](https://amberwilson.co.uk/blog/are-your-anchor-links-accessible/) by Amber Wilson.
 * [Algorithms Behaving Badly: 2020 Edition](https://themarkup.org/2020-in-review/2020/12/15/algorithms-bias-racism-surveillance) by The Markup Staff.
 * [He spent 10 days in jail after facial recognition software led to the arrest of the wrong man, lawsuit ](https://www.nj.com/middlesex/2020/12/he-spent-10-days-in-jail-after-facial-recognition-software-led-to-the-arrest-of-the-wrong-man-lawsuit-says.html)says by Anthony G. Attrino.
-
-
+* [Inside the Strange World of YouTube Thumbnails](https://www.vice.com/en/article/zme97a/inside-the-strange-world-of-youtube-thumbnails) by Louise Matsakis.
+* [Eleventy-Parcel](https://eleventy-parcel.netlify.app/) by Michelle Barker.
+* [Eleventy Plugin Template](https://github.com/5t3ph/eleventy-plugin-template) by Stephanie Eckles.
+* [Give your Eleventy Site Superpowers with Environment Variables](https://css-tricks.com/give-your-eleventy-site-superpowers-with-environment-variables/) by Andy Bell.
+* [Thoughts on screen readers and image recognition](https://tink.uk/thoughts-on-screen-readers-and-image-recognition/) by Léonie Watson.
+* [How To Make Seamless Patterns](https://yuanchuan.dev/how-to-make-seamless-patterns) by Yuan Chuan.
+* [How I turned my Goodreads data into a self-hosted website with Eleventy](https://hiddedevries.nl/en/blog/2021-01-04-how-i-turned-my-goodreads-data-into-a-self-hosted-website-with-eleventy) by Hidde de Vries.
+* [Architecting data in Eleventy](https://sia.codes/posts/architecting-data-in-eleventy/) by Sia Karamalegos.
+* [The Art of Building Real-life Components](https://ishadeed.com/article/building-real-life-components/) by Ahmad Shadeed.
+* [Distributed toxicity and the IndieWeb](https://beesbuzz.biz/blog/2316-Distributed-toxicity-and-the-IndieWeb) by Fluffy.
+* [Simple Social Image Resizer](https://defaced.dev/tools/simple-social-image-resizer/) by Chris Johnson.
+* [Front-End Performance Checklist 2021](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/) by Vitaly Friedman.
+* [The Surprising Things That CSS Can Animate](https://codersblock.com/blog/the-surprising-things-that-css-can-animate/) by Will Boyd.
 
 ## Other bookmarks
 
@@ -71,3 +82,10 @@ If I thought the last months of 2020 were somewhat hard, January really proved m
 * [The Real Reason Local Newspapers are Dying](https://lyz.substack.com/p/the-real-reason-local-newspapers) by Lyz.
 * [A beginner's guide to being an ally to trans people](https://www.glaad.org/amp/beginners-guide-being-ally-to-trans-people) by Ted Ravago.
 * [The family with no fingerprints](https://www.bbc.co.uk/news/world-asia-55301200) by Mir Sabbir.
+* [Trail cam footage of opossum and a skunk.](https://twitter.com/Rainmaker1973/status/1340643235983740929)
+* [Figuring Out What You Need To Flourish In The New Year](https://www.spacetobefree.co.uk/thoughts/newyear) by Nina Dearden.
+* [Compassionate action over empathy](https://tatianamac.com/posts/mistakes/) by Tatiana Mac.
+* [Lockdown ramifications](https://twitter.com/johnharris1969/status/1346545808515223556).
+* [Why You Need to Stop Using These Words and Phrases](https://hbr.org/2020/12/why-you-need-to-stop-using-these-words-and-phrases) by Rakshitha Arni Ravishankar.
+* [In Germany, your ex must destroy nude photos on request](https://www.dw.com/en/in-germany-your-ex-must-destroy-nude-photos-on-request/a-18934921) by Ben Knight.
+* [I Knew the Vessel Was Going to Have a Suicide Problem Years Before It Was Built](https://www.curbed.com/2021/01/vessel-hudson-yards-suicide-problem.html) By Audrey Wachs.
