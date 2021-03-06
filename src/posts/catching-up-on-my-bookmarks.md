@@ -95,3 +95,4 @@ If I thought the last months of 2020 were somewhat hard, January really proved m
 * [Twitter’s Most Infamous Stan Account Speaks](https://www.thecut.com/2020/07/ana-de-armas-infamous-twitter-stan-account-speaks.html) by Sangeeta Singh-Kurtz.
 * [Far-right extremists take over UK land sales Facebook page](https://www.theguardian.com/technology/2021/jan/20/far-right-extremists-take-over-uk-land-sales-facebook-page) by Alex Hern.
 * [In defense of disorder: on career, creativity, and professionalism](https://chias.blog/2021/in-defense-of-disorder-on-career-creativity-and-professionalism/) by Chiara Amisola.
+* [How I recovered from imposter syndrome after changing career to software engineering](https://francesmx.medium.com/how-i-recovered-from-imposter-syndrome-after-changing-career-to-software-engineering-a4edbf609d44) by Frances Maxwell.
