@@ -1,20 +1,24 @@
 ---
 layout: layouts/post.njk
 title: Catching up on my bookmarks
-date: 2021-03-01T13:31:29.729Z
+date: 2021-06-03T12:00:00.000Z
 tags:
   - post
   - Bookmarks
-description: A collection of everything I bookmarked in the last four months.
+description: A collection of some things I bookmarked in the last four months.
 hasMood: true
-mood: Sad
-doing: On my lunch break
-thinking: Overthinking if someone is annoyed at me.
+mood: Relaxed
+doing: Watching television with my cat
+thinking: I'm relaxed... that's... rare...
 listening: '"I want the world to stop" from Belle & Sebastian'
 ---
 The thing about loss is that it just doesn't seem to end. It gets easier though. One day you wake you and you're feeling fine but one insignificant action somehow opens the gates for the sadness to creep in. And then that's it. The floodgates open and the tears come out. 
 
 If I thought the last months of 2020 were somewhat hard, January really proved me wrong. I do regret that I neglected my monthly bookmarks post. I've been wondering if I should start sharing the bookmarks individually like some folks do so that it doesn't pile up. I will think about it.
+
+I'm sure I accidentally missed some bookmarks - a consequence of delaying sharing them. I hope that I can catch up on my missed bookmarks in my next post. It is also likely that I accidentally missed some posts from friends. Being online hasn't been a priority for me.
+
+Take care friends. 
 
 ## Bookmarks related to tech or web development
 
@@ -72,6 +76,20 @@ If I thought the last months of 2020 were somewhat hard, January really proved m
 * [The Surprising Things That CSS Can Animate](https://codersblock.com/blog/the-surprising-things-that-css-can-animate/) by Will Boyd.
 * [Grids Part 2: Semantics](https://sarahmhigley.com/writing/grids-part2/) by Sarah Higley.
 * [SVG Crop](https://svgcrop.com/) by Steve Dennett.
+* [An AI saw a cropped photo of AOC. It autocompleted her wearing a bikini](https://www.technologyreview.com/2021/01/29/1017065/ai-image-generation-is-racist-sexist/) by Karen Hao.
+* [Why Generation X will save the web](https://webdevlaw.uk/2021/01/30/why-generation-x-will-save-the-web/) by Heather Burns
+* [Authentication](https://adactio.com/journal/17794) by Jeremy Keith.
+* [Uniwidth typefaces for interface design](https://uxdesign.cc/uniwidth-typefaces-for-interface-design-b6e8078dc0f7) by Lisa Staudinger.
+* [Create a generative landing page & WebGL powered background animation](https://dev.to/georgedoescode/create-a-generative-landing-page-webgl-powered-background-animation-3nl0) by George Francis.
+* [Command Line Basics: A Short & Sweet Introduction](https://taeluralexis.com/2021/02/08/command-line-basics-a-short-sweet-introduction/) by Tae'lur Alexis.
+* [Exposing.ai](https://exposing.ai/) by by Adam Harvey and Jules LaPlace.
+* [How to Add Instagram Timeline To a NextJS Site](https://www.aboutmonica.com/blog/adding-instagram-timeline-to-next-js-site) by Monica Powell.
+* [Accessibility auditing and ego](https://ericwbailey.design/writing/accessibility-auditing-and-ego/) by Eric W Bailey.
+* [Finding an Element’s Nearest Relative Positioned Ancestor](https://css-irl.info/finding-an-elements-nearest-relative-positioned-ancestor/) by Michelle Barker.
+* [Implement a Skip Link for Navigation-Heavy Sites](https://benmyers.dev/blog/skip-links/) by Ben Myers.
+* [Link Targets and 3.2.5](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html) by Adrian Roselli.
+* [Improve the readability of the content on your website](https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website) by Andy Bell.
+* [Create Responsive Image Effects With CSS Gradients And aspect-ratio](https://www.smashingmagazine.com/2021/02/responsive-image-effects-css-gradients-aspect-ratio/) by Stephanie Eckles.
 
 ## Other bookmarks
 
@@ -96,3 +114,7 @@ If I thought the last months of 2020 were somewhat hard, January really proved m
 * [Far-right extremists take over UK land sales Facebook page](https://www.theguardian.com/technology/2021/jan/20/far-right-extremists-take-over-uk-land-sales-facebook-page) by Alex Hern.
 * [In defense of disorder: on career, creativity, and professionalism](https://chias.blog/2021/in-defense-of-disorder-on-career-creativity-and-professionalism/) by Chiara Amisola.
 * [How I recovered from imposter syndrome after changing career to software engineering](https://francesmx.medium.com/how-i-recovered-from-imposter-syndrome-after-changing-career-to-software-engineering-a4edbf609d44) by Frances Maxwell.
+* [Meet the Customer Service Reps for Disney and Airbnb Who Have to Pay to Talk to You](https://www.propublica.org/article/meet-the-customer-service-reps-for-disney-and-airbnb-who-have-to-pay-to-talk-to-you?utm_medium=social&utm_source=twitter) by Ken Armstrong, Justin Elliott and Ariana Tobin.
+* [Hoarding Is All Too Familiar To Second Generation Brits. Here's Why](https://www.huffingtonpost.co.uk/entry/hoarding-second-generation-families_uk_5f85647ac5b6e6d033a75528) by Deborah Yewande Bankole.
+* [Content moderation won’t stop the spread of disinformation. Here’s why](https://conversationalist.org/2021/02/19/content-moderation-wont-stop-the-spread-of-disinformation-heres-why/) by Jillian C. York
+* [The Lies Hollywood Tells About Little Girls](https://www.nytimes.com/2021/02/23/opinion/britney-spears-mara-wilson-hollywood.html) by Mara Wilson.
