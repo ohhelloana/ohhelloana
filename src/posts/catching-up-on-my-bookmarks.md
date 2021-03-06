@@ -70,6 +70,8 @@ If I thought the last months of 2020 were somewhat hard, January really proved m
 * [Simple Social Image Resizer](https://defaced.dev/tools/simple-social-image-resizer/) by Chris Johnson.
 * [Front-End Performance Checklist 2021](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/) by Vitaly Friedman.
 * [The Surprising Things That CSS Can Animate](https://codersblock.com/blog/the-surprising-things-that-css-can-animate/) by Will Boyd.
+* [Grids Part 2: Semantics](https://sarahmhigley.com/writing/grids-part2/) by Sarah Higley.
+* [SVG Crop](https://svgcrop.com/) by Steve Dennett.
 
 ## Other bookmarks
 
@@ -88,4 +90,8 @@ If I thought the last months of 2020 were somewhat hard, January really proved m
 * [Lockdown ramifications](https://twitter.com/johnharris1969/status/1346545808515223556).
 * [Why You Need to Stop Using These Words and Phrases](https://hbr.org/2020/12/why-you-need-to-stop-using-these-words-and-phrases) by Rakshitha Arni Ravishankar.
 * [In Germany, your ex must destroy nude photos on request](https://www.dw.com/en/in-germany-your-ex-must-destroy-nude-photos-on-request/a-18934921) by Ben Knight.
-* [I Knew the Vessel Was Going to Have a Suicide Problem Years Before It Was Built](https://www.curbed.com/2021/01/vessel-hudson-yards-suicide-problem.html) By Audrey Wachs.
+* [I Knew the Vessel Was Going to Have a Suicide Problem Years Before It Was Built](https://www.curbed.com/2021/01/vessel-hudson-yards-suicide-problem.html) by Audrey Wachs.
+* [Us vs them: the sinister techniques of ‘Othering’ – and how to avoid them](https://www.theguardian.com/inequality/2017/nov/08/us-vs-them-the-sinister-techniques-of-othering-and-how-to-avoid-them) by John A Powell.
+* [Twitter’s Most Infamous Stan Account Speaks](https://www.thecut.com/2020/07/ana-de-armas-infamous-twitter-stan-account-speaks.html) by Sangeeta Singh-Kurtz.
+* [Far-right extremists take over UK land sales Facebook page](https://www.theguardian.com/technology/2021/jan/20/far-right-extremists-take-over-uk-land-sales-facebook-page) by Alex Hern.
+* [In defense of disorder: on career, creativity, and professionalism](https://chias.blog/2021/in-defense-of-disorder-on-career-creativity-and-professionalism/) by Chiara Amisola.
