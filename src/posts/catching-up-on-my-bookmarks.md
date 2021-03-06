@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Catching up on my bookmarks
-date: 2021-06-03T12:00:00.000Z
+date: 2021-03-06T13:00:00.000Z
 tags:
   - post
   - Bookmarks
