@@ -17,3 +17,16 @@
   right: -30px;
   left: unset;
 }
+
+.tape--menu-top {
+  width: 185px;
+  height: 40px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+  transform: rotate(2deg);
+  margin: .2rem 0;
+  position: absolute;
+  z-index: 2;
+  background-color: rgb(169 163 142 / 21%);
+  left: calc(50% - 70px);
+  top: -26px;
+}

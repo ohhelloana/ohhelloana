@@ -1,8 +1,6 @@
 .post {
-  border-radius: 45px 95px 10px 55px/15px 10px 5px 5px;
-  border: 2px solid #000;
+  background-color: #ececec;
   padding: 10px;
-  background-color: #fff;
   line-height: 1.8;
   max-width: 680px;
   margin: 30px auto;
@@ -12,18 +10,25 @@
   }
 
   .post-header {
+    padding: 0 30px;
     border-bottom: 1px solid;
     margin-bottom: 15px;
     padding: 0 30px;
+    border-color: #657161;
+    border-bottom-style: dashed;
 
     h1 {
       margin: 10px 0;
+      background-image: linear-gradient(0deg,#e8d4cb 0,#e8d4cb 20%,transparent 20%,transparent);
+      color: #667161;
     }
   }
 
   .post-meta {
     margin: 10px 0;
     font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
+    color: #5a6b56;
+    margin-bottom: 30px;
   }
 
   .post-content {
@@ -33,6 +38,7 @@
 
 .mood {
   position: relative;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 10%);
   border-radius: 15px 65px 40px 75px/5px 5px 5px 5px;
   padding: 10px;
   line-height: 1.8;
