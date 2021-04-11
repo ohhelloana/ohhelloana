@@ -28,19 +28,20 @@ layout: default
       {% else %}
       <li class="single-post">
         <div class="post-info">
-            <h3>
+          <h3>
               <span class="post-title">
                 <a href="{{ post.url }}">{{ post.data.title | escape }}</a>
             </span>
           </h3>
+          {% if post.data.hasContentNote %}<p>Content note: {{post.data.contentNote}}</p>{% endif %}
           <div>
-          <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
-          {# <p>
-         {#  {% for tag in post.data.tags  %}
-            {% if tag != 'post' %} <span>{{ tag }}</span> {% endif %}
-          {% endfor %}
-          </p>#}
-        </div>
+            <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
+            {# <p>
+          {#  {% for tag in post.data.tags  %}
+              {% if tag != 'post' %} <span>{{ tag }}</span> {% endif %}
+            {% endfor %}
+            </p>#}
+          </div>
         </div>
       </li>
       {% endif %}
