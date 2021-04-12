@@ -3,56 +3,42 @@
 
   h2 {
     display: inline-block;
-    border-radius: 15px 65px 40px 75px/5px 5px 5px 5px;
+    background-color: rgba(250,237,39,.44);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
     padding: 10px;
     line-height: 1.8;
-    max-width: 680px;
-    margin: 10px auto 10px auto;
-    color: #333;
-    background: repeating-linear-gradient(180deg, #ae9d8cba, #D3B89B 5%, #D3C0A6 0, #D3C0A6 50%) 0/15px 15px,repeating-linear-gradient(180deg, #D3B89B, #D3B89B 5%, #D3C0A6, #D3B89B 50%) 0/15px 15px;
+    margin: 10px auto 30px auto;
   }
 }
 
 .archive__post-list {
-  border: 1px solid;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .archive__single-post {
   list-style: none;
-  border: 1px solid black;
-  margin-left: -1px;
-  margin-top: -1px;
-  border-bottom: none;
-  border-right: none;
-  background-color: $bg;
   padding: 10px;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  width: 100%;
+  background-color: rgba(215,215,207,.64);
 
 
   h3 {
-    margin: 0;
+    margin: 0 0 10px 0;
     order: 2;
     a {
       text-decoration: none;
+      font-family: system-ui;
+      &:hover {
+        color: #e91e63;
+      }
     }
   }
 }
 
 .archive__single-post-meta {
-  border-right: 1px solid #d7d7cf;
-  margin-right: 15px;
-  padding-right: 15px;
-  display: flex;
-  flex-direction: column;
-  order: 1;
-  min-width: 200px;
-  max-width: 200px;
-
   time {
     font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
     margin-right: 20px;
@@ -63,18 +49,17 @@
 
 .archive__single-post-tag-list {
   display: flex;
-  margin: 0;
+  margin: 10px 0 0 0;
   flex-wrap: wrap;
 }
 
 .archive__single-post-tag {
   list-style: none;
-  background-color: #d1a39d5e;
+  background-color: #ececec;
   padding: 3px;
   border-radius: 5px;
   font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
   font-weight: 400;
-  border: 2px solid #D1A39D;
   font-size: 16px;
   margin: 0 5px 5px 0;
 }

@@ -36,13 +36,13 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
 .new-grid-test {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
 
   & > div {
-    height: 150px;
+    height: 160px;
     padding: 30px;
     position: relative;
     background-color: rgb(215 215 207 / 0.64);
@@ -103,13 +103,18 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
         transform: none;
       }
     }
+
+    a {
+      text-align: center;
+      padding: 0;
+    }
   }
 
   .home-grid__about-me {
     background-image: url('/assets/website/menu-item__about-me.png');
-    background-size: 100%;
+    background-size: 60%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +133,7 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
   .home-grid__pixels {
     background-image: url('/assets/website/menu-item__pixels.png');
-    background-size: 80%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: unset;
     display: flex;
@@ -149,9 +154,9 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
   .home-grid__blogroll {
     background-image: url('/assets/website/menu-item__blogroll.png');
-    background-size: 70%;
+    background-size: 50%;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: left;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,9 +187,9 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
   .home-grid__drafts {
     background-image: url('/assets/website/menu-item__drafts.png');
-    background-size: 100%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,7 +198,7 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
   .home-grid__cursed-thoughts {
     background-image: url('/assets/website/menu-item__cursed-thoughts.png');
-    background-size: 100%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: right;
     display: flex;

@@ -95,11 +95,13 @@
         border-radius: 100px 95px/100px 50px;
         border: 2px solid #000;
         margin: 0 20px;
+        overflow: hidden;
 
         a {
           padding: 10px;
           display: block;
           font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
+          text-decoration: none;
           &:hover {
             color: #000;
             text-decoration: none;
