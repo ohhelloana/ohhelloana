@@ -1,12 +1,10 @@
 .about-me__title {
   display: inline-block;
-  border-radius: 15px 65px 40px 75px/5px 5px 5px 5px;
+  background-color: rgba(250,237,39,.44);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
   padding: 10px;
   line-height: 1.8;
-  max-width: 680px;
-  margin: 10px auto 10px auto;
-  color: #333;
-  background: repeating-linear-gradient(180deg, #ae9d8cba, #D3B89B 5%, #D3C0A6 0, #D3C0A6 50%) 0/15px 15px,repeating-linear-gradient(180deg, #D3B89B, #D3B89B 5%, #D3C0A6, #D3B89B 50%) 0/15px 15px;
+  margin: 10px auto 30px auto;
 }
 
 .about-me__parent {
@@ -46,7 +44,6 @@
   background-color: #ececec;
   padding: 15px;
   line-height: 1.8;
-  border: 1px solid #cdcdc0;
 
   p:first-of-type {
     margin-top: 0;
@@ -60,8 +57,7 @@
   grid-area: 2 / 1 / 3 / 7; 
   background-color: #ececec;
   padding: 15px;
-  border: 1px solid #cdcdc0;
-  margin-top: 30px;
+  margin: 30px 0;
 
   ul li {
     list-style: inside;

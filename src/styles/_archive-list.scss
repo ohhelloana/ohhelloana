@@ -23,7 +23,12 @@
   list-style: none;
   padding: 10px;
   background-color: rgba(215,215,207,.64);
+  position: relative;
 
+  &:hover {
+    outline: 2px solid #000;
+    outline-offset: .2rem;
+  }
 
   h3 {
     margin: 0 0 10px 0;
@@ -33,6 +38,14 @@
       font-family: system-ui;
       &:hover {
         color: #e91e63;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
       }
     }
   }

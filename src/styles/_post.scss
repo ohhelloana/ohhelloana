@@ -19,8 +19,12 @@
 
     h1 {
       margin: 10px 0;
-      background-image: linear-gradient(0deg,#e8d4cb 0,#e8d4cb 20%,transparent 20%,transparent);
-      color: #667161;
+      color: black;
+      display: inline-block;
+      background-color: rgba(250,237,39,.44);
+      box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+      padding: 10px;
+      line-height: 1.8;
     }
   }
 
