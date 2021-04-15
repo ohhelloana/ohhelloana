@@ -8,20 +8,8 @@ pagination:
   data: collections.pixels 
   size: 5
 ---
-<div class="page-content bookmark-page">
-  <h2 class="bookmark-page__title">Pixels</h2>
-  <ul class="bookmarks-list">
-    {%- for post in pagination.items -%}
-      <li class="bookmark h-entry">
-        <div class="bookmark-info">
-          <p>Published on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time></p>
-          <h2 class="bookmark-title">
-            <a class="u-bookmark-of h-cite" href="{{ post.url }}">{{ post.data.title }}</a>
-          </h2>
-          <div class="bookmark-content">{{ post.templateContent | safe }}</div>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="post">
+  <h2>Pixels</h2>
 
+  <p>This is a work in progress! Come back soon!</p>
 </div>
