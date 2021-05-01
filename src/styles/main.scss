@@ -36,10 +36,9 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
 .new-grid-test {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
   & > div {
     height: 160px;
@@ -83,6 +82,8 @@ body, blockquote, pre, hr, dl, dd, ol, ul, figure {
       position: absolute;
       z-index: -1;
       opacity: 0.5;
+      height: 100%;
+      width: 100%;
     }
   }
 
