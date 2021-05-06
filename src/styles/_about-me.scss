@@ -13,17 +13,26 @@
 }
   
 .about-me__sidebar { 
-  flex-basis: 15rem;  
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+
+  @media all and (min-width: 900px) {
+    flex-basis: 15rem;  
+    flex-direction: column;
+  }
+
   figure {
     padding: 8px;
     border: 1.5px solid #37353f;
     border-radius: 0 0 125px 3px/3px 85px 5px 55px;
     background: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    width: 40%;
+
+    @media all and (min-width: 900px) {
+      width: initial;
+    }
 
     img {
       width: 100%;
@@ -37,7 +46,12 @@
 .about-me__main-bio-wrapper {
   flex-basis: 0;
   flex-grow: 999;
-  padding: 0 0 0 30px;
+  margin-top: 30px;
+
+  @media all and (min-width: 900px) { 
+    padding: 0 0 0 30px;
+    margin: 0;
+  }
 }
 
 .about-me__main-bio { 
