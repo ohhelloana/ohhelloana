@@ -2,6 +2,7 @@ $secondary: black;
 $gap: 30px;
 $border-color: #916154;
 $drawn-border-color: #37353f;
+$bg: #ececec;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 
@@ -21,11 +22,13 @@ p, h1, h2, h3, h4, h5, h6, ul {
 body {
   font-family: verdana, arial, helvetica, sans-serif;
   margin: 0;
-  padding: 30px 0;
-  background-color: #ececec;
-  border: 5px solid #ececec;
-  line-height: 1.3;
+  background-color: $bg;
+  border: 10px solid $bg;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d7d7cf' fill-opacity='1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  line-height: 1.3;
+  @media all and (min-width: 800px) {
+    border: 30px solid $bg;
+  }
 }
 
 a {
@@ -47,6 +50,11 @@ a:hover {
 
 a:active {
   color: $secondary;
+}
+
+a:focus {
+  outline: 2px solid #000;
+  outline-offset: .2rem;
 }
 
 blockquote {
@@ -105,7 +113,7 @@ cite {
   font-size: 24px;
   letter-spacing: 1px;
   text-decoration-style: wavy;
-  font-family: 'Nanum Pen Script';
+  font-family: 'Nanum Pen Script', "andale mono","monotype.com",monaco,"courier new",courier,monospace;
   display:inline-block
 }
 
@@ -129,4 +137,14 @@ cite {
 
 code {
   background-color: antiquewhite;
+}
+
+.skip-link {
+  position: absolute;
+  padding: 30px;
+  background-color: $bg;
+  color: black;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
 }
