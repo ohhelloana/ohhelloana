@@ -44,10 +44,10 @@ Tech and web development
 * [The Beauty Of Tiny Enhancements In CSS](https://ishadeed.com/article/tiny-enhancements-in-css/) by Ahmad Shadeed.
 * [Bulletproofing Embedded Tweets](https://adrianroselli.com/2021/01/bulletproofing-embedded-tweets.html) by Adrian Roselli.
 * [The Importance of Career Laddering](https://css-tricks.com/the-importance-of-career-laddering/) by Sarah Drasner.
-
-
-
-
+* [Project base for Eleventy Sites](https://github.com/andy-piccalilli/11ty-base-no-blog) by Andy Bell.
+* [How TikTok Chooses Which Songs Go Viral](https://www.bloomberg.com/news/articles/2021-04-22/how-to-go-viral-on-tiktok-like-megan-thee-stallion-play-the-app-s-game) by Shelly Banjo.
+* [Make a personal changelog](https://brianlovin.com/writing/make-a-personal-changelog) by Brian Lovin.
+* [Your cut-and-keep guide to the “unregulated wild west internet”](https://webdevlaw.uk/2021/04/20/your-cut-and-keep-guide-to-the-unregulated-wild-west-internet/) by Heather Burns.
 
 Others
 
@@ -57,3 +57,6 @@ Others
 * [Crab mentality](https://twitter.com/wank_666/status/1376580978311901186) (via twitter).
 * [My identity = my job has a dark side](https://twitter.com/joulee/status/1377645731515822081) (via twitter).
 * [Letting go: my battle to help my parents die a good death](https://www.theguardian.com/news/2021/apr/06/letting-go-my-battle-to-help-my-parents-die-a-good-death) by Kate Clanchy.
+* [For some, Wii Fit’s legacy is body shame](https://www.polygon.com/22358945/wii-fit-nintendo-health-ring-fit-adventure) by Ana Diaz.
+* [My first novel was a hit. I could write full-time. And that made me … angry](https://www.irishtimes.com/culture/books/kevin-power-my-first-novel-was-a-hit-i-could-write-full-time-and-that-made-me-angry-1.4543526) by Kevin Power.
+* [Shantay, You Pay: Inside the Heavy Financial Burden of Going On ‘Drag Race’](https://www.vice.com/en/article/y3dmav/what-does-it-cost-to-go-on-rupauls-drag-race) by Rachel Miller.
