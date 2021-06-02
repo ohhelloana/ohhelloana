@@ -48,6 +48,12 @@ Tech and web development
 * [How TikTok Chooses Which Songs Go Viral](https://www.bloomberg.com/news/articles/2021-04-22/how-to-go-viral-on-tiktok-like-megan-thee-stallion-play-the-app-s-game) by Shelly Banjo.
 * [Make a personal changelog](https://brianlovin.com/writing/make-a-personal-changelog) by Brian Lovin.
 * [Your cut-and-keep guide to the “unregulated wild west internet”](https://webdevlaw.uk/2021/04/20/your-cut-and-keep-guide-to-the-unregulated-wild-west-internet/) by Heather Burns.
+* [Awesome standalones](https://github.com/davatron5000/awesome-standalones) by Dave Rupert.
+* [Going public](https://martinschneider.me/articles/going-public/) by Martin Schneider.
+* [Flora](https://lab.hakim.se/flora/) by Hakim El Hattab.
+* [Left alone, together](https://www.phirephoenix.com/blog/2021-05-03/privacy) by Jenny Zhang.
+
+
 
 Others
 
