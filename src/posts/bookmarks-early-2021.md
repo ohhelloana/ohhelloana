@@ -1,0 +1,59 @@
+---
+layout: layouts/post.njk
+title: Bookmarks early 2021
+date: 2021-06-02T19:43:48.657Z
+description: test
+hasMood: false
+mood: sfsdf
+doing: dsfsdf
+thinking: ewwrwr
+listening: Inner Smile by Texas
+---
+Intro
+
+Tech and web development
+
+* [How to display language-specific quotes in CSS](https://www.stefanjudis.com/today-i-learned/how-to-use-language-dependent-quotes-in-css/) by Stefan Judis
+* [Accessible Icon Buttons](<* https://www.sarasoueidan.com/blog/accessible-icon-buttons/>) by Sara Soueidan.
+* [Sharing deepfake images ‘must be made a crime’](https://www.thetimes.co.uk/article/sharing-deepfake-images-must-be-made-a-crime-thf20kqw2) by Jonathan Ames.
+* [Hiding content responsibily](https://kittygiraudel.com/2021/02/17/hiding-content-responsibly/) by Kitty Giraudel.
+* [System fonts don’t have to be ugly](https://iainbean.com/posts/2021/system-fonts-dont-have-to-be-ugly/) by Iain Bean.
+* [Questionable Advice: “How can I sniff out bad managers while interviewing for a job?”](https://charity.wtf/2021/02/19/questionable-advice-how-can-i-sniff-out-bad-managers-while-interviewing-for-a-job/) by Charity Majors.
+* [Digging Into CSS Logical Properties](https://ishadeed.com/article/css-logical-properties/) by Ahmad Shadeed.
+* [A Generative SVG Starter Kit](https://dev.to/georgedoescode/a-generative-svg-starter-kit-5cm1) by George Francis.
+* [The Mobile Performance Inequality Gap, 2021](https://infrequently.org/2021/03/the-performance-inequality-gap/) by Alex Russell.
+* [Pa. woman created ‘deepfake’ videos to force rivals off daughter’s cheerleading squad](https://www.pennlive.com/news/2021/03/pa-woman-created-deepfake-videos-to-force-rivals-off-daughters-cheerleading-squad-police.html) by Jana Benscoter.
+* [Why is an individual contributor like a Tetris block?](https://leaddev.com/career-paths-progression-promotion/why-individual-contributor-tetris-block) by Denise Yu.
+* [Perfect fullscreen 4:3 aspect ratio](https://remysharp.com/til/css/perfect-fullscreen-43-aspect-ratio) by Remy Sharp.
+* [100 underline/overlay animations | The ultimate CSS collection](https://dev.to/afif/100-underline-overlay-animation-the-ultimate-css-collection-4p40) by Temani Afif.
+* [Noise & gradient](https://www.noiseandgradient.com/?chaos=0.1&colors=%23ed625d-%2342b6c6-%23f79f88-%23b2dfe6-%2303232d&grain=0.1) by Clara B.
+* [The internet didn’t kill counterculture—you just won’t find it on Instagram](https://www.documentjournal.com/2021/01/the-internet-didnt-kill-counterculture-you-just-wont-find-it-on-instagram/) by Caroline Busta.
+* [A tale of languages](https://kittygiraudel.com/2021/03/22/a-tale-of-languages/) by Kitty Giraudel.
+* [Kentrosaurus](https://codepen.io/michellebarker/pen/KKagoLy "Kentrosaurus") by Michelle Barker.
+* [Mistakes I’ve Made as an Engineering Manager](https://css-tricks.com/mistakes-ive-made-as-an-engineering-manager/) by Sarah Drasner.
+* [Defining a strategy for accessibility](http://www.craigabbott.co.uk/blog/defining-a-strategy-for-accessibility) by Craig Abbott.
+* [No feigning surprise](https://jvns.ca/blog/2017/04/27/no-feigning-surprise/) by Julia Evans.
+* [After Working at Google, I’ll Never Let Myself Love a Job Again](https://www.nytimes.com/2021/04/07/opinion/google-job-harassment.html) by Emi Nietfeld.
+* [A Target Sex-Trafficking Hoax Is Going Viral on TikTok](https://www.rollingstone.com/culture/culture-features/target-sex-trafficking-tiktok-hoax-1151665/) by EJ Dickson.
+* [How to make an ineffective 404 page](https://ericwbailey.design/writing/how-to-make-an-ineffective-404-page/) by Eric W Bailey.
+* [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) by Manuel Matuzovic.
+* [Beauty filters are changing the way young girls see themselves](https://www.technologyreview.com/2021/04/02/1021635/beauty-filters-young-girls-augmented-reality-social-media/) by Tate Ryan-Mosleyarchive.
+* [Build a fancy hover animation](https://piccalil.li/tutorial/build-a-fancy-hover-animation) by Andy Bell.
+* [The Layers of the Web](https://www.youtube.com/watch?v=96DCTASFniI) by Jeremy Keith.
+* [Understanding Logical Focus Order](https://devyarns.com/logical-focus-order/) by Rachel Leggett.
+* [The Beauty Of Tiny Enhancements In CSS](https://ishadeed.com/article/tiny-enhancements-in-css/) by Ahmad Shadeed.
+* [Bulletproofing Embedded Tweets](https://adrianroselli.com/2021/01/bulletproofing-embedded-tweets.html) by Adrian Roselli.
+* [The Importance of Career Laddering](https://css-tricks.com/the-importance-of-career-laddering/) by Sarah Drasner.
+
+
+
+
+
+Others
+
+* [How Portugal silenced ‘centuries of violence and trauma’](https://www.aljazeera.com/features/2021/3/10/how-portugal-silenced-centuries-of-violence-and-trauma) by Ana Naomi de Sousa.
+* [All culture is cancel culture ](https://twitter.com/cdespinosa/status/1371162640173559810)(via twitter).
+* [How not to say the wrong thing by Susan Silk](https://www.latimes.com/opinion/op-ed/la-xpm-2013-apr-07-la-oe-0407-silk-ring-theory-20130407-story.html) and Barry Goldman.
+* [Crab mentality](https://twitter.com/wank_666/status/1376580978311901186) (via twitter).
+* [My identity = my job has a dark side](https://twitter.com/joulee/status/1377645731515822081) (via twitter).
+* [Letting go: my battle to help my parents die a good death](https://www.theguardian.com/news/2021/apr/06/letting-go-my-battle-to-help-my-parents-die-a-good-death) by Kate Clanchy.
