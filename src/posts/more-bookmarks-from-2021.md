@@ -12,7 +12,7 @@ doing: Sitting in the garden
 thinking: I miss me
 listening: Terrible thing by AG
 ---
-I'm not gonna lie - I'm quite disappointed in myself that I still haven't got my poop together and go back to doing this monthly. I managed to write some blog posts since March but all those happened because I milked really hard the surge of energy I had at that moment. 
+I'm not gonna lie - I'm quite disappointed in myself that I still haven't got my poop together and gone back to doing this monthly. I managed to write some blog posts since March but all those happened because I milked really hard the surge of energy I had at that moment. 
 
 As I've gone a bit quieter, the following quote has been haunting me every time I sign in on Twitter.
 
