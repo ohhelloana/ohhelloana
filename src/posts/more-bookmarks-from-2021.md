@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: More bookmarks from 2021
-date: 2021-06-03T08:43:33.679Z
+date: 2021-06-03T18:10:07.942Z
 tags:
   - post
   - Bookmarks
@@ -23,7 +23,7 @@ Quote via [The internet didn’t kill counterculture—you just won’t find it 
 Bookmarks related to tech and web development
 
 * [How to display language-specific quotes in CSS](https://www.stefanjudis.com/today-i-learned/how-to-use-language-dependent-quotes-in-css/) by Stefan Judis
-* [Accessible Icon Buttons](<* https://www.sarasoueidan.com/blog/accessible-icon-buttons/>) by Sara Soueidan.
+* [Accessible Icon Buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons/) by Sara Soueidan.
 * [Sharing deepfake images ‘must be made a crime’](https://www.thetimes.co.uk/article/sharing-deepfake-images-must-be-made-a-crime-thf20kqw2) by Jonathan Ames.
 * [Hiding content responsibily](https://kittygiraudel.com/2021/02/17/hiding-content-responsibly/) by Kitty Giraudel.
 * [System fonts don’t have to be ugly](https://iainbean.com/posts/2021/system-fonts-dont-have-to-be-ugly/) by Iain Bean.
