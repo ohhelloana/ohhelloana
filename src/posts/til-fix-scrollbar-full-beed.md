@@ -51,15 +51,15 @@ document.body.style.setProperty('--halfScrollbarWidth', `${halfScrollbarWidth}px
 
 ``` css
 {% raw %}
-  --viewportWidth: calc(100vw - var(--scrollbarWidth));
-  /* finalHalfScrollbar: value must be negative */
-  --finalHalfScrollbar: calc(var(--halfScrollbarWidth) * -1);
+--viewportWidth: calc(100vw - var(--scrollbarWidth));
+/* finalHalfScrollbar: value must be negative */
+--finalHalfScrollbar: calc(var(--halfScrollbarWidth) * -1);
 
-  width: 100%;
-  width: calc(100vw - 15px);
-  width: var(--viewportWidth);
-  margin-left: 0;
-  margin-left: calc(50% - 50vw - var(--finalHalfScrollbar, -7px));
+width: 100%;
+width: calc(100vw - 15px);
+width: var(--viewportWidth);
+margin-left: 0;
+margin-left: calc(50% - 50vw - var(--finalHalfScrollbar, -7px));
 {% endraw %}
 ```
 
