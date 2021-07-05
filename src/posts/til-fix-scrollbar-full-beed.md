@@ -26,7 +26,7 @@ tags:
 
 <p>And then last week I was presented with a problem. Another developer in this project messaged me and asked if we could delete the <code>overflow-x: hidden</code> from the <code>body</code>. They were trying to build a feature that uses <code>position: sticky</code> and as it turns out, there is a <a href="https://github.com/w3c/csswg-drafts/issues/865">ticket reporting that position sticky inside overflow hidden doesn’t work</a>.</p>
 
-<p>A solution could be to do a refactor and create a <a href="https://www.joshwcomeau.com/css/full-bleed/">full-bleed layout using CSS grid</a> like Joshua Comeau suggests. Due to a variety of constraints (time, budget, codebase etc) a refactor wasn’t possible.</p>
+<p>A solution could be to do a refactor and create a <a href="https://www.joshwcomeau.com/css/full-bleed/">full-bleed layout using CSS grid</a> like Joshua Comeau suggests. Due to a variety of constraints a refactor wasn’t possible.</p>
 
 <p>After making the overflow visible, I needed to fix the horizontal scrollbar and that led me to an article from Jonnie Hallman called “<a href="https://destroytoday.com/blog/100vw-and-the-horizontal-overflow-you-probably-didnt-know-about">100vw and the horizontal overflow you probably didn’t know about</a>”. My solution was based on the one presented in that article.</p>
 
