@@ -5,6 +5,27 @@
   max-width: 680px;
   margin: 30px auto;
 
+  a:link {
+    color: $secondary;
+  }
+  
+  a:visited {
+    color: $secondary;
+  }
+  
+  a:hover {
+    color: #325208;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: $secondary;
+  }
+
+  img {
+    width: 100%;
+  }
+
   li {
     list-style: inside;
   }

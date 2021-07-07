@@ -92,9 +92,15 @@
           font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
           text-decoration: none;
           background-color: #ececec;
+          border: 1px solid transparent;
           &:hover {
             color: #000;
             text-decoration: none;
+            background-color: #e8d4cb;
+          }
+          &[aria-current] {
+            border-radius: 100px 95px/100px 50px;
+            border: 1px solid #ffeb3b;
             background-color: #e8d4cb;
           }
         }

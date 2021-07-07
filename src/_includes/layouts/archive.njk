@@ -24,6 +24,10 @@ layout: all
               <a href="{{ post.url }}">{{ post.data.title | escape }}</a>
           </span>
         </h3>
+
+        {% if post.data.hasContentNote %}
+          <span class="content-note">Content note: {{post.data.contentNote}}</span>
+        {% endif %}
         
         <div class="archive__single-post-meta">
             <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time>
