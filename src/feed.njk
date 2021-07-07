@@ -33,7 +33,11 @@
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | rssDate }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    {%- if post.data.hasContentNote %}
+      <content type="html">This post has a content note of {{post.data.contentNote}}. Visit the link directly if you're okay with reading it.</content>
+    {%- else %}
+      <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    {%- endif %}
   </entry>
   {%- endfor %}
 </feed>
