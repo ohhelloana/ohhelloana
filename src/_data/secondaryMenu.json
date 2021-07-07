@@ -7,27 +7,27 @@
     },
     {
       "text": "Posts",
-      "url": "/posts",
+      "url": "/posts/",
       "external": false
     },
     {
       "text": "Pixels",
-      "url": "/pixels",
+      "url": "/pixels/",
       "external": false
     },
     {
       "text": "Bookmarks",
-      "url": "/bookmarks",
+      "url": "/bookmarks/",
       "external": false
     },
     {
       "text": "Jots",
-      "url": "/cursed-thoughts",
+      "url": "/cursed-thoughts/",
       "external": false
     },
     {
       "text": "Drafts",
-      "url": "/drafts",
+      "url": "/drafts/",
       "external": false
     }
   ]
