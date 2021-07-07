@@ -1,0 +1,80 @@
+.post {
+  background-color: #ececec;
+  padding: 10px;
+  line-height: 1.8;
+  max-width: 680px;
+  margin: 30px auto;
+
+  a:link {
+    color: $secondary;
+  }
+  
+  a:visited {
+    color: $secondary;
+  }
+  
+  a:hover {
+    color: #325208;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: $secondary;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  li {
+    list-style: inside;
+  }
+
+  .post-header {
+    padding: 0 30px;
+    border-bottom: 1px solid;
+    margin-bottom: 15px;
+    padding: 0 30px;
+    border-color: #657161;
+    border-bottom-style: dashed;
+
+    h1 {
+      margin: 10px 0;
+      color: black;
+      display: inline-block;
+      background-color: rgba(250,237,39,.44);
+      box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+      padding: 10px;
+      line-height: 1.8;
+    }
+  }
+
+  .post-meta {
+    margin: 10px 0;
+    font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
+    color: #5a6b56;
+    margin-bottom: 30px;
+  }
+
+  .post-content {
+    padding: 0 30px;
+  }
+}
+
+.mood {
+  position: relative;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 10%);
+  border-radius: 15px 65px 40px 75px/5px 5px 5px 5px;
+  padding: 10px;
+  line-height: 1.8;
+  max-width: 680px;
+  margin: 30px auto;
+  color: #333;
+  background: repeating-linear-gradient(180deg, #ae9d8cba, #D3B89B 5%, #D3C0A6 0, #D3C0A6 50%) 0 / 15px 15px, repeating-linear-gradient(180deg, #D3B89B, #D3B89B 5%, #D3C0A6, #D3B89B 50%) 0 / 15px 15px;
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style: none;
+  }
+}

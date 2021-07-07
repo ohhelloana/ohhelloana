@@ -9,24 +9,27 @@ pagination:
   size: 5
 ---
 <div class="page-content bookmark-page">
-  <h2 class="bookmark-page__title">Bookmarks</h2>
-  <p class="bookmark-page__intro">
-    The bookmarks page has its own <a href="{{ "/feed.links.xml" | relative_url }}">RSS feed.</a>
-  </p>
+  <div class="bookmark-page__title-wrapper">
+    <h2 class="bookmark-page__title">Bookmarks</h2>
+  </div>
   <ul class="bookmarks-list">
     {%- for post in pagination.items -%}
       <li class="bookmark h-entry">
         <div class="bookmark-info">
-          <p>Published on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time></p>
           <h2 class="bookmark-title">
             <a class="u-bookmark-of h-cite" href="{{ post.url }}">{{ post.data.title }}</a>
           </h2>
-          <div class="bookmark-content">{{ post.templateContent | safe }}</div>
+          <p>Published on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time></p>
         </div>
+        
+        <div class="bookmark-content">{{ post.templateContent | safe }}</div>
       </li>
     {% endfor %}
   </ul>
   <aside class="bookmark-page__sidebar">
+    <p class="bookmark-page__intro">
+      The bookmarks page has its own <a href="{{ "/feed.links.xml" | relative_url }}">RSS feed.</a>
+    </p>
     <h2 class="bookmark-page__sidebar-title"><span>Websites & Blogs I binge read</span></h2>
     <ul class="bookmark-page__sidebar-list">
       {% for item in blogroll %}

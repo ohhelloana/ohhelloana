@@ -1,0 +1,9 @@
+---
+permalink: "posts{% if pagination.pageNumber > 0 %}/archive-{{ pagination.pageNumber + 1 }}{% endif %}/index.html"
+layout: archive
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections.posts
+  size: 20
+---
+

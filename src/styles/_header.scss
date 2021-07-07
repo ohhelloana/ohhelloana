@@ -1,3 +1,7 @@
+.header {
+  padding: 30px 0 0 0;
+}
+
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -13,24 +17,11 @@
   flex: 0 0 100%;
   background-color: #ececec;
   border: 1px solid #d8d8d1;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Nanum Pen Script', "andale mono","monotype.com",monaco,"courier new",courier,monospace;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 30px;
   margin-top: 30px;
-}
-
-.header__navigation-list { 
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.header__navigation-link {
-  @extend %highlight-link;
 }
 
 .header__home-link {
@@ -38,7 +29,7 @@
   border: 1px solid #d8d8d1;
   font-size: 1.5em;
   text-decoration: none;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Nanum Pen Script', "andale mono","monotype.com",monaco,"courier new",courier,monospace;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 30px;
@@ -60,4 +51,60 @@
 .header__small-print {
   border-bottom: 3px solid;
   border-radius: 100px 100px 10px 100px/5px 5px 5px 5px;
+}
+
+.repeated-menu {
+  position: relative;
+  margin: 40px auto;
+
+  nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbd9d0;
+    transform: rotate(358deg);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+    background: repeating-linear-gradient(180deg, #ae9d8cba, #d4c3b0 5%, #d0bda4 0, #c4b197 50%) 0/15px 15px,repeating-linear-gradient(180deg, #cbb7a1, #fff9f2 5%, #fbfbfa, #ecdbc9 50%) 0/15px 15px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-content: space-between;
+      margin: 10px 0;
+      flex-wrap: wrap;
+
+      li {
+        border-radius: 100px 95px/100px 50px;
+        border: 2px solid #000;
+        margin: 20px 20px;
+        overflow: hidden;
+        &:focus-within {
+          overflow: initial;
+          border-radius: 0;
+        }
+
+        a {
+          padding: 10px;
+          display: block;
+          font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
+          text-decoration: none;
+          background-color: #ececec;
+          border: 1px solid transparent;
+          &:hover {
+            color: #000;
+            text-decoration: none;
+            background-color: #e8d4cb;
+          }
+          &[aria-current] {
+            border-radius: 100px 95px/100px 50px;
+            border: 1px solid #ffeb3b;
+            background-color: #e8d4cb;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include "partials/head.njk" %}
+  <body>
+
+    {% include "partials/header.njk" %}
+    
+    {% include "partials/menu.njk" %}
+    
+    <main role="main" id="content">
+      <div class="wrapper">
+        {{ content | safe }}
+
+        {% if pagination %}
+          {% include "partials/pagination.njk" %}
+        {% endif %}
+      </div>
+    </main>
+
+    {% include "partials/footer.njk" %}
+  </body>
+</html>
