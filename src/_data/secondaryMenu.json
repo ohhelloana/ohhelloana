@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "text": "Main menu",
+      "url": "/",
+      "external": false
+    },
+    {
+      "text": "Posts",
+      "url": "/posts",
+      "external": false
+    },
+    {
+      "text": "Pixels",
+      "url": "/pixels",
+      "external": false
+    },
+    {
+      "text": "Bookmarks",
+      "url": "/bookmarks",
+      "external": false
+    },
+    {
+      "text": "Jots",
+      "url": "/cursed-thoughts",
+      "external": false
+    },
+    {
+      "text": "Drafts",
+      "url": "/drafts",
+      "external": false
+    }
+  ]
+}

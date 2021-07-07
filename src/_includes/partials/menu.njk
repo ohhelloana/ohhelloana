@@ -1,13 +1,18 @@
 <div class="wrapper repeated-menu">
   <div class="tape--menu-top"></div>
-  <nav role="navigation" class="secondary-menu">
+  <nav role="navigation" class="secondary-menu" aria-label="Navigation">
     <ul>
-      <li><a href="/">Main menu</a></li>
-      <li><a href="/posts">Posts</a></li>
-      <li><a href="/pixels">Pixels</a></li>
-      <li><a href="/bookmarks">Bookmarks</a></li>
-      <li><a href="/cursed-thoughts">Jots</a></li>
-      <li><a href="/drafts">Drafts</a></li>
-    </ul>
+      {% for item in secondaryMenu.items %}
+        {% set currentAttribute = '' %}
+
+        {% if page.url == item.url %}
+          {% set currentAttribute = ' aria-current="page"' %}
+        {% endif %}
+
+        <li>
+          <a href="{{ item.url }}"{{ currentAttribute | safe }}>{{ item.text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
   </nav>
 </div>
