@@ -4,6 +4,7 @@ title: So I am now a naturalised citizen...
 date: 2021-07-07T16:53:36.809Z
 tags:
   - post
+  - personal
 description: A breakdown of my process to become naturalised as British citizen.
 hasMood: true
 mood: Anxious
