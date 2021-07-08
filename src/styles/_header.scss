@@ -84,6 +84,10 @@
         &:focus-within {
           overflow: initial;
           border-radius: 0;
+
+          a[aria-current] {
+            border-radius: 0;
+          }
         }
 
         a {
