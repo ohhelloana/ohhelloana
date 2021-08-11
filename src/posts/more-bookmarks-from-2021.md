@@ -93,7 +93,6 @@ Other bookmarks
 * [How not to say the wrong thing by Susan Silk](https://www.latimes.com/opinion/op-ed/la-xpm-2013-apr-07-la-oe-0407-silk-ring-theory-20130407-story.html) and Barry Goldman.
 * [Crab mentality](https://twitter.com/wank_666/status/1376580978311901186) (via twitter).
 * [My identity = my job has a dark side](https://twitter.com/joulee/status/1377645731515822081) (via twitter).
-* [Letting go: my battle to help my parents die a good death](https://www.theguardian.com/news/2021/apr/06/letting-go-my-battle-to-help-my-parents-die-a-good-death) by Kate Clanchy.
 * [For some, Wii Fit’s legacy is body shame](https://www.polygon.com/22358945/wii-fit-nintendo-health-ring-fit-adventure) by Ana Diaz.
 * [My first novel was a hit. I could write full-time. And that made me … angry](https://www.irishtimes.com/culture/books/kevin-power-my-first-novel-was-a-hit-i-could-write-full-time-and-that-made-me-angry-1.4543526) by Kevin Power.
 * [Shantay, You Pay: Inside the Heavy Financial Burden of Going On ‘Drag Race’](https://www.vice.com/en/article/y3dmav/what-does-it-cost-to-go-on-rupauls-drag-race) by Rachel Miller.
