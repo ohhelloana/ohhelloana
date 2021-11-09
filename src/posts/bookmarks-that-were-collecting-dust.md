@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Bookmarks that were collecting dust
-date: 2021-11-09T16:38:23.465Z
+date: 2021-11-09T19:38:23.465Z
 tags:
   - post
   - Bookmarks
