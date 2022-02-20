@@ -24,4 +24,13 @@ eleventyExcludeFromCollections: true
 
 <p>This page is also a work in progress - but I am planning to capture here all the decisions I make regarding this website. Come back soon for a more polished layout and organisation!</p>
 
+<article>
+    <h3>The guestbook</h3>
+    Last updated on: <time datetime="{{ date: 2022-02-20 | time }}">{{ 2022-02-20 | prettyDate }}</time>
+    <p>Currently the <a href="/guestbook">guestbook</a> is showing entries submitted via Webmention. Webmentions are then picked up by <a href="https://brid.gy/">Brid.gy</a>, so in theory it should pick up some mentions from social medias like Twitter and Mastodon.</p>
+
+    <p>My Webmentions are currently possible because of <a href="https://webmention.io/">Webmention.io</a>. I've been debating for a while and I decided to request my Webmentions on demand (by this I mean requesting them via Javascript on page load). There's a lot of people who have created super cool solutions to cache and save Webmentions for Eleventy but for now this is my preferred solution. This is mostly because in the end of the day this is a static website and I don't build my website frequently enough to get the latest status of my Webmentions. Also time and data storage concerns.</p>
+    
+    <p>In the future, I would like my guestbook to also allow form submission using a similar proccess shared in the CSS Tricks article "<a href="https://css-tricks.com/jamstack-comments/">JAMstack Comments</a>".</p>
+</article>
 </div>
