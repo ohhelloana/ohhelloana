@@ -1,0 +1,22 @@
+.guestbook__new-entry {
+    padding: 1em;
+    border: 1em solid transparent;
+    background: url(/assets/website/texture.png), linear-gradient(#ececec, #ececec) padding-box, 
+                repeating-linear-gradient(
+-45deg, #a76145 0, #a76145 12.5%, #ececec 0, #ececec 25%, #34675a 0, #34675a 37.5%, #ECECFE 0, #ececec 50%) 0 / 6em 6em;
+    margin: 0 1em 3em 1em;
+    position: relative;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+
+.guestbook__entry {
+    margin-top: 20px;
+    font-family: georgia;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.guestbook__author, .guestbook__date {
+    font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
+    color: #5a6b56;
+}

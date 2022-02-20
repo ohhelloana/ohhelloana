@@ -144,3 +144,13 @@ $row-gap: 10px;
     }
   }
 }
+
+.two-col-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+
+  @media (min-width: 40rem) {
+    grid-template-columns: 250px minmax(10px, 1fr);
+  }
+}

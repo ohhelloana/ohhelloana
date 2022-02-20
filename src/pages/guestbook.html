@@ -5,8 +5,83 @@ layout: page
 eleventyExcludeFromCollections: true
 ---
 
-<div class="post">
-  <h2>Guestbook</h2>
+<h2 class="page-title">Guestbook</h2>
 
-  <p>Call me old fashioned - it's okay! This page is not finished yet but I reckon that you might be able to send me a Webmention?</p>
+<div class="two-col-layout">
+	<aside>
+		<div class="aside__highlighted">
+		Currently this page is displaying entries sent via <a href="https://indieweb.org/Webmention">Webmention</a>. Contact me if you'd like your Webmention to be removed.
+		</div>
+	</aside>
+	<div id="guestbook-entries"></div>
 </div>
+
+
+<script>
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'https://webmention.io/api/mentions.jf2?target=https://ohhelloana.blog/guestbook/');
+	xhr.send();
+	xhr.onload = function() {
+		if (xhr.status === 200) {
+		var data = JSON.parse(xhr.responseText);
+		console.log('----data', data);
+
+		var entriesContainer = document.getElementById('guestbook-entries');
+
+		for (var i = 0; i < data.children.length; i++) {
+			console.log('---each', data.children[i]);
+			const currentEntry = data.children[i];
+			
+			const newEntry = document.createElement("div");
+			newEntry.classList.add("guestbook__new-entry");
+			entriesContainer.append(newEntry);
+
+			// add author
+			const entryAuthor = document.createElement("div");
+			entryAuthor.classList.add("guestbook__author");
+
+			entryAuthor.innerHTML = `
+				<div class="u-author h-card">
+					Message from 
+					<a href="${currentEntry.author.url}" rel="nofollow">${currentEntry.author.name}</a> via
+					<a href="${currentEntry.url}" aria-label="Webmention source for ${currentEntry.author.name}'s guestbook entry." rel="nofollow">Webmention</a>
+				</div>
+			`;
+			newEntry.appendChild(entryAuthor);
+
+			// add date
+			const entryDate = document.createElement("div");
+			entryDate.classList.add("guestbook__date");
+
+			var guestbookEntryDate = new Date(currentEntry.published).toDateString();
+
+			entryDate.innerHTML = `${guestbookEntryDate}`;
+			newEntry.appendChild(entryDate);
+			
+			// add entry
+			const guestbookEntry = document.createElement("div");
+			guestbookEntry.classList.add("guestbook__entry");
+
+			guestbookEntry.innerHTML = `${currentEntry.content.html}`;
+			newEntry.appendChild(guestbookEntry);
+
+			//add decoration
+			const topTape = document.createElement("div");
+			topTape.classList.add("tape--guestbook-left-top");
+
+			const middleTape = document.createElement("div");
+			middleTape.classList.add("tape--guestbook-middle-top");
+
+			const bottomTape = document.createElement("div");
+			bottomTape.classList.add("tape--guestbook-right-bottom");
+
+			if(i % 2 == 0) {
+				newEntry.appendChild(middleTape);
+			} else {
+				newEntry.appendChild(topTape);
+				newEntry.appendChild(bottomTape);
+			}
+		}
+	}};
+
+</script>
