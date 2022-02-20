@@ -153,4 +153,12 @@ $row-gap: 10px;
   @media (min-width: 40rem) {
     grid-template-columns: 250px minmax(10px, 1fr);
   }
+
+  article {
+    background-color: #ececec;
+    padding: 10px;
+    line-height: 1.8;
+    margin: 0 auto 30px 0;
+    width: 100%;
+  }
 }
