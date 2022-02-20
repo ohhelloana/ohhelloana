@@ -25,12 +25,9 @@ eleventyExcludeFromCollections: true
 	xhr.onload = function() {
 		if (xhr.status === 200) {
 		var data = JSON.parse(xhr.responseText);
-		console.log('----data', data);
-
 		var entriesContainer = document.getElementById('guestbook-entries');
 
 		for (var i = 0; i < data.children.length; i++) {
-			console.log('---each', data.children[i]);
 			const currentEntry = data.children[i];
 			
 			const newEntry = document.createElement("div");
