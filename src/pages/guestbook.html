@@ -25,59 +25,65 @@ eleventyExcludeFromCollections: true
 	xhr.onload = function() {
 		if (xhr.status === 200) {
 		var data = JSON.parse(xhr.responseText);
+		console.log('----data', data);
+
 		var entriesContainer = document.getElementById('guestbook-entries');
 
 		for (var i = 0; i < data.children.length; i++) {
-			const currentEntry = data.children[i];
-			
-			const newEntry = document.createElement("div");
-			newEntry.classList.add("guestbook__new-entry");
-			entriesContainer.append(newEntry);
+			console.log('---each', data.children[i]);
 
-			// add author
-			const entryAuthor = document.createElement("div");
-			entryAuthor.classList.add("guestbook__author");
+			if (data.children[i]['wm-property'] === 'in-reply-to' || data.children[i]['wm-property'] === 'mention-of') {
+				const currentEntry = data.children[i];
+				
+				const newEntry = document.createElement("div");
+				newEntry.classList.add("guestbook__new-entry");
+				entriesContainer.append(newEntry);
 
-			entryAuthor.innerHTML = `
-				<div class="u-author h-card">
-					Message from 
-					<a href="${currentEntry.author.url}" rel="nofollow">${currentEntry.author.name}</a> via
-					<a href="${currentEntry.url}" aria-label="Webmention source for ${currentEntry.author.name}'s guestbook entry." rel="nofollow">Webmention</a>
-				</div>
-			`;
-			newEntry.appendChild(entryAuthor);
+				// add author
+				const entryAuthor = document.createElement("div");
+				entryAuthor.classList.add("guestbook__author");
 
-			// add date
-			const entryDate = document.createElement("div");
-			entryDate.classList.add("guestbook__date");
+				entryAuthor.innerHTML = `
+					<div class="u-author h-card">
+						Message from 
+						<a href="${currentEntry.author.url}" rel="nofollow">${currentEntry.author.name}</a> via
+						<a href="${currentEntry.url}" aria-label="Webmention source for ${currentEntry.author.name}'s guestbook entry." rel="nofollow">Webmention</a>
+					</div>
+				`;
+				newEntry.appendChild(entryAuthor);
 
-			var guestbookEntryDate = new Date(currentEntry.published).toDateString();
+				// add date
+				const entryDate = document.createElement("div");
+				entryDate.classList.add("guestbook__date");
 
-			entryDate.innerHTML = `${guestbookEntryDate}`;
-			newEntry.appendChild(entryDate);
-			
-			// add entry
-			const guestbookEntry = document.createElement("div");
-			guestbookEntry.classList.add("guestbook__entry");
+				var guestbookEntryDate = new Date(currentEntry.published).toDateString();
 
-			guestbookEntry.innerHTML = `${currentEntry.content.html}`;
-			newEntry.appendChild(guestbookEntry);
+				entryDate.innerHTML = `${guestbookEntryDate}`;
+				newEntry.appendChild(entryDate);
+				
+				// add entry
+				const guestbookEntry = document.createElement("div");
+				guestbookEntry.classList.add("guestbook__entry");
 
-			//add decoration
-			const topTape = document.createElement("div");
-			topTape.classList.add("tape--guestbook-left-top");
+				guestbookEntry.innerHTML = `${currentEntry.content.html}`;
+				newEntry.appendChild(guestbookEntry);
 
-			const middleTape = document.createElement("div");
-			middleTape.classList.add("tape--guestbook-middle-top");
+				//add decoration
+				const topTape = document.createElement("div");
+				topTape.classList.add("tape--guestbook-left-top");
 
-			const bottomTape = document.createElement("div");
-			bottomTape.classList.add("tape--guestbook-right-bottom");
+				const middleTape = document.createElement("div");
+				middleTape.classList.add("tape--guestbook-middle-top");
 
-			if(i % 2 == 0) {
-				newEntry.appendChild(middleTape);
-			} else {
-				newEntry.appendChild(topTape);
-				newEntry.appendChild(bottomTape);
+				const bottomTape = document.createElement("div");
+				bottomTape.classList.add("tape--guestbook-right-bottom");
+
+				if(i % 2 == 0) {
+					newEntry.appendChild(middleTape);
+				} else {
+					newEntry.appendChild(topTape);
+					newEntry.appendChild(bottomTape);
+				}
 			}
 		}
 	}};
