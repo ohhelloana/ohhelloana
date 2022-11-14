@@ -7,6 +7,12 @@ hasMood: false
 tags: 
   - personal
   - post
+hasContentNote: true
+contentNote: pregnancy, birth & mention of previous loss
+---	
+
+Content note: pregnancy, birth & mention of previous loss
+
 ---
 
 During a very late scroll through Tiktok, I stumbled upon a video that mentioned the word “mastrescence”, and I didn’t know what it meant. It’s like adolescence but for motherhood.
