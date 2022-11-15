@@ -19,6 +19,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }
 
 .footer__links {
@@ -27,6 +28,7 @@ footer {
 
 .footer__extra {
   flex: 0 0 100%;
+  padding-top: 10px;
   p {
     margin-bottom: 15px;
   }
