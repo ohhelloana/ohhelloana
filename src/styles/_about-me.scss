@@ -77,3 +77,42 @@
     list-style: inside;
   }
 }
+
+.aside__now-page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.days-since-crying {
+  background-color: #ececec;
+  border-radius: 10px 55px 550px 70px/15px 10px 5px 5px;
+  border: 2px solid #000;
+  padding: 20px 10px;
+  line-height: 1.6em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.days-since-crying__header {
+  text-align: center;
+  background-color: darkolivegreen;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.days-since-crying__number {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #d0cccc;
+  font-family: sans-serif;
+  color: black;
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+
+.days-since-crying__message {
+  font-size: 0.9rem;
+}

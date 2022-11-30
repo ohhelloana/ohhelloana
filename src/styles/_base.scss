@@ -109,6 +109,14 @@ cite {
   top: -10px;
 }
 
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
 @mixin highlight-link {
   background: linear-gradient(to left, rgba(253, 200, 48, 0.3) 0%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.4) 60%, rgba(253, 200, 48, 0.6) 85%, rgba(253, 200, 48, 0.8) 100%);
   padding: 10px;
