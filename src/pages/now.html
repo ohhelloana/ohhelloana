@@ -66,7 +66,7 @@ date: 2022-11-30
     var month = new Date().getMonth();
     var day = new Date().getDate();
     var diffCalc = Math.ceil(
-  (new Date(2022, 11, 27) - new Date(year, month + 1, day)) / 1000 / 60 / 60 / 24
+  (new Date(2022, 11 - 1, 27) - new Date(year, month , day)) / 1000 / 60 / 60 / 24
 );
     var difference = Math.abs(diffCalc);
     daysCounter.innerHTML = `${difference}`;
