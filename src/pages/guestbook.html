@@ -32,7 +32,7 @@ eleventyExcludeFromCollections: true
 		for (var i = 0; i < data.children.length; i++) {
 			console.log('---each', data.children[i]);
 
-			if (data.children[i]['wm-property'] === 'in-reply-to' || data.children[i]['wm-property'] === 'mention-of') {
+			if (data.children[i]['wm-property'] === 'in-reply-to') {
 				const currentEntry = data.children[i];
 				
 				const newEntry = document.createElement("div");
@@ -65,8 +65,13 @@ eleventyExcludeFromCollections: true
 				const guestbookEntry = document.createElement("div");
 				guestbookEntry.classList.add("guestbook__entry");
 
-				guestbookEntry.innerHTML = `${currentEntry.content.html}`;
-				newEntry.appendChild(guestbookEntry);
+				if (currentEntry.content.html) {
+					guestbookEntry.innerHTML = `${currentEntry.content.html}`;
+					newEntry.appendChild(guestbookEntry);
+				} else if (currentEntry.content.text) {
+					guestbookEntry.innerHTML = `${currentEntry.content.text}`;
+					newEntry.appendChild(guestbookEntry);
+				}
 
 				//add decoration
 				const topTape = document.createElement("div");
