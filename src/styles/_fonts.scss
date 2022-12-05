@@ -1,6 +1,11 @@
 @font-face {
+  font-family: 'Fallback';
+  src: local(Arial);
+  size-adjust: 65%;
+}
+
+@font-face {
   font-family: 'Nanum Pen Script';
-  size-adjust: 100%;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
