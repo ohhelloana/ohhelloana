@@ -116,3 +116,22 @@
 .days-since-crying__message {
   font-size: 0.9rem;
 }
+
+.current-nail-polish {
+  display: inline-block;
+  background-color: rgb(250 39 52 / 15%);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+  padding: 3px 10px;
+  line-height: 1.8;
+  margin: 0 0 10px 0;
+  width: auto;
+  text-align: left;
+  transform: rotate(358deg);
+}
+
+.current-nail-polish__img {
+  background-color: bisque;
+  width: 100%;
+  border-radius: 90px 75px 300px 90px/15px 10px 5px 5px;
+  border: 2px solid #000;
+}
