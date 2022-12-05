@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Nanum Pen Script';
+  size-adjust: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nanum Pen Script'),
+       url('/assets/fonts/NanumPenScript-Regular.woff2') format('woff2');
+  /* Latin glyphs */
+  unicode-range: U+000-5FF;
+}
