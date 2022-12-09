@@ -1,7 +1,6 @@
 .post {
   background-color: #ececec;
   padding: 10px;
-  line-height: 1.8;
   max-width: 680px;
   margin: 30px auto;
 
@@ -66,8 +65,12 @@
 }
 
 .post, .post-content, .rich-text {
-  & > * + p, & > * + ul {
+  & > * + p, & > * + ul, & > * + h3 {
     margin-top: 15px;
+  }
+
+  p, ul li {
+    line-height: 1.8rem;
   }
 
   & > * + h1, 

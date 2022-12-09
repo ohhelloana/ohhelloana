@@ -22,7 +22,7 @@ pagination:
           <p>Published on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time></p>
         </div>
         
-        <div class="bookmark-content">{{ post.templateContent | safe }}</div>
+        <div class="bookmark-content rich-text">{{ post.templateContent | safe }}</div>
       </li>
     {% endfor %}
   </ul>
