@@ -31,7 +31,7 @@ I asked on [Twitter](https://twitter.com/ohhelloana/status/1651834949203378178),
 * [beyond tellerrand 2023 playlist](https://www.youtube.com/playlist?list=PL8ZzmQWppBBv7I3d0lYfGze6avk6NdurI) via [Calum](https://calumryan.com).
 * [Rich Harris on frameworks, the web, and the edge](https://www.youtube.com/watch?app=desktop&v=uXCipjbcQfM) via [bersling](https://mastodon.social/@bersling@techhub.social).
 * [The Interactive Guide to Rendering in React](https://ui.dev/why-react-renders) via [Nitin](https://github.com/nitin42).
-* Andy Bell's talk "be the browsers mentor, not it's micro-manager" via [Grace](https://fedmentor.dev/).
+* Andy Bell's talk "[be the browsers mentor, not it's micro-manager](https://andy-bell.co.uk/be-the-browsers-mentor-not-its-micromanager/)" via [Grace](https://fedmentor.dev/) and [Gregory](https://gregoryhammond.ca/).
 
 
 
