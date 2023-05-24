@@ -3,7 +3,7 @@ title: Now
 permalink: "now/"
 layout: page
 eleventyExcludeFromCollections: true
-date: 2022-12-29
+date: 2023-05-24
 ---
 
 <h2 class="page-title">What I'm doing now</h2>
@@ -18,7 +18,7 @@ date: 2022-12-29
         <div class="days-since-crying">
             <h3 class="days-since-crying__header">Emotional safety</h3>
             <span id="days-counter" class="days-since-crying__number">
-                <noscript>29th December 2022</noscript>
+                <noscript>21st May 2023</noscript>
             </span>
             <p class="days-since-crying__message">
                 <noscript>
@@ -32,31 +32,33 @@ date: 2022-12-29
 
         <div>
             <h3 class="current-nail-polish">Current nail polish</h3>
-            <img class="current-nail-polish__img" src="{{ site.baseurl }}/assets/profile/current_nails.PNG" alt="Illustration of hands with the nails using the colour bisque." />
+            <img class="current-nail-polish__img" src="{{ site.baseurl }}/assets/profile/current_nails.PNG" alt="Illustration of hands with the nails with no colour." />
         </div>
 	</aside>
 	<article class="post">
         <h3>Work</h3>
-        <p>I'm currently on maternity leave.</p>
+        <p>I'm back at work! Still adjusting after one year of maternity leave.</p>
    
         <h3>Current priorities</h3>
         <ul>
-            <li>My mental health.</li>
+            <li>Establish a brand new routine.</li>
         </ul>
 
         <h3>Thinking about</h3>
         <ul>
-            <li>What are my goals for 2023.</li>
+            <li>How to finish a specific blog post I am currently writing.</li>
         </ul>
 
         <h3>Currently reading</h3>
         <ul>
             <li>Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, Or Self-Involved Parents Book by Lindsay C. Gibson.</li>
+            <li>The Montessori Toddler: A Parent's Guide to Raising a Curious and Responsible Human Being Paperback by Simone Davies.</li>
         </ul>
 
         <h3>Currently watching</h3>
         <ul>
-            <li><a href="https://www.imdb.com/title/tt13406094/">White Lotus</a></li>
+            <li><a href="https://www.imdb.com/title/tt7660850/">Succession</a></li>
+            <li><a href="https://www.imdb.com/title/tt10986410/">Ted Lasso</a></li>
         </ul>
        
     </article>
@@ -68,7 +70,7 @@ date: 2022-12-29
     var month = new Date().getMonth();
     var day = new Date().getDate();
     var diffCalc = Math.ceil(
-  (new Date(2022, 12 - 1, 29) - new Date(year, month , day)) / 1000 / 60 / 60 / 24
+  (new Date(2023, 5 - 1, 21) - new Date(year, month , day)) / 1000 / 60 / 60 / 24
 );
     var difference = Math.abs(diffCalc);
     daysCounter.innerHTML = `${difference}`;
