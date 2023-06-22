@@ -1,6 +1,6 @@
 ---
 title: Bookmarks
-permalink: "bookmarks/{% if pagination.pageNumber > 0 %}/archive-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+permalink: "bookmarks/{% if pagination.pageNumber > 0 %}/archive-{{ pagination.pageNumber }}/{% endif %}index.html"
 layout: bookmarks
 description: Hand picked links that I want to share
 eleventyExcludeFromCollections: true
@@ -22,13 +22,13 @@ pagination:
           <p>Published on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time></p>
         </div>
         
-        <div class="bookmark-content rich-text">{{ post.templateContent | safe }}</div>
+        <div class="bookmark-content rich-text">{{ post.templateContent }}</div>
       </li>
     {% endfor %}
   </ul>
   <aside class="bookmark-page__sidebar">
     <p class="bookmark-page__intro">
-      The bookmarks page has its own <a href="{{ "/feed.links.xml" | relative_url }}">RSS feed.</a>
+      The bookmarks page has its own <a href="{{ "/feed.links.xml" }}">RSS feed.</a>
     </p>
     <h2 class="bookmark-page__sidebar-title"><span>Websites & Blogs I binge read</span></h2>
     <ul class="bookmark-page__sidebar-list">
