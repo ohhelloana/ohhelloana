@@ -39,3 +39,58 @@ layout: all
   </form>
 </div>
 
+  {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+  {% set nextPost = collections.posts | getNextCollectionItem(page) %}
+  <h2 class="page-title">Read more posts</h2>
+  <div class="archive__post-list">
+    {% if previousPost %}
+    <div class="archive__single-post">
+      <h3>
+        <span class="post-title">
+            <a href="{{ previousPost.url }}">{{ previousPost.data.title | escape }}</a>
+        </span>
+      </h3>
+
+      {% if previousPost.data.hasContentNote %}
+        <span class="content-note">Content note: {{previousPost.data.contentNote}}</span>
+      {% endif %}
+      
+      <div class="archive__single-post-meta">
+          <time datetime="{{ previousPost.date | time }}">{{ previousPost.date | prettyDate }}</time>
+          <ul class="archive__single-post-tag-list">
+            {% for tag in previousPost.data.tags  %}
+              {% if tag != 'post' %}<li class="archive__single-post-tag">{{ tag }}</li>{% endif %}
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+    {% endif %}
+    {% if nextPost %}
+    <div class="archive__single-post">
+      <h3>
+        <span class="post-title">
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title | escape }}</a>
+        </span>
+      </h3>
+
+      {% if nextPost.data.hasContentNote %}
+        <span class="content-note">Content note: {{nextPost.data.contentNote}}</span>
+      {% endif %}
+      
+      <div class="archive__single-post-meta">
+          <time datetime="{{ nextPost.date | time }}">{{ nextPost.date | prettyDate }}</time>
+          <ul class="archive__single-post-tag-list">
+            {% for tag in nextPost.data.tags  %}
+              {% if tag != 'post' %}<li class="archive__single-post-tag">{{ tag }}</li>{% endif %}
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+
+
+
+
+
