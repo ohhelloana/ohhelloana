@@ -19,3 +19,23 @@ layout: all
   {% include "partials/mood.njk" %}
 {% endif %}
 
+<div class="post__message guestbook__new-entry">
+  <h2>Send me a message about this post</h2>
+  <p>Messages sent via the following form will not be published.</p>
+  <form class="post__contact" name="contact" method="POST" data-netlify="true">
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <input type="hidden" name="post" value="{{title}}">
+      <button type="submit">Send</button>
+    </p>
+  </form>
+</div>
+
