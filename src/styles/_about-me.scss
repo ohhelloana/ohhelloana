@@ -1,11 +1,3 @@
-.about-me__title {
-  display: inline-block;
-  background-color: rgba(250,237,39,.44);
-  box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
-  padding: 10px;
-  margin: 10px auto 30px auto;
-}
-
 .about-me__parent {
   display: flex;
   flex-wrap: wrap;
@@ -131,4 +123,31 @@
   width: 100%;
   border-radius: 90px 75px 300px 90px/15px 10px 5px 5px;
   border: 2px solid #000;
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin-top: 15px;
+}
+
+.feedback-grid__img {
+  max-width: 400px;
+  padding: 8px;
+  border: 1.5px solid #37353f;
+  border-radius: 0 0 125px 3px/3px 85px 5px 55px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+.simple-text-container { 
+  background-color: #ececec;
+  padding: 15px;
+
+  ul li {
+    list-style: inside;
+  }
 }

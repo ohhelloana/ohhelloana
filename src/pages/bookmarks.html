@@ -8,35 +8,29 @@ pagination:
   data: collections.bookmarks 
   size: 5
 ---
-<div class="page-content bookmark-page">
-  <div class="bookmark-page__title-wrapper">
-    <h2 class="bookmark-page__title">Bookmarks</h2>
-  </div>
-  <ul class="bookmarks-list">
-    {%- for post in pagination.items -%}
-      <li class="bookmark h-entry">
-        <div class="bookmark-info">
-          <h2 class="bookmark-title">
-            <a class="u-bookmark-of h-cite" href="{{ post.url }}">{{ post.data.title }}</a>
-          </h2>
-          <p>Published on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time></p>
-        </div>
-        
-        <div class="bookmark-content rich-text">{{ post.templateContent }}</div>
-      </li>
-    {% endfor %}
-  </ul>
-  <aside class="bookmark-page__sidebar">
-    <p class="bookmark-page__intro">
+
+<h2 class="heading--primary">Bookmarks</h2>
+<div class="two-col-layout">
+	<aside>
+		<div class="aside__highlighted">
       The bookmarks page has its own <a href="{{ "/feed.links.xml" }}">RSS feed.</a>
-    </p>
-    <h2 class="bookmark-page__sidebar-title"><span>Websites & Blogs I binge read</span></h2>
-    <ul class="bookmark-page__sidebar-list">
-      {% for item in blogroll %}
-        <li class="blogroll__item">
-            <a class="blogroll__link" href="{{ item.url }}">{{ item.title }}</a>
+		</div>
+	</aside>
+	<div>
+    <ul class="bookmarks-list">
+      {%- for post in pagination.items -%}
+        <li class="bookmark h-entry">
+          <div class="bookmark-info">
+            <h2 class="bookmark-title">
+              <a class="u-bookmark-of h-cite" href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+            <p>Published on the <time datetime="{{ post.date | time }}">{{ post.date | prettyDate }}</time></p>
+          </div>
+          
+          <div class="bookmark-content rich-text">{{ post.templateContent }}</div>
         </li>
       {% endfor %}
     </ul>
-  </aside>
+  </div>
 </div>
+
