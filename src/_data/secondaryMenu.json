@@ -21,13 +21,13 @@
       "external": false
     },
     {
-      "text": "Jots",
-      "url": "/cursed-thoughts/",
+      "text": "Guestbook",
+      "url": "/guestbook/",
       "external": false
     },
     {
-      "text": "Drafts",
-      "url": "/drafts/",
+      "text": "About me",
+      "url": "/about/",
       "external": false
     }
   ]
