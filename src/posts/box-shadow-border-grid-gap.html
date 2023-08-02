@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Experimenting with using box-shadow as a border on top of a grid-gap"
+date: 2023-08-02
+description: "Using box-shadow as a border between grid elements on the grid gap."
+hasMood: false
+tags: 
+  - TIL
+  - post
+---
+
+<p>I need to preface this post by saying: bare with me. I was without doing much coding for over a year, so maybe I'm wrong, or everyone already knows this.</p>
+
+<p>I recently had a situation where I needed to add a border between elements that sat in a 12 grid with a gap between them. To my knowledge (and again, possibly I am wrong), you can't add much on top of the grid-gap. I searched around but was in a rush, so I decided to do something that achieved the result visually. But it doesn't feel super nice and clean. In moments like this, I remind myself of what <a href="https://rachelandrew.co.uk/">Rachel Andrew</a> said at Pixel Pioneers some years ago: “Is this the right way to do it?... well, does it work?”.</p>
+
+<p>It works. So here it is. You can fake a border effect by using two shadows, one on top of the other. The first declared shadow should match your background colour, while the second should be the desired border colour. The shadow with the same background colour will be on top of the shadow with the desired border colour. When this happens, there is a tiny difference in their offset. The shadow with the border colour will only be visible in that little offset gap.</p>
+
+<p>The offset value should be half of the size of the gap, and the shadow that will act as the border should be a tiny bit bigger offset value.</p>
+
+<br/>
+<br/>
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzRBqbW" data-user="ohhelloana" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/ohhelloana/pen/YzRBqbW">
+    Experimenting with using box-shadow as a border on top of a grid gap</a> by Ana  Rodrigues (<a href="https://codepen.io/ohhelloana">@ohhelloana</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+  <br/>
+
+  <p>In the codepen above I was somewhat successful at reproducing this visual effect with a few specific sizes. While the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gap">gap property</a> accepts quite a few of them, the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow">box-shadow property</a> is more limited (I couldn't get this to work with percentages or calc() for example).</p>
+
+  <p>It is also quite interesting how different lengths will generate visually different thicknesses of this fake border.</p>
+
+
