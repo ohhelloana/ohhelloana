@@ -125,23 +125,6 @@
   border: 2px solid #000;
 }
 
-.feedback-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
-  margin-top: 15px;
-}
-
-.feedback-grid__img {
-  max-width: 400px;
-  padding: 8px;
-  border: 1.5px solid #37353f;
-  border-radius: 0 0 125px 3px/3px 85px 5px 55px;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,.4);
-}
-
 .simple-text-container { 
   background-color: #ececec;
   padding: 15px;
