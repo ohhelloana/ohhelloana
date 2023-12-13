@@ -57,6 +57,7 @@ Thanks Remy and everyone who replied to my toot! I'm super happy I was able to f
 
 Lessons learned:
 * You can do this!
+* Don't be afraid to ask for help!
 * Don't assume the first solution YouTube tells you is the right one if you don't know the basics.
 * Basics matter! 
 
