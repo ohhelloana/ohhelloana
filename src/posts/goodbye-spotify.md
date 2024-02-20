@@ -12,7 +12,7 @@ I've been thinking, especially since the recent Spotify layoffs, that I'm due to
 
 The other thing is that I've had this draft for ages and procrastinated on this topic. Luckily, today, I stumbled across this post from [Raed explaining their reasonings for deleting their account](https://blog.raed.dev/posts/goodbye_spotify). I thought, "Yeah, see, I had the same idea but procrastinated on it!". Not anymore!!
 
-I have reasons similar to Rae's, but here are some of the thoughts that have been lurking in my head.
+I have reasons similar to Raed's, but here are some of the thoughts that have been lurking in my head.
 
 ## Their apps take up too much disk space.
 It first annoyed me some years ago when I had a very old laptop with limited disk space. At one point, their app and its data took over 4 GB of disk space. That was when I deleted their app from my computer. 
