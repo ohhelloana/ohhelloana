@@ -4,7 +4,7 @@ title: I too have deleted my Spotify account
 date: 2024-02-20
 tags:	
   - post			
-description: I am one of the speakers at All Day Hey! See you there?
+description: Inspired by another blog post I too finally deleted my Spotify account and listed the reasons why.
 hasMood: false	
 ---	
 
