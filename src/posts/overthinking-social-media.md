@@ -46,4 +46,4 @@ Because let's be realistic: before Twitter imploded, tech Twitter was/is very mu
 
 There's a lot of crap on LinkedIn. It is its own meme, but something tells me that these new microblogging platforms will come and go, but LinkedIn will still be there with its own cursed vibe. 
 
-Anyway, if we have actually met, feel free to add me on [LinkedIn](https://www.linkedin.com/in/ana-r-966b581a7)! 
+Anyway, if we have actually met, feel free to add me on [LinkedIn](https://www.linkedin.com/in/ana-rdrg)! 
