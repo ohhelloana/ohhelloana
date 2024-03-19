@@ -17,13 +17,13 @@ The other weekend, I attended [IndieWebCamp Brighton](https://indieweb.org/2024/
 ## Day one - Unconference
 
 ### Energy Efficiency
-I started to follow this topic a few years ago when the carbon calculator came out. It impacted how I added certain things to my website, which also positively impacted its performance. In 2022, at FFConf, I saw a talk by Natalia about a greener web that mentioned how streams are a source of pollution. Frankly, it had never occurred to me and has been bothering me a lot. It was one of the decisions that led me to delete my Spotify account and made me think about what other waste I was making. 
+I started to follow this topic a few years ago when the carbon calculator came out. It impacted how I added certain things to my website, which also positively impacted its performance. In 2022, at FFConf, I saw a talk by Natalia about a greener web that mentioned how streams are a source of pollution. Frankly, it had never occurred to me and has been bothering me a lot. It was [one of the decisions that led me to delete my Spotify account](https://ohhelloana.blog/goodbye-spotify/) and made me think about what other waste I was making. 
 
 As captured in the notes, one of my comments was about how many automated processes are running in the background of running our personal websites. I could generate the HTML pages of my website locally and manually upload the files to my hosting. Instead, I have it on GitHub, which gets my commits and then triggers a build on Netlify and, later, a deployment. For all this cool tech to work, there are servers, energy consumption, data stored, etc. 
 
 On the other hand, I promote the idea that your personal website should be a place where you experiment and learn. In the grand scheme of things, my personal website does not impact the environment, the same way that deleting my Spotify account hasn't improved the world, but it makes part of me give up taking space on the web.
 
-I've wondered in the past if I could create some videos or even stream, but not only do I have privacy concerns, but I also know I would feel guilty if I didn't feel as sustainable as I could be. 
+I've wondered in the past if I could create some videos or even stream, but [not only do I have privacy concerns](https://ohhelloana.blog/overthinking-online-participation/), but I also know I would feel guilty if I didn't feel as sustainable as I could be. 
 
 I really enjoyed the session, but I have a hang-up on feeling like I am doing too much digital waste instead of rightfully blaming the billionaires and their stupid private jets. 
 
@@ -69,7 +69,7 @@ I've recently made better mental efforts to avoid allowing tech debt to paralyse
 ## Day two - Hands-on
 My day started by sitting down with [Paul](https://paulrobertlloyd.com/) and trying out [IndieKit](https://getindiekit.com/). I've been dreaming of creating my micropub endpoint, but lack of time and confidence has stalled me. [We got it working](https://ohhelloana.blog/testing-indiekit/)! It turns out that having sat down together to try to run it allowed us to spot some bugs and gave Paul a different perspective on how another person could use their tool. I loved it! Now, I need to work on my plug-in to ensure the templates are created for my specific needs. After that, I will be unstoppable!
 
-This took a chunk of the morning, so I needed an achievable task after it. I decided to add a privacy page to my blog. A while back, through my analytics, I saw someone having thoughts and opinions on my analytics usage and the way it was worded made it sound like I used trackers of the invasive kind. It was time to add a page that clarified my analytics usage. 
+This took a chunk of the morning, so I needed an achievable task after it. I decided to add a [privacy page](https://ohhelloana.blog/privacy-policy/) to my blog. A while back, through my analytics, I saw someone having thoughts and opinions on my analytics usage and the way it was worded made it sound like I used trackers of the invasive kind. It was time to add a page that clarified my analytics usage. 
 
 The day was wrapped up with impressive demos from everyone. 
 
