@@ -35,12 +35,12 @@ While any blogging platform is fine to use, I personally crave the control over 
 
 ## How do you write your posts?
 I typically start in one of two ways:
-1. Open my editor directly.
-2. When frustrated, start in a basic document (like Google Docs) for initial word-vomit drafting.
+* Open my editor directly.
+* When frustrated, start in a basic document (like Google Docs) for initial word-vomit drafting.
 
 As a non-native English speaker, I spend considerable time reviewing my grammar. I think faster than I type, so I need to ensure my written thoughts are coherent and connected. After editing and reviewing, I copy the content into my editor, usually creating either:
-- A markdown file for simple text posts
-- An HTML page for posts requiring fancy features
+* A markdown file for simple text posts
+* An HTML page for posts requiring fancy features
 
 I've tried tools like Grammarly but found them unnecessary for my needs. Most often, it's just basic punctuation that needs fixing, which I've gotten better at handling on my own. And now I probably jinxed myself and anyone reading this will find lots of mistakes.
 
