@@ -22,7 +22,7 @@ layout: all
 <div class="post__message guestbook__new-entry">
   <h2>Send me a message about this post</h2>
   <p>Messages sent via the following form will not be published.</p>
-  <form class="post__contact" name="contact" method="POST" data-netlify="true">
+  <form class="post__contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
     <p>
       <label>Your Name: <input type="text" name="name" /></label>
     </p>
@@ -34,6 +34,8 @@ layout: all
     </p>
     <p>
       <input type="hidden" name="post" value="{{title}}">
+
+      <div data-netlify-recaptcha="true"></div>
       <button type="submit">Send</button>
     </p>
   </form>
