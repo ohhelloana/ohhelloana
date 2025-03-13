@@ -6,8 +6,7 @@ tags:
   - post		
   - personal
   - tech
-description: Remy challenged to reply to the Blog questions challenge. Here is what I had to say!
-hasMood: true	
+description: Is it okay to prioritize readability and learning over cutting-edge optimization on personal websites? I believe so. And if we want more people to have a personal website, I think more of us should consider doing the same.​​​​​​​​​​​​​​​​
 ---	
 
 For a while now, I've been slowing working on a refactor of the codebase of this blog. At one point, I got caught in exciting world of performance and I wanted to make sure I had a super fast pageload. Currently, my CSS is added inline in the HTML and I found myself thinking "no one will be able to read this". 
