@@ -6,7 +6,7 @@ tags:
   - post		
   - personal
 description: It's been eight years since we adopted Jessie and I should have posted about it!
-hasMood: no	
+hasMood: false	
 ---	
 I am currently regretting the posts I didn't make. Yes, as someone who bangs on and on about posting things on your blog first and then elsewhere, I too fail many times. And, it's been like that when it comes to Jessie. 
 
