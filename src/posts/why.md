@@ -29,7 +29,13 @@ We, humans, are driven to touch and craft with our body. Deep down we crave that
 
 There, I let out a draft from my phone and it is now in my blog. Why not?
 
-Anyway, I love how the "no thought is original" is real. Turns out, one day before I started this draft on my blog, [Jim Nielsen](https://blog.jim-nielsen.com/2025/why-make-a-website-in-2025/) also did a similar comparison. They're smarter than me, listen to them! 
+Anyway, I love how the "no thought is original" is real. Turns out, one day before I started this draft on my blog, [Jim Nielsen](https://blog.jim-nielsen.com/2025/why-make-a-website-in-2025/) also did a similar comparison. They're smarter than me, listen to them!
+
+---
+
+<a href="https://news.indieweb.org/en" class="u-syndication">
+  Also posted on IndieNews
+</a>
 
 
 
