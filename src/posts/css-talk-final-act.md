@@ -12,7 +12,7 @@ description: "It's a wrap! Now it's time to talk about all the feelings I had in
 hasMood: false	
 ---	
 
-I am back from Berlin after spending a few days last week at Beyond Tellerrand where I was a speaker! It was my first time attending as well. Before that, in September, I did the same talk in Freiburg at Smashing Conference.
+I am back from Berlin after spending a few days last week at [Beyond Tellerrand where I was a speaker](https://beyondtellerrand.com/events/berlin-2025/speakers)! It was my first time attending as well. Before that, in September, I did the same talk in [Freiburg at Smashing Conference](https://smashingconf.com/freiburg-2025/).
 
 In both events I gave the talk that I worked on the first half of this year about modernising and maintaining CSS. Now that this is all done, I want to write out all my feelings. 
 
@@ -28,7 +28,7 @@ Everything I say on that talk is true:
 
 This is the origin story of this talk. But there was another thought that creeped in: I wanted to be seen as someone who is vaguely professional. I know, I know! I jest on my social media bios. I normally say that I work as a "unprofessional front end developer" but I do wish to feel like I belong. That the respect between me and my peers is mutual and that I am worth _something_. 
 
-Despite being someone who enjoys seeing everyone being their unapologetic self, every once in a while I look at my "unpolished" layout of my blog and feel a little bit insecure. Also, not so long ago, I gave a silly talk about creating an in-browser gamified karaoke where I embraced the cringe and sang to hundreds of people. I suddenly began to feel afraid that I could be typecasted as... too silly. It feels like others do "silly" better than me and I just didn't want to feel like the class clown.
+Despite being someone who enjoys seeing everyone being their unapologetic self, every once in a while I look at my "unpolished" layout of my blog and feel a little bit insecure. Also, not so long ago, [I gave a silly talk about creating an in-browser gamified karaoke](https://ohhelloana.blog/back-to-doing-talks/) where I embraced the cringe and sang to hundreds of people. I suddenly began to feel afraid that I could be typecasted as... too silly. It feels like others do "silly" better than me and I just didn't want to feel like the class clown.
 
 This means that I was out of my comfort zone. I know I am good employee and that sometimes I write and share "serious" and useful things here too but still I had this quiet whisper in my brain saying "who the hell am I to say anything". 
 
@@ -48,7 +48,7 @@ And I became a little bit anxious. Some days I was defending myself "Nope, this 
 
 At this point I had to create a rule. No self bad talk until this talk is finished. Detect the thought and drown it. Do the thing my therapist used to nag me about. Turns out it helps.
 
-Eventually, the time to practise with friends came and the first run of it in public happened. And all was fine! The world didn't end!
+Eventually, the time to practise with friends came and the [first run of it in public happened](https://ohhelloana.blog/post-css-talk/). And all was fine! The world didn't end!
 
 ## The support act
 
@@ -69,9 +69,9 @@ Last Friday afternoon, I had this intense feeling of relief that was so obvious 
 
 ## What's next?
 
-I don't know but I don't want to force anything. This is a side gig to me and an experience for myself as my current job doesn't require me to do talks. I mean, I always have a talk in my pocket about the IndieWeb if anyone is interested!
+I don't know but I don't want to force anything. This is a side gig to me and an experience for myself as my current job doesn't require me to do talks. I mean, [I always have a talk in my pocket about the IndieWeb if anyone is interested](https://noti.st/anarodrigues/b6GF87/building-sharing-and-owning-your-online-presence)!
 
-During this year I was a fucking pain in the arse to those close to me. I was so afraid and doubting myself that most times I couldn't believe the kind things people were telling me. I asked for reassurance a lot and, for that, I am sorry. I just really really wanted to do well. But I think it is time to fully embrace my silly self and just be that person - even if it is "unprofessional". 
+I'm sure that during this year I was a fucking pain in the arse to those close to me. I was so afraid and doubting myself that most times I couldn't believe the kind things people were telling me. I asked for reassurance a lot and, for that, I am sorry. I just really really wanted to do well. But I think it is time to fully embrace my silly self and just be that person - even if it is "unprofessional". 
 
 
 
