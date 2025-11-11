@@ -1,7 +1,7 @@
 ---	
 layout: layouts/post.njk	
 title: "Talking around about CSS: The final act"
-date: 2025-11-10
+date: 2025-11-11
 tags:	
   - post		
   - tech
