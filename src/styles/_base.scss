@@ -151,3 +151,23 @@ code {
   opacity: 0;
   z-index: 10;
 }
+
+details {
+  border: 1px solid;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+details p {
+  margin-bottom: 1rem;
+}
+
+details p:last-of-type {
+  margin-bottom: 0;
+}
+
+details[open] summary {
+  border-bottom: 1px solid;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
