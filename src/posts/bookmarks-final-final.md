@@ -52,7 +52,7 @@ I am deeply frustrated with my inability to stick to the plan and do this post o
 * [Don't start testing accessibility with a screen reader](https://www.erikkroes.nl/blog/dont-test-accessibility-with-a-screen-reader/) by Erik Kroes.
 * [Not so short note on aria-label usage – Big Table Edition](https://html5accessibility.com/stuff/2024/05/22/not-so-short-note-on-aria-label-usage-big-table-edition/) by stevef.
 * [HMRC's Virtual Empathy Hub](https://personas-prototype.herokuapp.com/).
-* [Dark Patterns Detective](https://games.productartistry.com/games/dark-patterns) by .
+* [Dark Patterns Detective](https://games.productartistry.com/games/dark-patterns).
 * [Come to the light-dark() Side](https://css-tricks.com/come-to-the-light-dark-side/) by Sara Joy.
 * [CSS light-dark()](https://12daysofweb.dev/2024/css-light-dark/) by Mayank.
 * [More options for styling details](https://developer.chrome.com/blog/styling-details) by Bramus.
@@ -67,14 +67,14 @@ I am deeply frustrated with my inability to stick to the plan and do this post o
 * [How to (not) use aria-label, -labelledby and -describedby](https://www.stevefrenzel.dev/posts/how-to-not-use-aria-label-aria-labelledby-and-aria-describedby/) by Steve Frenzel.
 * [Cally](https://wicky.nillia.ms/cally/) by Nick Williams.
 * [Five ways cookie consent managers hurt web performance (and how to fix them)](https://www.speedcurve.com/blog/web-performance-cookie-consent/) by Cliff Crocker.
-* [Get out of my <head>](https://getoutofmyhead.dev/).
+* [Get out of my head](https://getoutofmyhead.dev/).
 * [no web without women](https://nowebwithoutwomen.com/) by Selman.
 * [Bringing Joy Back to the Web: Fediverse vs. Centralized Apps](https://thenewstack.io/bringing-joy-back-to-the-web-fediverse-vs-centralized-apps/) by Richard MacManus.
 * [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing).
 * [How to Surf the Web in 2025, and Why You Should](https://www.raptitude.com/2025/06/how-to-surf-the-web-in-2025-and-why-you-should/) by David Cain.
 * [The 'Accessibility' link is a Lie: My Adventures in Weaponizing Corporate Virtue Signaling](https://sightlessscribbles.com/posts/20250724/) by Robert Kingett.
-* [US dad takes photos of his naked toddler for the doctor, Google flags him as criminal](https://www.straitstimes.com/world/united-states/us-dad-takes-photos-of-his-naked-toddler-for-the-doctor-google-flags-him-as-criminal) by .
-* [Webring List](https://brisray.com/web/webring-list.html).
+* [US dad takes photos of his naked toddler for the doctor, Google flags him as criminal](https://www.straitstimes.com/world/united-states/us-dad-takes-photos-of-his-naked-toddler-for-the-doctor-google-flags-him-as-criminal)
+* [Webring List](https://brisray.com/utils/webrings.htm).
 * [Pattern Craft](https://patterncraft.fun/).
 * [Simplified Accessibility Testing](https://tools.caat.report/).
 * [A guide to creating accessible PDFs using free tools](https://piccalil.li/blog/a-guide-to-creating-accessible-pdfs-using-free-tools/) by Steve Frenzel.
