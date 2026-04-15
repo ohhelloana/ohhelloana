@@ -3,7 +3,7 @@ title: Now
 permalink: "now/"
 layout: page
 eleventyExcludeFromCollections: true
-date: 2024-03-09
+date: 2026-04-15
 ---
 
 <h2 class="heading--primary">What I'm doing now</h2>
@@ -17,16 +17,28 @@ date: 2024-03-09
 
         <div class="days-since-crying">
             <h3 class="days-since-crying__header">Emotional safety</h3>
-            <span id="days-counter" class="days-since-crying__number">
-                <noscript>2nd March 2024</noscript>
+            <span class="days-counter days-since-crying__number" data-since="2026-04-15">
+                <noscript>15th April 2026</noscript>
             </span>
             <p class="days-since-crying__message">
                 <noscript>
                     Last time I cried.
                 </noscript>
-                <span id="js-available" class="display-none">
+                <span class="js-available display-none">
                     No. of days since last cry.
                 </span>
+            </p>
+        </div>
+
+        <div class="days-since-crying">
+            <h3 class="days-since-crying__header">Days since talking about The Rasmus</h3>
+            <span class="days-counter days-since-crying__number" data-since="2026-04-14">
+                <noscript>14th April 2026</noscript>
+            </span>
+            <p class="days-since-crying__message">
+                <noscript>
+                    Last time I mentioned the band.
+                </noscript>
             </p>
         </div>
 
@@ -41,41 +53,41 @@ date: 2024-03-09
    
         <h3>Current priorities</h3>
         <ul>
-            <li>Improve my talk about Web Speech API.</li>
+            <li>Finish sewing my top to wear at CSS Day.</li>
+            <li>Alter my old summer clothes to fit me ahead of summer.</li>
+            <li>Re-design this website.</li>
+            <li>Organise SWCodes.</li>
         </ul>
 
         <h3>Thinking about</h3>
         <ul>
-            <li>Tackling the technical debt of this website.</li>
+            <li>How to find my style when it comes to art.</li>
         </ul>
 
         <h3>Currently reading</h3>
         <ul>
-            <li>Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, Or Self-Involved Parents Book by Lindsay C. Gibson.</li>
-            <li>The Montessori Toddler: A Parent's Guide to Raising a Curious and Responsible Human Being Paperback by Simone Davies.</li>
+            <li>Sense and Sensibility by Jane Austen.</li>
         </ul>
 
         <h3>Currently watching</h3>
         <ul>
-            <li><a href="https://www.imdb.com/title/tt13444408/">Kin</a></li>
+            <li><a href="https://www.imdb.com/title/tt35466672/">Malcolm in the Middle: Life's Still Unfair</a></li>
         </ul>
        
     </article>
 </div>
 
 <script>
-    var daysCounter = document.getElementById('days-counter');
-    var year = new Date().getFullYear();;
-    var month = new Date().getMonth();
-    var day = new Date().getDate();
-    var diffCalc = Math.ceil(
-  (new Date(2024, 3 - 1, 2) - new Date(year, month , day)) / 1000 / 60 / 60 / 24
-);
-    var difference = Math.abs(diffCalc);
-    daysCounter.innerHTML = `${difference}`;
+    var today = new Date();
 
-    var subtitle = document.getElementById('js-available');
+    document.querySelectorAll('.days-counter').forEach(function(counter) {
+        var since = new Date(counter.dataset.since);
+        var difference = Math.abs(Math.ceil((since - today) / 1000 / 60 / 60 / 24));
+        counter.innerHTML = `${difference}`;
+    });
 
-    subtitle.classList.remove('display-none');
-    subtitle.classList.add('display-block');
+    document.querySelectorAll('.js-available').forEach(function(subtitle) {
+        subtitle.classList.remove('display-none');
+        subtitle.classList.add('display-block');
+    });
 </script>
