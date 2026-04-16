@@ -17,7 +17,7 @@ date: 2026-04-15
 
         <div class="days-since-crying">
             <h3 class="days-since-crying__header">Emotional safety</h3>
-            <span class="days-counter days-since-crying__number" data-since="2026-04-15">
+            <span class="days-counter days-since-crying__number" data-since="2026-04-15T15:00">
                 <noscript>15th April 2026</noscript>
             </span>
             <p class="days-since-crying__message">
@@ -32,7 +32,7 @@ date: 2026-04-15
 
         <div class="days-since-crying">
             <h3 class="days-since-crying__header">Days since talking about The Rasmus</h3>
-            <span class="days-counter days-since-crying__number" data-since="2026-04-15">
+            <span class="days-counter days-since-crying__number" data-since="2026-04-15T19:30">
                 <noscript>15th April 2026</noscript>
             </span>
             <p class="days-since-crying__message">
@@ -82,8 +82,10 @@ date: 2026-04-15
 
     document.querySelectorAll('.days-counter').forEach(function(counter) {
         var since = new Date(counter.dataset.since);
-        var difference = Math.abs(Math.ceil((since - today) / 1000 / 60 / 60 / 24));
-        counter.innerHTML = `${difference}`;
+        var diffMs = Math.abs(today - since);
+        var days = Math.floor(diffMs / 1000 / 60 / 60 / 24);
+        var hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / 1000 / 60 / 60);
+        counter.innerHTML = days > 0 ? `${days}d ${hours}h` : `${hours}h`;
     });
 
     document.querySelectorAll('.js-available').forEach(function(subtitle) {
