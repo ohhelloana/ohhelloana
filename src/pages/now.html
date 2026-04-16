@@ -85,7 +85,7 @@ date: 2026-04-16
         var diffMs = Math.abs(today - since);
         var days = Math.floor(diffMs / 1000 / 60 / 60 / 24);
         var hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / 1000 / 60 / 60);
-        counter.innerHTML = days > 0 ? `${days}d ${hours}h` : `${hours}h`;
+        counter.innerHTML = days < 1 ? `0d ${hours}h` : `${days}d`;
     });
 
     document.querySelectorAll('.js-available').forEach(function(subtitle) {
