@@ -1,6 +1,6 @@
 ---	
 layout: layouts/post.njk	
-title: "It's 2026 and women are still asked to teach others to think a little bit and don't be a prick"
+title: "It's 2026 and women are still asked to teach others to think a little bit and not be a prick"
 date: 2026-05-12
 tags:	
   - post		
@@ -12,7 +12,7 @@ hasMood: false
 
 This article was originally drafted in 2024 but I struggled to finish it then. I was stuck wondering if I was just moaning over the past. Recently, [Salma](https://whitep4nth3r.com/blog/why-women-in-tech-isnt-enough/) and [Jo](https://bsky.app/profile/thisisjofrank.bsky.social/post/3mk6fd4xpns2m) both shared thoughts that gave me the rage and energy to come back to this. Today is the day I finally have the courage to publish.
 
-I can’t recall how many times I thought of writing something like this. I thought of riding certain waves inspired by other authors but most times the embarrassment got the best of me. During those waves this post could have been titled “When I leave tech”, “I’m still a woman in tech” etc. But today it is called “it’s 2026 and women are still asked to teach others to think a little bit and don’t be a prick”. Temporary title. 
+I can’t recall how many times I thought of writing something like this. I thought of riding certain waves inspired by other authors but most times the embarrassment got the best of me. During those waves this post could have been titled “When I leave tech”, “I’m still a woman in tech” etc. But today it is called “It's 2026 and women are still asked to teach others to think a little bit and not be a prick”. Temporary title. 
 
 ---
 
