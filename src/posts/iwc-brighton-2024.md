@@ -73,11 +73,11 @@ This took a chunk of the morning, so I needed an achievable task after it. I dec
 
 The day was wrapped up with impressive demos from everyone. 
 
-Thank you so much, [Paul](https://paulrobertlloyd.com/) and [Mark](https://qubyte.codes/), for organising it! I had a fantastic time and hope it will become a frequent event.
+Thank you so much, [Paul](https://paulrobertlloyd.com/) and [Aura](https://qubyte.codes/), for organising it! I had a fantastic time and hope it will become a frequent event.
 
 More people wrote about their day, and you should check it out!
 
-* [IndieWebCamp Brighton 2024 by Mark](https://qubyte.codes/blog/indiewebcamp-brighton-2024)
+* [IndieWebCamp Brighton 2024 by Aura](https://qubyte.codes/blog/indiewebcamp-brighton-2024)
 * [Indie webbing by Jeremy](https://adactio.com/journal/20968)
 * [What I created at IndieWebCamp by Tantek](https://tantek.com/2024/072/t1/created-at-indiewebcamp-brighton)
 * [Plugging into the IndieWeb by Jon](https://roobottom.com/articles/plugging-into-the-indieweb/)
