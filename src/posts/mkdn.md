@@ -196,3 +196,9 @@ Not long ago, Paul Robert Lloyd shared a presentation that is a [beginner's guid
 --- 
 
 Join whatever community or safe place that feels better for you - all we can wish for is that you find some time to embrace creating your personal website.
+
+---
+
+<a href="https://news.indieweb.org/en" class="u-syndication">
+  Also posted on IndieNews
+</a>
