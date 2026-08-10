@@ -1,0 +1,18 @@
+---
+title: About
+permalink: "ana-are-you-ok/"
+layout: page
+eleventyExcludeFromCollections: true
+---
+
+<h2 class="heading--primary">Ana, are you ok?</h2>
+
+<div>
+  {% if checkinStatus.status == "ok" %}
+    <p>Ana has checked in and is OK! Thank you for caring.</p>
+  {% elsif checkinStatus.status == "alive" %}
+    <p>Ana is alive and last checked in on {{ checkinStatus.formattedCheckin }}.</p>
+  {% else %}
+    <p>Hmm, very odd that Ana hasn't checked in in over 6 months. Sure everything is fine but if you're curious reach out. This email will reach a trusted family member: <a href="mailto:trusted-contact@example.com">trusted-contact@example.com</a>.</p>
+  {% endif %}
+</div>
