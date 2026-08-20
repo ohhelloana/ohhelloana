@@ -1,6 +1,6 @@
 ---	
 layout: layouts/post.njk	
-title: "Artigo na SuperInteressante"
+title: "[PT] Internet à moda antiga: conheça a indie web, onde as pessoas ainda fazem seus próprios sites"
 date: 2026-08-20
 tags:		
   - IndieWeb
