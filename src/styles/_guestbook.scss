@@ -53,10 +53,13 @@
     }
 }
 
+.guestbook-form__message {
+    display: grid;
+}
+
 .guestbook-form__field {
-    display: flex;
-    flex-direction: column;
-    height: stretch;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .guestbook-form__required {
