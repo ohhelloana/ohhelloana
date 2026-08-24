@@ -42,6 +42,11 @@ module.exports = function(eleventyConfig) {
     return newDate;
   });
 
+  // JSON.stringify a value for safe embedding inside a <script type="application/json"> bc guestbook messages.
+  eleventyConfig.addFilter("jsonScriptSafe", value => {
+    return JSON.stringify(value).replace(/</g, '\\u003c');
+  });
+
   eleventyConfig.addFilter("indexPaginationPermalink", value => {
 
     const indexPaginationPermalink = (pageNumber) => pageNumber ? `/page/${pageNumber + 1}/` : "/";

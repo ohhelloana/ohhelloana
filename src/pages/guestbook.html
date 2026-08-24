@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: true
 <div class="two-col-layout">
 	<aside>
 		<div class="aside__highlighted">
-		Currently this page is displaying entries sent via <a href="https://indieweb.org/Webmention">Webmention</a>. Contact me if you'd like your Webmention to be removed.
+		Currently this page is displaying entries sent via <a href="https://indieweb.org/Webmention">Webmention</a> and via the guestbook form. Contact me if you'd like your entry to be removed.
 		</div>
 	</aside>
 	<noscript>The guestbook entries are requested using Javascript which is either unavailable or disabled in your browser.</noscript>
@@ -88,88 +88,144 @@ eleventyExcludeFromCollections: true
 	})();
 </script>
 
+<script type="application/json" id="guestbook-json-data">{{ guestbook | jsonScriptSafe }}</script>
+
 <script>
+(function () {
+	var entriesContainer = document.getElementById('guestbook-entries');
+
+	function escapeHtml(str) {
+		var div = document.createElement('div');
+		div.textContent = str;
+		return div.innerHTML;
+	}
+
+	// entries submitted via the guestbook form and merged into src/_data/guestbook.json
+	function getLocalEntries() {
+		var dataEl = document.getElementById('guestbook-json-data');
+		var data;
+		try {
+			data = JSON.parse(dataEl.textContent);
+		} catch (e) {
+			data = [];
+		}
+
+		return data.map(function (entry) {
+			return {
+				authorName: entry.name,
+				authorUrl: entry.url || null,
+				sourceUrl: null,
+				sourceLabel: null,
+				date: entry.date,
+				html: null,
+				text: entry.message
+			};
+		});
+	}
+
+	// entries submitted via Webmention
+	function getWebmentionEntries(data) {
+		var entries = [];
+
+		for (var i = 0; i < data.children.length; i++) {
+			var currentEntry = data.children[i];
+
+			if (currentEntry['wm-property'] !== 'in-reply-to' && currentEntry['wm-property'] !== 'mention-of') continue;
+			if (!currentEntry.author || !currentEntry.content) continue;
+
+			entries.push({
+				authorName: currentEntry.author.name,
+				authorUrl: currentEntry.author.url,
+				sourceUrl: currentEntry.url,
+				sourceLabel: 'Webmention',
+				date: currentEntry.published || currentEntry['wm-received'],
+				html: currentEntry.content.html || null,
+				text: currentEntry.content.html ? null : currentEntry.content.text
+			});
+		}
+
+		return entries;
+	}
+
+	function renderEntries(entries) {
+		entries.sort(function (a, b) {
+			return new Date(b.date) - new Date(a.date);
+		});
+
+		entries.forEach(function (entry, i) {
+			const newEntry = document.createElement("div");
+			newEntry.classList.add("guestbook__new-entry");
+			entriesContainer.append(newEntry);
+
+			// add author
+			const entryAuthor = document.createElement("div");
+			entryAuthor.classList.add("guestbook__author");
+
+			const authorLink = entry.authorUrl
+				? `<a href="${entry.authorUrl}" rel="nofollow">${entry.authorName}</a>`
+				: entry.authorName;
+			const sourceLink = entry.sourceUrl
+				? ` via <a href="${entry.sourceUrl}" aria-label="Webmention source for ${entry.authorName}'s guestbook entry." rel="nofollow">${entry.sourceLabel}</a>`
+				: ' via guestbook form.';
+
+			entryAuthor.innerHTML = `
+				<div class="u-author h-card">
+					Message from ${authorLink}${sourceLink}
+				</div>
+			`;
+			newEntry.appendChild(entryAuthor);
+
+			// add date
+			const entryDate = document.createElement("div");
+			entryDate.classList.add("guestbook__date");
+			entryDate.innerHTML = `${new Date(entry.date).toDateString()}`;
+			newEntry.appendChild(entryDate);
+
+			// add entry
+			const guestbookEntry = document.createElement("div");
+			guestbookEntry.classList.add("guestbook__entry");
+
+			if (entry.html) {
+				guestbookEntry.innerHTML = `${entry.html}`;
+				newEntry.appendChild(guestbookEntry);
+			} else if (entry.text) {
+				guestbookEntry.innerHTML = escapeHtml(entry.text);
+				newEntry.appendChild(guestbookEntry);
+			}
+
+			//add decoration
+			const topTape = document.createElement("div");
+			topTape.classList.add("tape--guestbook-left-top");
+
+			const middleTape = document.createElement("div");
+			middleTape.classList.add("tape--guestbook-middle-top");
+
+			const bottomTape = document.createElement("div");
+			bottomTape.classList.add("tape--guestbook-right-bottom");
+
+			if (i % 2 == 0) {
+				newEntry.appendChild(middleTape);
+			} else {
+				newEntry.appendChild(topTape);
+				newEntry.appendChild(bottomTape);
+			}
+		});
+	}
+
+	var allEntries = getLocalEntries();
+
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', 'https://webmention.io/api/mentions.jf2?target=https://ohhelloana.blog/guestbook/');
 	xhr.send();
-	xhr.onload = function() {
+	xhr.onload = function () {
 		if (xhr.status === 200) {
-		var data = JSON.parse(xhr.responseText);
-		console.log('----data', data);
-
-		var entriesContainer = document.getElementById('guestbook-entries');
-
-		for (var i = 0; i < data.children.length; i++) {
-			console.log('---each', data.children[i]);
-
-			if (data.children[i]['wm-property'] === 'in-reply-to' || data.children[i]['wm-property'] === 'mention-of') {
-				const currentEntry = data.children[i];
-
-				if (currentEntry.author && currentEntry.content) {
-					const newEntry = document.createElement("div");
-					newEntry.classList.add("guestbook__new-entry");
-					entriesContainer.append(newEntry);
-
-					// add author
-					const entryAuthor = document.createElement("div");
-					entryAuthor.classList.add("guestbook__author");
-
-					entryAuthor.innerHTML = `
-						<div class="u-author h-card">
-							Message from 
-							<a href="${currentEntry.author.url}" rel="nofollow">${currentEntry.author.name}</a> via
-							<a href="${currentEntry.url}" aria-label="Webmention source for ${currentEntry.author.name}'s guestbook entry." rel="nofollow">Webmention</a>
-						</div>
-					`;
-					newEntry.appendChild(entryAuthor);
-
-					// add date
-					const entryDate = document.createElement("div");
-					entryDate.classList.add("guestbook__date");
-
-
-					if (currentEntry.published) {
-						var guestbookEntryDate = new Date(currentEntry.published).toDateString();
-					} else {
-						var guestbookEntryDate = new Date(currentEntry['wm-received']).toDateString();
-					}
-					
-
-					entryDate.innerHTML = `${guestbookEntryDate}`;
-					newEntry.appendChild(entryDate);
-					
-					// add entry
-					const guestbookEntry = document.createElement("div");
-					guestbookEntry.classList.add("guestbook__entry");
-
-					
-					if (currentEntry.content.html) {
-						guestbookEntry.innerHTML = `${currentEntry.content.html}`;
-						newEntry.appendChild(guestbookEntry);
-					} else if (currentEntry.content.text) {
-						guestbookEntry.innerHTML = `${currentEntry.content.text}`;
-						newEntry.appendChild(guestbookEntry);
-					}	
-					
-					//add decoration
-					const topTape = document.createElement("div");
-					topTape.classList.add("tape--guestbook-left-top");
-
-					const middleTape = document.createElement("div");
-					middleTape.classList.add("tape--guestbook-middle-top");
-
-					const bottomTape = document.createElement("div");
-					bottomTape.classList.add("tape--guestbook-right-bottom");
-
-					if(i % 2 == 0) {
-						newEntry.appendChild(middleTape);
-					} else {
-						newEntry.appendChild(topTape);
-						newEntry.appendChild(bottomTape);
-					}
-				}
-			}
+			var data = JSON.parse(xhr.responseText);
+			allEntries = allEntries.concat(getWebmentionEntries(data));
 		}
-	}};
-
+		renderEntries(allEntries);
+	};
+	xhr.onerror = function () {
+		renderEntries(allEntries);
+	};
+})();
 </script>
