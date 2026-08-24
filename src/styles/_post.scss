@@ -136,8 +136,8 @@
     flex-direction: column;
   }
 
-  input {
-    width: max-content;
+  input, textarea {
+    width: -webkit-fill-available;
   }
 }
 
