@@ -24,17 +24,16 @@ layout: all
   <p>Messages sent via the following form will not be published.</p>
   <form class="post__contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
     <p>
-      <label>Your Name: <input type="text" name="name" /></label>
+      <label>Your name: <input type="text" name="name" /></label>
     </p>
     <p>
-      <label>Your Email: <input type="email" name="email" /></label>
+      <label>Your email: <input type="email" name="email" /></label>
     </p>
     <p>
-      <label>Message: <textarea name="message"></textarea></label>
+      <label>Your message: <textarea name="message"></textarea></label>
     </p>
     <p>
       <input type="hidden" name="post" value="{{title}}">
-
       <div data-netlify-recaptcha="true"></div>
       <button type="submit">Send</button>
     </p>

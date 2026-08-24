@@ -1,0 +1,40 @@
+label {
+    font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
+    color: $secondary;
+    margin-bottom: 0.4rem;
+}
+
+input,
+textarea {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0;
+    border: 2px dashed #4c4c4c;
+
+    &:focus {
+        outline: 1px solid #000;
+        outline-offset: 1px;
+    }
+
+    &:invalid:not(:placeholder-shown) {
+        border: 2px dashed #b3261e;
+    }
+}
+
+button {
+    align-self: flex-start;
+    font-family: "andale mono","monotype.com",monaco,"courier new",courier,monospace;
+    padding: 0.6rem 1.4rem;
+    border: 2px solid $drawn-border-color;
+    background-color: $bg;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($bg, 8%);
+    }
+
+    &:focus {
+        outline: 1px solid #000;
+    }
+}

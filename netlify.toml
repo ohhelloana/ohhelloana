@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "site"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"

@@ -17,6 +17,76 @@ eleventyExcludeFromCollections: true
 	<div id="guestbook-entries"></div>
 </div>
 
+<section class="guestbook-form-section">
+	<h2 class="heading--primary">Sign the guestbook</h2>
+
+	<p class="guestbook-form__intro">Fields marked (required) must be filled in.</p>
+
+	<div id="guestbook-form-status" role="status"></div>
+
+	<form class="guestbook-form" id="guestbook-form" action="/.netlify/functions/guestbook-submit" method="POST" novalidate>
+		
+		<div class="guestbook-form__mesage">
+			<div class="guestbook-form__stamp stamp--mobile"></div>
+			<div class="guestbook-form__field">
+				<label for="guestbook-message">Your message <span class="guestbook-form__required">(required)</span></label>
+				<textarea class="guestbook-message" id="guestbook-message" name="message" rows="4" required></textarea>
+			</div>
+		</div>
+
+		<div class="guestbook-form__sender">
+			<div class="guestbook-form__stamp stamp--desktop"></div>
+			<div class="guestbook-form__field">
+				<label for="guestbook-name">Your name <span class="guestbook-form__required">(required)</span></label>
+				<input type="text" id="guestbook-name" name="name" autocomplete="name" required>
+			</div>
+
+			<div class="guestbook-form__field">
+				<label for="guestbook-url">Your URL</label>
+				<input type="url" id="guestbook-url" name="url" autocomplete="url" placeholder="https://">
+			</div>
+
+			<div class="guestbook-form__field">
+				<label for="guestbook-email">Your email <span class="guestbook-form__required">(required)</span></label>
+				<input type="email" id="guestbook-email" name="email" autocomplete="email" aria-describedby="guestbook-email-hint" required>
+				<p class="guestbook-form__hint" id="guestbook-email-hint">Your email will not be public, only used if I need to reach you. Read the <a href="/privacy-policy">privacy policy</a>.</p>
+			</div>
+
+			<div class="guestbook-form__honeypot" aria-hidden="true">
+				<label for="guestbook-website">Website</label>
+				<input type="text" id="guestbook-website" name="website" tabindex="-1" autocomplete="off">
+			</div>
+
+			<input type="hidden" name="formLoadedAt" id="guestbook-form-loaded-at" value="">
+
+			<button type="submit" class="guestbook-form__submit">Sign the guestbook</button>
+		</div>
+	</form>
+	<form name="guestbook-full" data-netlify="true" hidden>
+		<input type="text" name="name">
+		<input type="url" name="url">
+		<input type="email" name="email">
+		<textarea name="message"></textarea>
+	</form>
+</section>
+
+<script>
+	document.getElementById('guestbook-form-loaded-at').value = Date.now();
+
+	(function () {
+		var status = new URLSearchParams(window.location.search).get('submitted');
+		var el = document.getElementById('guestbook-form-status');
+		if (!el || !status) return;
+
+		if (status === 'ok') {
+			el.textContent = "Thank you for signing my guestbook! Your message has been submitted and is awaiting review.";
+			el.classList.add('guestbook-form__status--ok');
+		} else if (status === 'error') {
+			el.textContent = "Something went wrong submitting your message. Please try again, or email me directly.";
+			el.classList.add('guestbook-form__status--error');
+		}
+	})();
+</script>
 
 <script>
 	var xhr = new XMLHttpRequest();
