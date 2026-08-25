@@ -215,7 +215,7 @@ eleventyExcludeFromCollections: true
 	var allEntries = getLocalEntries();
 
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'https://webmention.io/api/mentions.jf2?target=https://ohhelloana.blog/guestbook/');
+	xhr.open('GET', 'https://webmention.io/api/mentions.jf2?target=https://ohhelloana.blog/guestbook&wm-property[]=in-reply-to&wm-property[]=mention-of');
 	xhr.send();
 	xhr.onload = function () {
 		if (xhr.status === 200) {
