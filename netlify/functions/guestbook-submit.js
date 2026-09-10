@@ -6,6 +6,8 @@ const BASE_BRANCH = 'main';
 const DATA_FILE_PATH = 'src/_data/guestbook.json';
 const GITHUB_API = 'https://api.github.com';
 const MIN_SUBMIT_SECONDS = 3;
+const SITE_URL = 'https://ohhelloana.blog';
+const AKISMET_API = 'https://rest.akismet.com/1.1/comment-check';
 
 exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') {
@@ -24,17 +26,32 @@ exports.handler = async (event) => {
     return redirect('ok');
   }
 
-  if (Number.isFinite(formLoadedAt) && formLoadedAt > 0) {
-    const elapsedSeconds = (Date.now() - formLoadedAt) / 1000;
-    if (elapsedSeconds < MIN_SUBMIT_SECONDS) {
-      return redirect('ok');
-    }
+  if (!Number.isFinite(formLoadedAt) || formLoadedAt <= 0) {
+    return redirect('ok');
+  }
+
+  const elapsedSeconds = (Date.now() - formLoadedAt) / 1000;
+  if (elapsedSeconds < MIN_SUBMIT_SECONDS) {
+    return redirect('ok');
   }
 
   if (!name || !email || !message) {
     return redirect('error');
   }
 
+  const isSpam = await checkAkismetSpam({
+    name,
+    email,
+    url,
+    message,
+    ip: clientIp(event),
+    userAgent: event.headers['user-agent'] || '',
+    referrer: event.headers['referer'] || event.headers['referrer'] || '',
+  });
+
+  if (isSpam) {
+    return redirect('ok');
+  }
 
   try {
     await openGuestbookPR({ name, url, message });
@@ -58,6 +75,54 @@ function redirect(status) {
     statusCode: 303,
     headers: { Location: `/guestbook/?submitted=${status}` },
   };
+}
+
+function clientIp(event) {
+  const forwardedFor = event.headers['x-forwarded-for'] || '';
+  return event.headers['x-nf-client-connection-ip'] || forwardedFor.split(',')[0].trim();
+}
+
+async function checkAkismetSpam({ name, email, url, message, ip, userAgent, referrer }) {
+  const apiKey = process.env.AKISMET_API_KEY;
+  if (!apiKey) {
+    console.warn('AKISMET_API_KEY not set; skipping spam check');
+    return false;
+  }
+
+  const body = new URLSearchParams({
+    api_key: apiKey,
+    blog: SITE_URL,
+    user_ip: ip || '',
+    user_agent: userAgent || '',
+    referrer: referrer || '',
+    permalink: `${SITE_URL}/guestbook/`,
+    comment_type: 'guestbook',
+    comment_author: name,
+    comment_author_email: email,
+    comment_author_url: url || '',
+    comment_content: message,
+  });
+
+  try {
+    const res = await fetch(AKISMET_API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString(),
+    });
+
+    const debugHelp = res.headers.get('x-akismet-debug-help');
+    const result = (await res.text()).trim();
+
+    if (result !== 'true' && result !== 'false') {
+      console.error('Akismet comment-check returned an unexpected response:', result, debugHelp);
+      return false;
+    }
+
+    return result === 'true';
+  } catch (err) {
+    console.error('Akismet comment-check request failed:', err);
+    return false;
+  }
 }
 
 async function githubRequest(path, options = {}) {
