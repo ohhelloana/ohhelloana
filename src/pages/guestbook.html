@@ -85,6 +85,36 @@ eleventyExcludeFromCollections: true
 			el.classList.add('guestbook-form__status--error');
 		}
 	})();
+
+	(function () {
+		var form = document.getElementById('guestbook-form');
+		var button = form.querySelector('.guestbook-form__submit');
+		var status = document.getElementById('guestbook-form-status');
+		var defaultLabel = button.textContent;
+		var submitting = false;
+
+		form.addEventListener('submit', function () {
+			if (submitting) return;
+			submitting = true;
+
+			button.textContent = 'Submitting…';
+			button.disabled = true;
+			button.setAttribute('aria-busy', 'true');
+
+			status.classList.remove('guestbook-form__status--ok', 'guestbook-form__status--error');
+			status.textContent = 'Submitting your message…';
+
+			// don't leave the button stuck on "Submitting" forever.
+			window.setTimeout(function () {
+				button.textContent = defaultLabel;
+				button.disabled = false;
+				button.removeAttribute('aria-busy');
+				status.textContent = "It's taking longer than expected. Check your connection and try again.";
+				status.classList.add('guestbook-form__status--error');
+				submitting = false;
+			}, 20000);
+		});
+	})();
 </script>
 
 <script type="application/json" id="guestbook-json-data">{{ guestbook | jsonScriptSafe }}</script>
