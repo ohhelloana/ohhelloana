@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Bookmarks that were lingering in tabs
-date: 2020-07-16T17:32:01.971Z
+date: 2026-10-07
 tags:
   - post
   - Bookmarks
