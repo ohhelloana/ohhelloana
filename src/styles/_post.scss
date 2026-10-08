@@ -25,7 +25,7 @@
     width: 100%;
   }
 
-  li {
+  ul li {
     list-style: inside;
   }
 
@@ -71,6 +71,11 @@
 
   p, ul li, ol li {
     line-height: 1.8rem;
+  }
+
+  ol {
+    list-style: decimal;
+    margin-left: 1.25rem;
   }
 
   & > * + h1, 
