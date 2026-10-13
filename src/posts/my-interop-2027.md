@@ -50,6 +50,22 @@ And here's what would make my life easier at work and what are our most frequent
 9. [Responsive iframes](https://github.com/web-platform-tests/interop/issues/1443)
 10. [CSS `AccentColor` system color reflects `accent-color`](https://github.com/web-platform-tests/interop/issues/1361)
 
+## Other people's ranks
+
+Updated: 13th October 2026
+
+Since posting this, other developers have done the same and I've been enjoying reading their takes! Also, Firefox has since added a "share" feature on the ranking website which should allow _you_ to quickly create your own blog post too. If you do, let me know and I will add you to the list!
+
+<ul>
+<li><a href="hhttps://www.sarasoueidan.com/blog/interop-2027-rankings/">Sara Soueidan</a></li>
+<li><a href="https://vale.rocks/micros/20261011-0700">Declan Chidlow</a></li>
+<li><a href="https://cydstumpel.nl/my-picks-for-interop-2027/">Cyd Stumpel</a></li>
+<li><a href="https://tylersticka.com/journal/interop-2027-rank/">Tyler Sticka</a></li>
+<li><a href="https://pawelgrzybek.com/my-interop-2027-picks/">Paweł Grzybek</a></li>
+<li><a href="https://www.alwaystwisted.com/articles/and-thats-my-rank-2027-edition">Stuart Robson</a></li>
+</ul>
+
+
 
 
 
