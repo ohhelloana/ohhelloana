@@ -52,7 +52,7 @@ And here's what would make my life easier at work and what are our most frequent
 
 ## Other people's ranks
 
-Updated: 13th October 2026
+Updated: 14th October 2026
 
 Since posting this, other developers have done the same and I've been enjoying reading their takes! Also, Firefox has since added a "share" feature on the ranking website which should allow _you_ to quickly create your own blog post too. If you do, let me know and I will add you to the list!
 
@@ -63,6 +63,8 @@ Since posting this, other developers have done the same and I've been enjoying r
 <li><a href="https://tylersticka.com/journal/interop-2027-rank/">Tyler Sticka</a></li>
 <li><a href="https://pawelgrzybek.com/my-interop-2027-picks/">Paweł Grzybek</a></li>
 <li><a href="https://www.alwaystwisted.com/articles/and-thats-my-rank-2027-edition">Stuart Robson</a></li>
+<li><a href="https://www.hammerspace.co.uk/posts/interop2027-10-2026">David Marland</a></li>
+<li><a href="https://meyerweb.com/eric/thoughts/2026/10/14/my-interop-2027-rankings/">Eric A. Meyer</a></li>
 </ul>
 
 
