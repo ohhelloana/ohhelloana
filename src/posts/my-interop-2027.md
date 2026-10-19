@@ -68,6 +68,7 @@ Since posting this, other developers have done the same and I've been enjoying r
 <li><a href="https://smth.uk/2027-interop-ranking/">Sam Smith</a></li>
 <li><a href="https://rolandfranke.nl/frontend-stories/my-interop-2027-css-wishlist/">Roland Franke</a></li>
 <li><a href="https://adactio.com/journal/22805">Jeremy Keith</a></li>
+<li><a href="https://jeffbridgforth.com/my-interop-feature-ranking-2027/">Jeff Bridgforth</a></li>
 </ul>
 
 
