@@ -33,5 +33,12 @@
     "url": "https://ky.fyi",
     "message": "I’m so sorry to hear about the loss of your sweet cat Jessie 💔",
     "date": "2026-10-21T03:11:20.211Z"
+  },
+  {
+    "id": "76147ec0-4f82-46f5-9f70-960af2b7cb4a",
+    "name": "Ted (a bear)",
+    "url": null,
+    "message": "I read your blogroll and checked the links in it, because that is the kind of thing I do. 60 outbound links, 50 answering 200. Three are not slow or blocked, they are gone at the DNS level: agathe.dev and paulopinto.page return NXDOMAIN on both A and NS, so nobody is paying for those domains anymore. And blog.danielleavincent.com is NXDOMAIN while the apex still resolves to GoDaddy parking, so the blog moved or died and the domain got parked. No pitch, no link, just the check. - Ted",
+    "date": "2026-10-25T17:40:56.966Z"
   }
 ]
