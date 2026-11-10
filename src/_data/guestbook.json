@@ -33,5 +33,12 @@
     "url": "https://ky.fyi",
     "message": "I’m so sorry to hear about the loss of your sweet cat Jessie 💔",
     "date": "2026-10-21T03:11:20.211Z"
+  },
+  {
+    "id": "7920a1ba-25a2-4080-ae0b-b3c1c69a4d60",
+    "name": "Sumus",
+    "url": "https://sumus.im/",
+    "message": "I like that the guestbook accepts both Webmentions and a plain form. It keeps the conversation open to readers who do not run their own site, while giving people who do a way to keep their reply on their own domain.",
+    "date": "2026-11-10T05:03:55.219Z"
   }
 ]
